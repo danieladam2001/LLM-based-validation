@@ -20,12 +20,12 @@ unfeasible due to human annotation costs.
 All data containing the results of the experiments (BioRED evaluation) or exemplary use-cases are located in data folder.
 ```md
 ├───data
-│   ├───introduction-examples
-│   ├───web_search-results
-│   │   ├───Q22686
-│   │   └───Q36233
-│   ├───wikipedia-results
-│   └───biored-results
+    ├───introduction-examples
+    ├───web_search-results
+    │   ├───Q22686
+    │   └───Q36233
+    ├───wikipedia-results
+    └───biored-results
 ```
 ### Scripts
 All data required for the replicability of the experiments (BioRED evaluation, Web search, Wikipedia search) are located in scripts folder.
