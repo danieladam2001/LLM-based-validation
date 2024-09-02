@@ -7,7 +7,7 @@ To make this transformation:
 * Copy the whole XML content from the desired .txt file
 * Paste the copied XML to subject.xml and save it
 * Open Oxygen editor and apply a transformation using the transformation-html.xsl file
-* Refresh the page in the browser or open index.html again to view new content
+* Open index.html using your web browser to view the content
 
 
 
