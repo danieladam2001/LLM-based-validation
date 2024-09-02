@@ -1,8 +1,16 @@
-By default, the HTML is generated for data/wikipedia-results/Bioluminescence-gpt4.txt
-To view the HTML pages, open the .html file in your browser
+# Script for verifying statements through corresponding Wikipedia search
+We designed a method of obtaining primary sources for manually selected statements via corresponding Wikipedia article.
+The required inputs for the script are a Wikidata identifier for a selected topic and a list of specific statements contained on corresponding Wikidata page.
+The output of this script is a text file saved in /xml folder which is automatically created at the start of the process.
+The file contains an XML format which can be later transformed into a user-friendly HTML page.
+To make this transformation:
+* Copy the whole XML content from the desired .txt file
+* Paste the copied XML to subject.xml and save it
+* Open Oxygen editor and apply a transformation using the transformation-html.xsl file
+* Refresh the page in the browser or open index.html again to view new content
 
-To generate HTML for different subject:
-1. Copy the whole XML content from the desired .txt file
-2. Paste the copied XML to subject.xml and save it
-3. Open Oxygen editor and apply a transformation using the transformation-html.xsl file
-4. Refresh the page in the browser or open index.html again to view new content
+
+
+
+By default, the HTML is generated for data/wikipedia-results/Bioluminescence-gpt4.txt
+
