@@ -31,14 +31,14 @@ All data containing the results of the experiments (BioRED evaluation) or exempl
 All data required for the replicability of the experiments (BioRED evaluation, Web search, Wikipedia search) are located in scripts folder.
 ```md
 ├───scripts
-    ├───biored evaluation script
+    ├───biored_evaluation
     │   ├───biored-adjusted.json
     │   ├───bioRED-test.py
     │   └───biored-tests
-    ├───web-search script
+    ├───web-search
     │   ├───wikidata.py
     │   └───wikidata-references
-    └───wikipedia script
+    └───wikipedia
         ├───index.html
         ├───schema.xsd
         ├───subject.xml
