@@ -1,0 +1,20 @@
+{
+  "subject": "NDP-MSH",
+  "predicate": "Negative_Correlation",
+  "object": "MYC",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"NDP-MSH\" - \"Negative_Correlation\" - \"MYC\"].\nSnippet to verify from: \"Melanocortin-4 receptor activation inhibits c-Jun N-terminal kinase activity and promotes insulin signaling.The melanocortin system is crucial to regulation of energy homeostasis. The melanocortin receptor type 4 (MC4R) modulates insulin signaling via effects on c-Jun N-terminal kinase (JNK). The melanocortin agonist NDP-MSH dose-dependently inhibited JNK activity in HEK293 cells stably expressing the human MC4R; effects were reversed by melanocortin receptor antagonist. NDP-MSH time- and dose-dependently inhibited IRS-1(ser307) phosphorylation, effects also reversed by a specific melanocortin receptor antagonist. NDP-MSH augmented insulin-stimulated AKT phosphorylation in vitro. The melanocortin agonist melanotan II increased insulin-stimulated AKT phosphorylation in the rat hypothalamus in vivo. NDP-MSH increased insulin-stimulated glucose uptake in hypothalamic GT1-1 cells. The current study shows that the melanocortinergic system interacts with insulin signaling via novel effects on JNK activity.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Melanocortin-4 receptor activation inhibits c-Jun N-terminal kinase activity and promotes insulin signaling.The melanocortin system is crucial to regulation of energy homeostasis. The melanocortin receptor type 4 (MC4R) modulates insulin signaling via effects on c-Jun N-terminal kinase (JNK). The melanocortin agonist NDP-MSH dose-dependently inhibited JNK activity in HEK293 cells stably expressing the human MC4R; effects were reversed by melanocortin receptor antagonist. NDP-MSH time- and dose-dependently inhibited IRS-1(ser307) phosphorylation, effects also reversed by a specific melanocortin receptor antagonist. NDP-MSH augmented insulin-stimulated AKT phosphorylation in vitro. The melanocortin agonist melanotan II increased insulin-stimulated AKT phosphorylation in the rat hypothalamus in vivo. NDP-MSH increased insulin-stimulated glucose uptake in hypothalamic GT1-1 cells. The current study shows that the melanocortinergic system interacts with insulin signaling via novel effects on JNK activity.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The RDF statement is [\"NDP-MSH\" - \"Negative_Correlation\" - \"MYC\"]. While the snippet does not directly mention \"Negative_Correlation\" or \"MYC\", it does mention that NDP-MSH inhibits JNK activity and promotes insulin signaling, which could be interpreted as a negative correlation between NDP-MSH and JNK activity. However, there is no direct mention of MYC in the snippet, so the RDF statement cannot be directly verified.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

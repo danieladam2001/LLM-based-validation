@@ -1,0 +1,20 @@
+{
+  "subject": "Capecitabine",
+  "predicate": "Positive_Correlation",
+  "object": "CAD",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"Capecitabine\" - \"Positive_Correlation\" - \"CAD\"].\nSnippet to verify from: \"Safety of capecitabine: a review.IMPORTANCE OF THE FIELD: Fluoropyrimidines, in particular 5-fluorouracil (5-FU), have been the mainstay of treatment for several solid tumors, including colorectal, breast and head and neck cancers, for > 40 years. AREAS COVERED IN THIS REVIEW: This article reviews the pharmacology and efficacy of capecitabine with a special emphasis on its safety. WHAT THE READER WILL GAIN: The reader will gain better insight into the safety of capecitabine in special populations such as patients with advanced age, renal and kidney disease. We also explore different dosing and schedules of capecitabine administration. TAKE HOME MESSAGE: Capecitabine is an oral prodrug of 5-FU and was developed to fulfill the need for a more convenient therapy and provide an improved safety/efficacy profile. It has shown promising results alone or in combination with other chemotherapeutic agents in colorectal, breast, pancreaticobiliary, gastric, renal cell and head and neck cancers. The most commonly reported toxic effects of capecitabine are diarrhea, nausea, vomiting, stomatitis and hand-foot syndrome. Capecitabine has a well-established safety profile and can be given safely to patients with advanced age, hepatic and renal dysfunctions.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Safety of capecitabine: a review.IMPORTANCE OF THE FIELD: Fluoropyrimidines, in particular 5-fluorouracil (5-FU), have been the mainstay of treatment for several solid tumors, including colorectal, breast and head and neck cancers, for > 40 years. AREAS COVERED IN THIS REVIEW: This article reviews the pharmacology and efficacy of capecitabine with a special emphasis on its safety. WHAT THE READER WILL GAIN: The reader will gain better insight into the safety of capecitabine in special populations such as patients with advanced age, renal and kidney disease. We also explore different dosing and schedules of capecitabine administration. TAKE HOME MESSAGE: Capecitabine is an oral prodrug of 5-FU and was developed to fulfill the need for a more convenient therapy and provide an improved safety/efficacy profile. It has shown promising results alone or in combination with other chemotherapeutic agents in colorectal, breast, pancreaticobiliary, gastric, renal cell and head and neck cancers. The most commonly reported toxic effects of capecitabine are diarrhea, nausea, vomiting, stomatitis and hand-foot syndrome. Capecitabine has a well-established safety profile and can be given safely to patients with advanced age, hepatic and renal dysfunctions.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is c) The RDF statement definitely cannot be inferred from the snippet.The RDF statement claims a \"Positive_Correlation\" between \"Capecitabine\" and \"CAD\" (Coronary Artery Disease), but the snippet does not mention CAD or any correlation between Capecitabine and CAD. The snippet discusses the safety and efficacy of Capecitabine in treating various types of cancer, but it does not provide any information about its relationship with CAD.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

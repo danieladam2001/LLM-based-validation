@@ -1,0 +1,219 @@
+* {
+    text-align:justify;
+}
+
+table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom:10px;
+    font-size: 30px;
+    font-weight:100;
+}
+
+.first {
+    margin-top: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+    margin-top:20px;
+}
+
+h2 {
+    margin-bottom: -20px;
+}
+
+.nav {
+    border: 0px;
+    border-collapse: initial;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+.menuHref {
+    text-decoration: none;
+    color: black;
+}
+
+.navCell {
+    width:50%;
+    text-align:center;
+    font-size:40px;
+    border: 0px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    transition: background-color 0.2s ease-out 100ms;
+}
+
+.navCellButton {
+    width:5%;   
+}
+
+.navCellDetailed {
+    width:40%;
+}
+
+.navCell:hover {
+    background-color: #e6e6e6;
+}
+
+h3 {
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+hr {
+    margin-top:40px;
+    margin-bottom: 0px;
+}
+
+.infoRow {
+    font-weight: bold;
+    background-color: gray;
+}
+
+.wrapper {
+    width: 1400px;
+    padding: 40px 40px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+}
+
+td {
+    padding: 1px 4px;
+}
+
+.statementCellSubject{
+    width: 14%;
+}
+
+.statementCellPredicate{
+    width: 22%;
+}
+
+.statementCellPredicateURL{
+    width: 16%;
+}
+
+.statementCellobject{
+    width: 24%;
+}
+
+.statementCellobjectURL{
+    width: 24%;
+}
+
+.generalInfoTable {
+    width: 100%;
+}
+
+.generalInfoCellTitle {
+    width: 25%;
+    vertical-align: top;
+}
+
+.generalInfoCell {
+    width: 75%;
+}
+
+.groupText {
+    text-align:justify;
+    font-style:italic;
+}
+
+.paragraph {
+    
+}
+
+.primaryParagraph {
+    margin: 0 auto;
+}
+
+a {
+    color: black;
+}
+
+footer {
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+.prompt {
+}
+
+table {
+    background-color: white;
+}
+
+.selected {
+    border-bottom: 1px solid grey;
+    
+}
+
+.snippet {
+    background-color:#BED2D0;
+    border-radius:8px;
+    padding:0 6px;
+}
+
+.rdf {
+    background-color:#90adab;
+    border-radius:8px;
+    padding:0 6px;
+}
+
+.true-answer {
+    background-color:#60A172;
+    font-weight:bold;
+    border-radius:8px;
+    padding:0 6px;
+}
+
+.false-answer {
+    background-color:#CD7F55;
+    font-weight:bold;
+    border-radius:8px;
+    padding:0 6px;
+}
+
+.numbers {
+    margin-left: 5px;
+    font-weight:bold;
+}
+
+.bg {
+    margin-bottom:10px;
+    padding:2px;
+    background-color:#474747;
+    border-radius:4px;
+}
+
+.narrow {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom:10px;
+}
+
+.narrow1 {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom:10px;
+}
+
+
+
+
+
+
+

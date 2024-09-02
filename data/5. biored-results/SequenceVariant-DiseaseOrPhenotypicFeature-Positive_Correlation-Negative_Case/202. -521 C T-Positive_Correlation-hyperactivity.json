@@ -1,0 +1,20 @@
+{
+  "subject": "-521 C/T",
+  "predicate": "Positive_Correlation",
+  "object": "hyperactivity",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"-521 C/T\" - \"Positive_Correlation\" - \"hyperactivity\"].\nSnippet to verify from: \"Association study of polymorphisms in the promoter region of DRD4 with schizophrenia, depression, and heroin addiction.This study investigated the possible association between three functional polymorphisms in the promoter region of the dopamine D4 receptor (DRD4) gene and schizophrenia, depression, and heroin addiction. Genomic DNA was isolated from the venous blood leukocytes of 322 unrelated patients with schizophrenia, 156 patients with depression, 300 patients with heroin addiction, and 300 healthy unrelated individuals. Polymorphisms in the promoter region of DRD4 (-120 bp duplication, -616C/G, and -521C/T) were genotyped using allele-specific polymerase chain reaction analysis. Genotype and allele were analyzed using SPSS 11.5 software. Results of this analysis indicated that there is a strong finding of -120 bp duplication allele frequencies with schizophrenia (p=0.008) and weak finding with -1240 L/S and for paranoid schizophrenia (p=0.022). Interestingly, there is a stronger finding with -521 C/T allele frequencies with heroin dependence (p=0.0002). These observations strongly suggest that the -120-bp duplication polymorphism of DRD4 is associated with schizophrenia and that the -521 C/T polymorphism is associated with heroin addiction.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Association study of polymorphisms in the promoter region of DRD4 with schizophrenia, depression, and heroin addiction.This study investigated the possible association between three functional polymorphisms in the promoter region of the dopamine D4 receptor (DRD4) gene and schizophrenia, depression, and heroin addiction. Genomic DNA was isolated from the venous blood leukocytes of 322 unrelated patients with schizophrenia, 156 patients with depression, 300 patients with heroin addiction, and 300 healthy unrelated individuals. Polymorphisms in the promoter region of DRD4 (-120 bp duplication, -616C/G, and -521C/T) were genotyped using allele-specific polymerase chain reaction analysis. Genotype and allele were analyzed using SPSS 11.5 software. Results of this analysis indicated that there is a strong finding of -120 bp duplication allele frequencies with schizophrenia (p=0.008) and weak finding with -1240 L/S and for paranoid schizophrenia (p=0.022). Interestingly, there is a stronger finding with -521 C/T allele frequencies with heroin dependence (p=0.0002). These observations strongly suggest that the -120-bp duplication polymorphism of DRD4 is associated with schizophrenia and that the -521 C/T polymorphism is associated with heroin addiction.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The RDF statement is [\"-521 C/T\" - \"Positive_Correlation\" - \"hyperactivity\"], but the snippet does not mention \"hyperactivity\" at all. However, it does mention that there is a strong finding with -521 C/T allele frequencies with heroin dependence, which suggests a positive correlation between the two. Therefore, the snippet provides some indication of the truthfulness of the RDF, but it does not directly verify it.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

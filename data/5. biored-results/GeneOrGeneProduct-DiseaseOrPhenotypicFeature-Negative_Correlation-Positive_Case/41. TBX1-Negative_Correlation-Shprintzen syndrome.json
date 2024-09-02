@@ -1,0 +1,20 @@
+{
+  "subject": "TBX1",
+  "predicate": "Negative_Correlation",
+  "object": "Shprintzen syndrome",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"TBX1\" - \"Negative_Correlation\" - \"Shprintzen syndrome\"].\nSnippet to verify from: \"Human TBX1 missense mutations cause gain of function resulting in the same phenotype as 22q11.2 deletions.Deletion 22q11.2 syndrome is the most frequent known microdeletion syndrome and is associated with a highly variable phenotype, including DiGeorge and Shprintzen (velocardiofacial) syndromes. Although haploinsufficiency of the T-box transcription factor gene TBX1 is thought to cause the phenotype, to date, only four different point mutations in TBX1 have been reported in association with six of the major features of 22q11.2 deletion syndrome. Although, for the two truncating mutations, loss of function was previously shown, the pathomechanism of the missense mutations remains unknown. We report a novel heterozygous missense mutation, H194Q, in a familial case of Shprintzen syndrome and show that this and the two previously reported missense mutations result in gain of function, possibly through stabilization of the protein dimer DNA complex. We therefore conclude that TBX1 gain-of-function mutations can result in the same phenotypic spectrum as haploinsufficiency caused by loss-of-function mutations or deletions.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Human TBX1 missense mutations cause gain of function resulting in the same phenotype as 22q11.2 deletions.Deletion 22q11.2 syndrome is the most frequent known microdeletion syndrome and is associated with a highly variable phenotype, including DiGeorge and Shprintzen (velocardiofacial) syndromes. Although haploinsufficiency of the T-box transcription factor gene TBX1 is thought to cause the phenotype, to date, only four different point mutations in TBX1 have been reported in association with six of the major features of 22q11.2 deletion syndrome. Although, for the two truncating mutations, loss of function was previously shown, the pathomechanism of the missense mutations remains unknown. We report a novel heterozygous missense mutation, H194Q, in a familial case of Shprintzen syndrome and show that this and the two previously reported missense mutations result in gain of function, possibly through stabilization of the protein dimer DNA complex. We therefore conclude that TBX1 gain-of-function mutations can result in the same phenotypic spectrum as haploinsufficiency caused by loss-of-function mutations or deletions.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The RDF statement is [\"TBX1\" - \"Negative_Correlation\" - \"Shprintzen syndrome\"], but the snippet does not directly mention a \"Negative_Correlation\" between TBX1 and Shprintzen syndrome. However, it does mention that TBX1 mutations can result in Shprintzen syndrome, which could be interpreted as a negative correlation. Therefore, the snippet provides some indications of the truthfulness of the RDF, but it does not contain direct proof.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

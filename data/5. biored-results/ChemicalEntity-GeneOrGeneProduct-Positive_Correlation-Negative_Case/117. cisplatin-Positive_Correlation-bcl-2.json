@@ -1,0 +1,20 @@
+{
+  "subject": "cisplatin",
+  "predicate": "Positive_Correlation",
+  "object": "bcl-2",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"cisplatin\" - \"Positive_Correlation\" - \"bcl-2\"].\nSnippet to verify from: \"Coenzyme Q10 treatment ameliorates acute cisplatin nephrotoxicity in mice.The nephroprotective effect of coenzyme Q10 was investigated in mice with acute renal injury induced by a single i.p. injection of cisplatin (5 mg/kg). Coenzyme Q10 treatment (10 mg/kg/day, i.p.) was applied for 6 consecutive days, starting 1 day before cisplatin administration. Coenzyme Q10 significantly reduced blood urea nitrogen and serum creatinine levels which were increased by cisplatin. Coenzyme Q10 significantly compensated deficits in the antioxidant defense mechanisms (reduced glutathione level and superoxide dismutase activity), suppressed lipid peroxidation, decreased the elevations of tumor necrosis factor-alpha, nitric oxide and platinum ion concentration, and attenuated the reductions of selenium and zinc ions in renal tissue resulted from cisplatin administration. Also, histopathological renal tissue damage mediated by cisplatin was ameliorated by coenzyme Q10 treatment. Immunohistochemical analysis revealed that coenzyme Q10 significantly decreased the cisplatin-induced overexpression of inducible nitric oxide synthase, nuclear factor-kappaB, caspase-3 and p53 in renal tissue. It was concluded that coenzyme Q10 represents a potential therapeutic option to protect against acute cisplatin nephrotoxicity commonly encountered in clinical practice.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Coenzyme Q10 treatment ameliorates acute cisplatin nephrotoxicity in mice.The nephroprotective effect of coenzyme Q10 was investigated in mice with acute renal injury induced by a single i.p. injection of cisplatin (5 mg/kg). Coenzyme Q10 treatment (10 mg/kg/day, i.p.) was applied for 6 consecutive days, starting 1 day before cisplatin administration. Coenzyme Q10 significantly reduced blood urea nitrogen and serum creatinine levels which were increased by cisplatin. Coenzyme Q10 significantly compensated deficits in the antioxidant defense mechanisms (reduced glutathione level and superoxide dismutase activity), suppressed lipid peroxidation, decreased the elevations of tumor necrosis factor-alpha, nitric oxide and platinum ion concentration, and attenuated the reductions of selenium and zinc ions in renal tissue resulted from cisplatin administration. Also, histopathological renal tissue damage mediated by cisplatin was ameliorated by coenzyme Q10 treatment. Immunohistochemical analysis revealed that coenzyme Q10 significantly decreased the cisplatin-induced overexpression of inducible nitric oxide synthase, nuclear factor-kappaB, caspase-3 and p53 in renal tissue. It was concluded that coenzyme Q10 represents a potential therapeutic option to protect against acute cisplatin nephrotoxicity commonly encountered in clinical practice.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is c) The RDF statement definitely cannot be inferred from the snippet.The RDF statement claims a \"Positive_Correlation\" between \"cisplatin\" and \"bcl-2\", but the snippet does not mention \"bcl-2\" at all. It discusses the effects of cisplatin on renal tissue and the protective effects of coenzyme Q10, but it does not provide any information about the relationship between cisplatin and bcl-2.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

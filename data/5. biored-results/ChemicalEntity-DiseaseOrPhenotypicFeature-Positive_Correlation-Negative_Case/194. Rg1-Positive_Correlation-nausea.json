@@ -1,0 +1,20 @@
+{
+  "subject": "Rg1",
+  "predicate": "Positive_Correlation",
+  "object": "nausea",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"Rg1\" - \"Positive_Correlation\" - \"nausea\"].\nSnippet to verify from: \"Effects of ginsenosides on opioid-induced hyperalgesia in mice.Opioid-induced hyperalgesia (OIH) is characterized by nociceptive sensitization caused by the cessation of chronic opioid use. OIH can limit the clinical use of opioid analgesics and complicate withdrawal from opioid addiction. In this study, we investigated the effects of Re, Rg1, and Rb1 ginsenosides, the bioactive components of ginseng, on OIH. OIH was achieved in mice after subcutaneous administration of morphine for 7 consecutive days three times per day. During withdrawal (days 8 and 9), these mice were administered Re, Rg1, or Rb1 intragastrically two times per day. On the test day (day 10), mice were subjected to the thermal sensitivity test and the acetic acid-induced writhing test. Re (300 mg/kg) inhibited OIH in both the thermal sensitivity test and the acetic acid-induced writhing test. However, the Rg1 and Rb1 ginsenosides failed to prevent OIH in either test. Furthermore, Rg1 showed a tendency to aggravate OIH in the acetic acid-induced writhing test. Our data suggested that the ginsenoside Re, but not Rg1 or Rb1, may contribute toward reversal of OIH.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Effects of ginsenosides on opioid-induced hyperalgesia in mice.Opioid-induced hyperalgesia (OIH) is characterized by nociceptive sensitization caused by the cessation of chronic opioid use. OIH can limit the clinical use of opioid analgesics and complicate withdrawal from opioid addiction. In this study, we investigated the effects of Re, Rg1, and Rb1 ginsenosides, the bioactive components of ginseng, on OIH. OIH was achieved in mice after subcutaneous administration of morphine for 7 consecutive days three times per day. During withdrawal (days 8 and 9), these mice were administered Re, Rg1, or Rb1 intragastrically two times per day. On the test day (day 10), mice were subjected to the thermal sensitivity test and the acetic acid-induced writhing test. Re (300 mg/kg) inhibited OIH in both the thermal sensitivity test and the acetic acid-induced writhing test. However, the Rg1 and Rb1 ginsenosides failed to prevent OIH in either test. Furthermore, Rg1 showed a tendency to aggravate OIH in the acetic acid-induced writhing test. Our data suggested that the ginsenoside Re, but not Rg1 or Rb1, may contribute toward reversal of OIH.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The RDF statement is [\"Rg1\" - \"Positive_Correlation\" - \"nausea\"], but the snippet does not directly mention a positive correlation between Rg1 and nausea. However, it does mention that Rg1 showed a tendency to aggravate OIH in the acetic acid-induced writhing test, which could be related to nausea. Therefore, the snippet provides some indication of the truthfulness of the RDF, but it is not a direct proof.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

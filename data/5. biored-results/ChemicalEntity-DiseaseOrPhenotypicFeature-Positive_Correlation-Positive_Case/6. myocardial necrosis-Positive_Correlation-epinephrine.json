@@ -1,0 +1,20 @@
+{
+  "subject": "myocardial necrosis",
+  "predicate": "Positive_Correlation",
+  "object": "epinephrine",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"myocardial necrosis\" - \"Positive_Correlation\" - \"epinephrine\"].\nSnippet to verify from: \"Severe reversible left ventricular systolic and diastolic dysfunction due to accidental iatrogenic epinephrine overdose.Catecholamine-induced cardiomyopathy due to chronic excess of endogenous catecholamines has been recognized for decades as a clinical phenomenon. In contrast, reports of myocardial dysfunction due to acute iatrogenic overdose are rare. A 35-year-old woman whose cervix uteri was inadvertently injected with 8 mg of epinephrine developed myocardial stunning that was characterized by severe hemodynamic compromise, profound, albeit transient, left ventricular systolic and diastolic dysfunction, and only modestly elevated biochemical markers of myocardial necrosis. Our case illustrates the serious consequences of medical errors that can be avoided through improved medication labeling and staff supervision.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Severe reversible left ventricular systolic and diastolic dysfunction due to accidental iatrogenic epinephrine overdose.Catecholamine-induced cardiomyopathy due to chronic excess of endogenous catecholamines has been recognized for decades as a clinical phenomenon. In contrast, reports of myocardial dysfunction due to acute iatrogenic overdose are rare. A 35-year-old woman whose cervix uteri was inadvertently injected with 8 mg of epinephrine developed myocardial stunning that was characterized by severe hemodynamic compromise, profound, albeit transient, left ventricular systolic and diastolic dysfunction, and only modestly elevated biochemical markers of myocardial necrosis. Our case illustrates the serious consequences of medical errors that can be avoided through improved medication labeling and staff supervision.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions \"modestly elevated biochemical markers of myocardial necrosis\" and \"epinephrine\" in the same context, which suggests a possible correlation between the two. However, it does not directly state that there is a positive correlation between myocardial necrosis and epinephrine. Therefore, the RDF statement cannot be directly verified from the snippet, but the snippet does provide some indication of the truthfulness of the RDF.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

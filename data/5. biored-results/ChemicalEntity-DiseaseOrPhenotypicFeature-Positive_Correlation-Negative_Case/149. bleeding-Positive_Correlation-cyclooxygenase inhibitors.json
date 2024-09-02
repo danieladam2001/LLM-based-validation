@@ -1,0 +1,20 @@
+{
+  "subject": "bleeding",
+  "predicate": "Positive_Correlation",
+  "object": "cyclooxygenase inhibitors",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"bleeding\" - \"Positive_Correlation\" - \"cyclooxygenase inhibitors\"].\nSnippet to verify from: \"Interaction between warfarin and levofloxacin: case series.Warfarin is the most widely used oral anticoagulant and is indicated for many clinical conditions. Levofloxacin, a fluoroquinolone, is one of the most commonly prescribed antibiotics in clinical practice and is effective against Gram-positive, Gram-negative, and atypical bacteria. While small prospective studies have not revealed any significant drug-drug interaction between warfarin and levofloxacin, several case reports have indicated that levofloxacin may significantly potentiate the anticoagulation effect of warfarin. We report 3 cases of serious bleeding complications that appear to be the result of the interaction between warfarin and levofloxacin. Physicians should be aware of this potential interaction and use caution when prescribing levofloxacin to patients taking warfarin.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Interaction between warfarin and levofloxacin: case series.Warfarin is the most widely used oral anticoagulant and is indicated for many clinical conditions. Levofloxacin, a fluoroquinolone, is one of the most commonly prescribed antibiotics in clinical practice and is effective against Gram-positive, Gram-negative, and atypical bacteria. While small prospective studies have not revealed any significant drug-drug interaction between warfarin and levofloxacin, several case reports have indicated that levofloxacin may significantly potentiate the anticoagulation effect of warfarin. We report 3 cases of serious bleeding complications that appear to be the result of the interaction between warfarin and levofloxacin. Physicians should be aware of this potential interaction and use caution when prescribing levofloxacin to patients taking warfarin.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions \"serious bleeding complications\" as a result of the interaction between warfarin and levofloxacin, which suggests a positive correlation between bleeding and cyclooxygenase inhibitors (levofloxacin is a fluoroquinolone, which is not a cyclooxygenase inhibitor, but the snippet does provide some indication of the relationship between bleeding and certain medications). However, it does not provide direct proof of the RDF statement, as it does not explicitly state that cyclooxygenase inhibitors are involved.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

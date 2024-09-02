@@ -1,0 +1,38 @@
+{
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  },
+  "task": {
+    "subject": "Václav Havel",
+    "predicate": "award received",
+    "object": "Order of Rio Branco"
+  },
+  "sources": [
+    {
+      "url": "https://www.vaclavhavel.cz/en/vaclav-havel/awards/state",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.academia.edu/434527/V%C3%A1clav_Havel_Orders_And_Decorations",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://mzv.gov.cz/file/2724787/ga_sbornik2015.pdf",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://vcdns.valka.cz/attachments/34314/brozura.pdf",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://content-core.grandit.cz/svetknihy/files/1686c668-ae7a-4045-bc04-8e5aec01a0ff/katalog-programu-svet-knihy-praha-2019.pdf",
+      "rdf_proof": false
+    }
+  ]
+}

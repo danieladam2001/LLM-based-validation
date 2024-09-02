@@ -1,0 +1,20 @@
+{
+  "subject": "doxorubicin",
+  "predicate": "Positive_Correlation",
+  "object": "fulminant hepatic failure",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"doxorubicin\" - \"Positive_Correlation\" - \"fulminant hepatic failure\"].\nSnippet to verify from: \"Atrial fibrillation following chemotherapy for stage IIIE diffuse large B-cell gastric lymphoma in a patient with myotonic dystrophy (Steinert's disease).The authors describe the unusual association between diffuse B-cell gastric lymphoma and myotonic dystrophy, the most common form of adult muscular dystrophy, and sudden atrial fibrillation following one cycle of doxorubicin-based chemotherapy in the same patient. Atrial fibrillation or other cardiac arrhythmias are unusual complications in patients treated with chemotherapy. The cardiac toxicity intrinsically associated with the aggressive chemotherapy employed could function as a triggering factor for the arrhythmia in the predisposed myocardium of this patient.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Atrial fibrillation following chemotherapy for stage IIIE diffuse large B-cell gastric lymphoma in a patient with myotonic dystrophy (Steinert's disease).The authors describe the unusual association between diffuse B-cell gastric lymphoma and myotonic dystrophy, the most common form of adult muscular dystrophy, and sudden atrial fibrillation following one cycle of doxorubicin-based chemotherapy in the same patient. Atrial fibrillation or other cardiac arrhythmias are unusual complications in patients treated with chemotherapy. The cardiac toxicity intrinsically associated with the aggressive chemotherapy employed could function as a triggering factor for the arrhythmia in the predisposed myocardium of this patient.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions doxorubicin-based chemotherapy, but it does not directly mention \"fulminant hepatic failure\" or a \"Positive_Correlation\" between the two. However, it does mention cardiac toxicity associated with doxorubicin-based chemotherapy, which could be related to hepatic failure. Therefore, the snippet provides some indirect indication of the truthfulness of the RDF, but it does not contain direct proof.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  },
+  "task": {
+    "subject": "Václav Havel",
+    "predicate": "award received",
+    "object": "St. George's Order of Victory"
+  },
+  "sources": [
+    {
+      "url": "https://idfi.ge/en/state-prices-awarded-by-the-president-of-georgia-in-2003-2015",
+      "rdf_proof": true,
+      "paragraph": "2005 - 1 person - George Bush (Junior)2006 - 1 person - John McCain2007 - 4 persons - Irakli Kutateladze, Zurab Noghaideli, Valdas Adamkus, Lech Kaczynski2008 - 11 persons - Erekle Kodua, Vladimer Gurgenidze, Vakhtang Kikabidze, Giorgi Mebonia, Zurab Pochkhua, Mamuka Gvasalia, Onise Kistauri, Avtandil Lomidze, Nikoloz Dzebniauri, Shalva Janashvili, Giorgi Margiani2009 - 10 persons – Valdis Zatlers, Viktor Yushchenko, Vytautas Landsbergis, Ronald Asmus, John Francis Teft, Petras Vaitiekunas, Joseph Biden, Eldar Shengelaia, Devi Tchankotadze, Davit Nairashvili2010 - 6 persons – Davit Akhalaia, Davit Chkhartishvili, Richard Holbrooke, Vano Khukhunaishvili, Toomas Hendik Ilves, Mart Laar2011 - 7 persons - Joseph Lieberman, Krzysztof Lisek, Vaclav Havel, Nicolas Sarkozy, Aleksandre Lomaia, Henri de Raincourt, Matyas Eorsi2012 - 4 persons - Andris Berzins, Ramaz Nikolaishvili, Ivane Merabishvili, Giorgi Karbelashvili2013 - 30 persons, including: Davit Bakradze, Aleksandre Khetaguri, Andro Barnovi, Kakha Bendukidze, Giorgi Papuashvili, Konstantine Kublashvili, Niaz Diasamidze, Davit Bezhuashvili, Ilham Aliyev, Gela Charkviani2014 - 25 persons, including: Zurab Zhvania and Aza Adamia2015 - 1 person – Davit Sergeenko",
+      "raw_LLM": "The correct answer is a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement is [\"Václav Havel\" - \"award received\" - \"St. George's Order of Victory\"], and the snippet mentions Václav Havel in the list of persons for 2011, which implies that he received the St. George's Order of Victory award."
+    },
+    {
+      "url": "https://archive.vaclavhavel-library.org/Archive/Event?sort=3eventType=Poh%C3%A1dka&lang=en&&page=2769",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.vaclavhavel.cz/en/?ym=201911",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.ask-oracle.com/birth-chart/vaclav-havel/",
+      "rdf_proof": true,
+      "paragraph": "Awards Received: honorary doctor of the Université libre de Bruxelles | Honorary doctor of the University of Liège | Collar of the Order of the Cross of Terra Mariana | Order of the Three Stars, 1st Class | Evelyn F. Burkey Award | participant in the resistance and resistance against communism | Čestná medaile T. G. Masaryka | Grand Cross of the Order of the Bath | Grand Collar of the Order of Liberty | Grand Collar of the Order of the Southern Cross | Collar of the Order of the White Lion | Four Freedoms Award – Freedom Medal | honorary doctorate of the Masaryk University | honorary citizen of Prague | honorary doctor of the University of Padua | honorary citizen of Budapest | honorary doctorate of the Vrije Universiteit Brussel | Theodor Heuss Award | honorary citizen of Plzeň | 1st of June Award | Grand Cross Special Class of the Order of Merit of the Federal Republic of Germany | Order of Prince Yaroslav the Wise, 3rd class | Grand Cross of the Order of the White Double Cross | Order of Tomáš Garrigue Masaryk, 1st class | honorary doctorate of Haifa University | Collar of the Order of Isabella the Catholic | Democracy Service Medal | Giuseppe Motta Medal | honorary doctor of the Bar-Ilan University | Honorary doctor of the Dresden University of Technology | Fellow of the Royal Society of Literature | honorary doctor of the Hebrew University of Jerusalem | Grand Cross of the Legion of Honour | Order of Freedom of the Republic of Slovenia | Order Ecce Homo | Saint George medal | Karel Čapek Prize | Grand Cross of the Order of Vytautas the Great | Erasmus Prize | Sonning Prize | Indira Gandhi Peace Prize | Order of Rio Branco | Gottlieb Duttweiler Prize | Order of Brilliant Star | Companion of the Order of Canada | Knight Grand Cross of the Order of Merit of the Italian Republic | Commandeur des Arts et des Lettres | honorary doctor of the University of Warsaw | Philadelphia Liberty Medal | Fulbright Prize | Order of State of Republic of Turkey | Delta Prize for Global Understanding | Princess of Asturias Awards | Deutscher Nationalpreis | Geuzenpenning | International Simón Bolívar Prize | Point Alpha Prize | St. George's Order of Victory | Lagun Onari | Princess of Asturias Award for Communications and Humanities | Order of the Star of Jordan | Jaroslav Seifert Prize | Ambassador of Conscience Award | Order of al-Hussein bin Ali | Order of the Oriental Republic of Uruguay | Order of the Liberator General San Martín | Prix mondial Cino Del Duca | Freedom Award | Eugen Kogon Award | Olof Palme Prize | Gandhi Peace Prize | German citizenship price | Light of Truth Award | Concordia Prize | Bridge Prize of the City of Regensburg | Austrian Decoration for Science and Art | Peace Prize of the German Publishers' and Booksellers' Association | Order of the Chrysanthemum | Monismanien Prize | Grand Cross with Chain of the Order of Merit of the Republic of Hungary (civil) | Quadriga | Austrian State Prize for European Literature | Catalonia International Prize | Charlemagne Prize | Order of the White Eagle | Franz Kafka Prize | Presidential Medal of Freedom",
+      "raw_LLM": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly mentions \"St. George's Order of Victory\" as one of the awards received by Václav Havel, which matches the RDF statement."
+    },
+    {
+      "url": "https://playback.fm/person/v%C3%A1clav-havel",
+      "rdf_proof": false
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  },
+  "task": {
+    "subject": "Václav Havel",
+    "predicate": "award received",
+    "object": "Evelyn F. Burkey Award"
+  },
+  "sources": [
+    {
+      "url": "https://www.wgaeast.org/committee-to-protect-journalists-to-receive-writers-guild-of-america-easts-evelyn-f-burkey-award/",
+      "rdf_proof": true,
+      "paragraph": "The Burkey Award was established in 1978 to honor Evelyn F. Burkey, who dedicated her professional life to supporting and helping writers. Burkey worked to create the Writers Guild of America, East in 1953 as the union of film, television and radio writers, independent of precursor organizations. She was executive director of the WGAE until her retirement in 1972. The Burkey Award, created in her honor, continues her mission by recognizing one “whose contributions have brought honor and dignity to writers everywhere.” Past recipients of the Burkey Award include: 2008 recipient Walter Bernstein, Joan Didion, Martin Scorsese, The Museum of Television & Radio, Colin Callender, Tom Fontana, Vaclav Havel, David Brown, Sidney Lumet,",
+      "raw_LLM": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly mentions \"Václav Havel\" as a past recipient of the Burkey Award, which directly verifies the RDF statement [\"Václav Havel\" - \"award received\" - \"Evelyn F. Burkey Award\"]."
+    },
+    {
+      "url": "https://www.wgaeast.org/the-television-academy-foundations-archive-of-american-television-to-receive-writers-guild-of-america-east-burkey-award/",
+      "rdf_proof": true,
+      "paragraph": "The Evelyn F. Burkey Award was established in 1978 to honor Burkey, who dedicated her professional life to supporting and helping writers. Burkey helped create the Writers Guild of America, East in 1953 as the union of film, television and radio writers, independent of precursor organizations. She was the WGAE’s executive director until her retirement in 1972. The Burkey Award continues her mission by recognizing a person or an organization whose contributions have brought honor and dignity to writers everywhere. Past recipients include: 2010 honoree Edward Albee, Walter Bernstein, Martin Scorsese, Colin Callender, Vaclav Havel, Sidney Lumet, Arthur Miller, Art Buchwald, Horton Foote, and Andy Rooney.",
+      "raw_LLM": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly mentions \"Václav Havel\" as a past recipient of the \"Evelyn F. Burkey Award\", which directly verifies the given RDF."
+    },
+    {
+      "url": "https://www.adweek.com/performance-marketing/walter-bernstein-to-recieve-wgaes-evelyn-f-burkey-award/",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://variety.com/2011/tv/news/tv-archive-to-take-a-bow-at-wga-fete-1118030956/",
+      "rdf_proof": true,
+      "paragraph": "Past recipients of the Burkey nod include Edward Albee, Walter Bernstein, Martin Scorsese, Colin Callender, Vaclav Havel, Sidney Lumet, Arthur Miller, Art Buchwald, Horton Foote and Andy Rooney.",
+      "raw_LLM": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly mentions \"Vaclav Havel\" as a past recipient of the \"Burkey nod\", which is equivalent to the \"Evelyn F. Burkey Award\" mentioned in the RDF. Therefore, the RDF statement can be directly verified from the snippet."
+    },
+    {
+      "url": "https://www.nytimes.com/topic/person/vaclav-havel?page=10",
+      "rdf_proof": false
+    }
+  ]
+}

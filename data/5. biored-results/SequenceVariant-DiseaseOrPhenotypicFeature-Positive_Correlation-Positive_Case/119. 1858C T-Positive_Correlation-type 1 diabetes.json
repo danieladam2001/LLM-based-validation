@@ -1,0 +1,20 @@
+{
+  "subject": "1858C/T",
+  "predicate": "Positive_Correlation",
+  "object": "type 1 diabetes",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"1858C/T\" - \"Positive_Correlation\" - \"type 1 diabetes\"].\nSnippet to verify from: \"A haplotype-based analysis of the PTPN22 locus in type 1 diabetes.A recent addition to the list of widely confirmed type 1 diabetes risk loci is the PTPN22 gene encoding a lymphoid-specific phosphatase (Lyp). However, evidence supporting a role for PTPN22 in type 1 diabetes derives entirely from the study of just one coding single nucleotide polymorphism, 1858C/T. In the current study, the haplotype structure of the PTPN22 region was determined, and individual haplotypes were tested for association with type 1 diabetes in family-based tests. The 1858T risk allele occurred on only a single haplotype that was strongly associated with type 1 diabetes (P = 7.9 x 10(-5)). After controlling for the effects of this allele, two other haplotypes were observed to be weakly associated with type 1 diabetes (P < 0.05). Sequencing of the coding region of PTPN22 on these haplotypes revealed a novel variant (2250G/C) predicted to result in a nonsynonymous amino acid substitution. Analysis of PTPN22 transcripts from a subject heterozygous for this variant indicated that it interfered with normal mRNA splicing, resulting in a premature termination codon after exon 17. These results support the conclusion that the 1858C/T allele is the major risk variant for type 1 diabetes in the PTPN22 locus, but they suggest that additional infrequent coding variants at PTPN22 may also contribute to type 1 diabetes risk.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "A haplotype-based analysis of the PTPN22 locus in type 1 diabetes.A recent addition to the list of widely confirmed type 1 diabetes risk loci is the PTPN22 gene encoding a lymphoid-specific phosphatase (Lyp). However, evidence supporting a role for PTPN22 in type 1 diabetes derives entirely from the study of just one coding single nucleotide polymorphism, 1858C/T. In the current study, the haplotype structure of the PTPN22 region was determined, and individual haplotypes were tested for association with type 1 diabetes in family-based tests. The 1858T risk allele occurred on only a single haplotype that was strongly associated with type 1 diabetes (P = 7.9 x 10(-5)). After controlling for the effects of this allele, two other haplotypes were observed to be weakly associated with type 1 diabetes (P < 0.05). Sequencing of the coding region of PTPN22 on these haplotypes revealed a novel variant (2250G/C) predicted to result in a nonsynonymous amino acid substitution. Analysis of PTPN22 transcripts from a subject heterozygous for this variant indicated that it interfered with normal mRNA splicing, resulting in a premature termination codon after exon 17. These results support the conclusion that the 1858C/T allele is the major risk variant for type 1 diabetes in the PTPN22 locus, but they suggest that additional infrequent coding variants at PTPN22 may also contribute to type 1 diabetes risk.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement is [\"1858C/T\" - \"Positive_Correlation\" - \"type 1 diabetes\"], and the snippet explicitly states that \"the 1858T risk allele... was strongly associated with type 1 diabetes\", which directly supports the RDF statement.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

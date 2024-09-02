@@ -1,0 +1,20 @@
+{
+  "subject": "proteinuria",
+  "predicate": "Positive_Correlation",
+  "object": "mangiferin",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"proteinuria\" - \"Positive_Correlation\" - \"mangiferin\"].\nSnippet to verify from: \"Massive proteinuria and acute renal failure after oral bisphosphonate (alendronate) administration in a patient with focal segmental glomerulosclerosis.A 61-year-old Japanese man with nephrotic syndrome due to focal segmental glomerulosclerosis was initially responding well to steroid therapy. The amount of daily urinary protein decreased from 15.6 to 2.8 g. Within 14 days of the oral bisphosphonate (alendronate sodium) administration, the amount of daily urinary protein increased rapidly up to 12.8 g with acute renal failure. After discontinuing the oral alendronate, the patient underwent six cycles of hemodialysis and four cycles of LDL apheresis. Urinary volume and serum creatinine levels recovered to the normal range, with urinary protein disappearing completely within 40 days. This report demonstrates that not only intravenous, but also oral bisphosphonates can aggravate proteinuria and acute renal failure.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Massive proteinuria and acute renal failure after oral bisphosphonate (alendronate) administration in a patient with focal segmental glomerulosclerosis.A 61-year-old Japanese man with nephrotic syndrome due to focal segmental glomerulosclerosis was initially responding well to steroid therapy. The amount of daily urinary protein decreased from 15.6 to 2.8 g. Within 14 days of the oral bisphosphonate (alendronate sodium) administration, the amount of daily urinary protein increased rapidly up to 12.8 g with acute renal failure. After discontinuing the oral alendronate, the patient underwent six cycles of hemodialysis and four cycles of LDL apheresis. Urinary volume and serum creatinine levels recovered to the normal range, with urinary protein disappearing completely within 40 days. This report demonstrates that not only intravenous, but also oral bisphosphonates can aggravate proteinuria and acute renal failure.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions that the amount of daily urinary protein increased rapidly after oral bisphosphonate administration, which suggests a positive correlation between the two. However, it does not directly mention mangiferin, which is a key element in the RDF statement. Therefore, the snippet provides some indication of the truthfulness of the RDF, but it does not contain direct proof.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

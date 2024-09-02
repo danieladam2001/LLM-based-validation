@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    
+    <xs:element name="wikidataVerification" type="wikidataVerificationType"></xs:element>
+    
+    <xs:complexType name="wikidataVerificationType">
+        <xs:sequence>
+            <xs:element name="generalInformation" type="generalInformationType"/>
+            <xs:element name="tasks" type="tasksType"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="generalInformationType">
+        <xs:sequence>
+            <xs:element name="largeLanguageModel" type="xs:string"></xs:element>
+            <xs:element name="date" type="xs:date"></xs:element>
+            <xs:element name="time" type="xs:time"></xs:element>
+            <xs:element name="duration" type="durationType"></xs:element>
+            <xs:element name="duration" type="durationType"></xs:element>
+            <xs:element name="subjectID" type="xs:integer"></xs:element>
+            <xs:element name="subject" type="xs:string"></xs:element>
+            <xs:element name="wikidataURL" type="xs:string"></xs:element>
+            <xs:element name="wikidataPermalink" type="xs:string"></xs:element>
+            <xs:element name="wikipediaURL" type="xs:string"></xs:element>
+            <xs:element name="wikipediaPermalink" type="xs:string"></xs:element>
+            <xs:element name="wikidataEndpointURL" type="xs:string"></xs:element>
+            <xs:element name="statements" type="statementsType"></xs:element>
+            <xs:element name="wikipediaSections" type="wikipediaSectionsType"></xs:element>
+            <xs:element name="textGroups" type="textGroupsType"></xs:element>
+            <xs:element name="prompts" type="promptsType"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="durationType">
+        <xs:simpleContent>
+            <xs:extension base="xs:positiveInteger">
+                <xs:attribute name="unit" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:complexType name="statementsType">
+        <xs:sequence>
+            <xs:element name="statement" type="statementType" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="statementType">
+        <xs:sequence>
+            <xs:element name="subject" type="xs:string"></xs:element>
+            <xs:element name="predicate" type="xs:string"></xs:element>
+            <xs:element name="predicateURL" type="xs:string"></xs:element>
+            <xs:element name="object" type="xs:string"></xs:element>
+            <xs:element name="objectURL" type="xs:string"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="wikipediaSectionsType">
+        <xs:sequence>
+            <xs:element name="section" type="xs:string" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="textGroupsType">
+        <xs:sequence>
+            <xs:element name="group" type="groupType" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="groupType">
+        <xs:sequence>
+            <xs:element name="groupNumber" type="xs:integer"></xs:element>
+            <xs:element name="characters" type="xs:integer"></xs:element>
+            <xs:element name="groupText" type="xs:string"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="promptsType">
+        <xs:sequence>
+            <xs:element name="prompt" type="promptType" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="promptType">
+        <xs:sequence>
+            <xs:element name="promptNumber" type="xs:integer"></xs:element>
+            <xs:element name="intro" type="xs:string"></xs:element>
+            <xs:element name="rdf" type="xs:string"></xs:element>
+            <xs:element name="snippet" type="xs:string"></xs:element>
+            <xs:element name="request" type="xs:string"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="tasksType">
+        <xs:sequence>
+            <xs:element name="task" type="taskType" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="taskType">
+        <xs:sequence>
+            <xs:element name="subject" type="xs:string"></xs:element>
+            <xs:element name="predicate" type="xs:string"></xs:element>
+            <xs:element name="predicateURL" type="xs:string"></xs:element>
+            <xs:element name="object" type="xs:string"></xs:element>
+            <xs:element name="objectURL" type="xs:string"></xs:element>
+            <xs:element name="textGroupID" type="xs:integer"></xs:element>
+            <xs:element name="promptID" type="xs:integer"></xs:element>
+            <xs:element name="modelAnswer" type="xs:string"></xs:element>
+            <xs:element name="doesTextSupportRDF" type="doesTextSupportRDFType"></xs:element>
+            <xs:element name="detailedResearch" type="detailedResearchType" minOccurs="0"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="doesTextSupportRDFType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="YES"></xs:enumeration>
+            <xs:enumeration value="NO"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="detailedResearchType">
+        <xs:sequence>
+            <xs:element name="paragraph" type="paragraphType" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="paragraphType">
+        <xs:sequence>
+            <xs:element name="paragraphText" type="xs:string"></xs:element>
+            <xs:element name="promptID" type="xs:integer"></xs:element>
+            <xs:element name="modelAnswer" type="xs:string"></xs:element>
+            <xs:element name="doesTextSupportRDF" type="doesTextSupportRDFType"></xs:element>
+            <xs:element name="referenceNumbers" type="xs:string" minOccurs="0"></xs:element>
+            <xs:element name="references" type="referencesType" minOccurs="0"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="referencesType">
+        <xs:sequence>
+            <xs:element name="reference" type="referenceType" minOccurs="0" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="referenceType">
+        <xs:sequence>
+            <xs:element name="referenceNumber" type="xs:integer"></xs:element>
+            <xs:element name="referenceTitle" type="xs:string"></xs:element>
+            <xs:element name="referenceURL" type="xs:string"></xs:element>
+            <xs:element name="websiteContent" type="xs:string"></xs:element>
+            <xs:element name="paragraphs" type="paragraphsType"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="paragraphsType">
+        <xs:sequence>
+            <xs:element name="paragraph" type="paragraphFinalType" minOccurs="0" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="paragraphFinalType">
+        <xs:sequence>
+            <xs:element name="paragraphText" type="xs:string"></xs:element>
+            <xs:element name="modelAnswer" type="xs:string"></xs:element>
+            <xs:element name="doesTextSupportRDF" type="doesTextSupportRDFType"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>

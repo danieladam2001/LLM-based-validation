@@ -1,0 +1,20 @@
+{
+  "subject": "V876E",
+  "predicate": "Positive_Correlation",
+  "object": "HypoPP",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"V876E\" - \"Positive_Correlation\" - \"HypoPP\"].\nSnippet to verify from: \"Novel CACNA1S mutation causes autosomal dominant hypokalemic periodic paralysis in a South American family.Hypokalaemic periodic paralysis (HypoPP) is an autosomal dominant disorder, which is characterized by periodic attacks of muscle weakness associated with a decrease in the serum potassium level. A major disease-causing gene for HypoPP has been identified as CACNA1S, which encodes the skeletal muscle calcium channel alpha-subunit with four transmembrane domains (I-IV), each with six transmembrane segments (S1-S6). To date, all CACNA1S mutations identified in HypoPP patients are located within the voltage-sensor S4 segment. In this study we report a novel CACNA1S mutation in a new region of the protein, the S3 segment of domain III. We characterized a four-generation South American family with HypoPP. Genetic analysis identified a novel V876E mutation in all HypoPP patients in the family, but not in normal family members or 160 control people. Clinical analysis indicates that mutation V876E is associated with a severe outcome as characterized by a very early age of onset, complete penetrance and a severe prognosis including death. These results identify a new mutation in CACNA1S and expand the spectrum of CACNA1S mutations associated with HypoPP.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Novel CACNA1S mutation causes autosomal dominant hypokalemic periodic paralysis in a South American family.Hypokalaemic periodic paralysis (HypoPP) is an autosomal dominant disorder, which is characterized by periodic attacks of muscle weakness associated with a decrease in the serum potassium level. A major disease-causing gene for HypoPP has been identified as CACNA1S, which encodes the skeletal muscle calcium channel alpha-subunit with four transmembrane domains (I-IV), each with six transmembrane segments (S1-S6). To date, all CACNA1S mutations identified in HypoPP patients are located within the voltage-sensor S4 segment. In this study we report a novel CACNA1S mutation in a new region of the protein, the S3 segment of domain III. We characterized a four-generation South American family with HypoPP. Genetic analysis identified a novel V876E mutation in all HypoPP patients in the family, but not in normal family members or 160 control people. Clinical analysis indicates that mutation V876E is associated with a severe outcome as characterized by a very early age of onset, complete penetrance and a severe prognosis including death. These results identify a new mutation in CACNA1S and expand the spectrum of CACNA1S mutations associated with HypoPP.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement [\"V876E\" - \"Positive_Correlation\" - \"HypoPP\"] can be directly verified from the snippet, which explicitly states that the V876E mutation is associated with HypoPP.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

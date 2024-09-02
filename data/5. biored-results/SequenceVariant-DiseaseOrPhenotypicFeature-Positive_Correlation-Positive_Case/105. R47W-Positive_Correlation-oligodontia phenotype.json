@@ -1,0 +1,20 @@
+{
+  "subject": "R47W",
+  "predicate": "Positive_Correlation",
+  "object": "oligodontia phenotype",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"R47W\" - \"Positive_Correlation\" - \"oligodontia phenotype\"].\nSnippet to verify from: \"A novel missense mutation in the paired domain of human PAX9 causes oligodontia.PAX9 and MSX1 are transcription factors that play essential roles in craniofacial and limb development. In humans, mutations in both genes are associated with nonsyndromic and syndromic oligodontia, respectively. We screened one family with nonsyndromic oligodontia for mutations in PAX9 and MSX1. Single stranded conformational polymorphism (SSCP) analysis and sequencing revealed a novel heterozygous C139T transition in PAX9 in the affected members of the family. There were no mutations detected in the entire coding sequence of MSX1. The C139T mutation, predicted to result in the substitution of an arginine by a tryptophan (R47W) in the N-terminal subdomain, affected conserved residues in the PAX9 paired domain. To elucidate the pathogenic mechanism producing oligodontia phenotype caused by this mutation, we analyzed the binding of wild-type and mutant PAX9 paired domain protein to double-stranded DNA targets. The R47W mutation dramatically reduced DNA binding suggesting that the mutant protein with consequent haploinsufficiency results in a clinical phenotype.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "A novel missense mutation in the paired domain of human PAX9 causes oligodontia.PAX9 and MSX1 are transcription factors that play essential roles in craniofacial and limb development. In humans, mutations in both genes are associated with nonsyndromic and syndromic oligodontia, respectively. We screened one family with nonsyndromic oligodontia for mutations in PAX9 and MSX1. Single stranded conformational polymorphism (SSCP) analysis and sequencing revealed a novel heterozygous C139T transition in PAX9 in the affected members of the family. There were no mutations detected in the entire coding sequence of MSX1. The C139T mutation, predicted to result in the substitution of an arginine by a tryptophan (R47W) in the N-terminal subdomain, affected conserved residues in the PAX9 paired domain. To elucidate the pathogenic mechanism producing oligodontia phenotype caused by this mutation, we analyzed the binding of wild-type and mutant PAX9 paired domain protein to double-stranded DNA targets. The R47W mutation dramatically reduced DNA binding suggesting that the mutant protein with consequent haploinsufficiency results in a clinical phenotype.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is: a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement [\"R47W\" - \"Positive_Correlation\" - \"oligodontia phenotype\"] can be directly verified from the snippet, which explicitly states that the R47W mutation (substitution of an arginine by a tryptophan) in the PAX9 gene causes oligodontia phenotype.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "subject": "CIN",
+  "predicate": "Positive_Correlation",
+  "object": "Mad2",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"CIN\" - \"Positive_Correlation\" - \"Mad2\"].\nSnippet to verify from: \"Negative Selection and Chromosome Instability Induced by Mad2 Overexpression Delay Breast Cancer but Facilitate Oncogene-Independent Outgrowth.Chromosome instability (CIN) is associated with poor survival and therapeutic outcome in a number of malignancies. Despite this correlation, CIN can also lead to growth disadvantages. Here, we show that simultaneous overexpression of the mitotic checkpoint protein Mad2 with Kras(G12D) or Her2 in mammary glands of adult mice results in mitotic checkpoint overactivation and a delay in tumor onset. Time-lapse imaging of organotypic cultures and pathologic analysis prior to tumor establishment reveals error-prone mitosis, mitotic arrest, and cell death. Nonetheless, Mad2 expression persists and increases karyotype complexity in Kras tumors. Faced with the selective pressure of oncogene withdrawal, Mad2-positive tumors have a higher frequency of developing persistent subclones that avoid remission and continue to grow.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Negative Selection and Chromosome Instability Induced by Mad2 Overexpression Delay Breast Cancer but Facilitate Oncogene-Independent Outgrowth.Chromosome instability (CIN) is associated with poor survival and therapeutic outcome in a number of malignancies. Despite this correlation, CIN can also lead to growth disadvantages. Here, we show that simultaneous overexpression of the mitotic checkpoint protein Mad2 with Kras(G12D) or Her2 in mammary glands of adult mice results in mitotic checkpoint overactivation and a delay in tumor onset. Time-lapse imaging of organotypic cultures and pathologic analysis prior to tumor establishment reveals error-prone mitosis, mitotic arrest, and cell death. Nonetheless, Mad2 expression persists and increases karyotype complexity in Kras tumors. Faced with the selective pressure of oncogene withdrawal, Mad2-positive tumors have a higher frequency of developing persistent subclones that avoid remission and continue to grow.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The RDF statement is [\"CIN\" - \"Positive_Correlation\" - \"Mad2\"]. The snippet mentions \"Chromosome instability (CIN) is associated with poor survival and therapeutic outcome in a number of malignancies\", which implies a positive correlation between CIN and Mad2. However, it does not directly state that Mad2 causes CIN, but rather that they are associated. Therefore, the snippet provides some indication of the truthfulness of the RDF, but it does not contain direct proof.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

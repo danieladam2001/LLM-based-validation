@@ -1,0 +1,20 @@
+{
+  "subject": "Rab6a-GTP",
+  "predicate": "Positive_Correlation",
+  "object": "PKCalpha",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"Rab6a-GTP\" - \"Positive_Correlation\" - \"PKCalpha\"].\nSnippet to verify from: \"Disease-associated mutations in human BICD2 hyperactivate motility of dynein-dynactin.Bicaudal D2 (BICD2) joins dynein with dynactin into a ternary complex (termed DDB) capable of processive movement. Point mutations in the BICD2 gene have been identified in patients with a dominant form of spinal muscular atrophy, but how these mutations cause disease is unknown. To investigate this question, we have developed in vitro motility assays with purified DDB and BICD2's membrane vesicle partner, the GTPase Rab6a. Rab6a-GTP, either in solution or bound to artificial liposomes, released BICD2 from an autoinhibited state and promoted robust dynein-dynactin transport. In these assays, BICD2 mutants showed an enhanced ability to form motile DDB complexes. Increased retrograde transport by BICD2 mutants also was observed in cells using an inducible organelle transport assay. When overexpressed in rat hippocampal neurons, the hyperactive BICD2 mutants decreased neurite growth. Our results reveal that dominant mutations in BICD2 hyperactivate DDB motility and suggest that an imbalance of minus versus plus end-directed microtubule motility in neurons may underlie spinal muscular atrophy.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Disease-associated mutations in human BICD2 hyperactivate motility of dynein-dynactin.Bicaudal D2 (BICD2) joins dynein with dynactin into a ternary complex (termed DDB) capable of processive movement. Point mutations in the BICD2 gene have been identified in patients with a dominant form of spinal muscular atrophy, but how these mutations cause disease is unknown. To investigate this question, we have developed in vitro motility assays with purified DDB and BICD2's membrane vesicle partner, the GTPase Rab6a. Rab6a-GTP, either in solution or bound to artificial liposomes, released BICD2 from an autoinhibited state and promoted robust dynein-dynactin transport. In these assays, BICD2 mutants showed an enhanced ability to form motile DDB complexes. Increased retrograde transport by BICD2 mutants also was observed in cells using an inducible organelle transport assay. When overexpressed in rat hippocampal neurons, the hyperactive BICD2 mutants decreased neurite growth. Our results reveal that dominant mutations in BICD2 hyperactivate DDB motility and suggest that an imbalance of minus versus plus end-directed microtubule motility in neurons may underlie spinal muscular atrophy.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions \"Rab6a-GTP\" and its effect on BICD2, which is related to the RDF statement [\"Rab6a-GTP\" - \"Positive_Correlation\" - \"PKCalpha\"]. However, the snippet does not directly mention PKCalpha or a positive correlation between Rab6a-GTP and PKCalpha. Therefore, the RDF statement cannot be directly verified from the snippet, but the snippet provides some indications of the truthfulness of the RDF.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

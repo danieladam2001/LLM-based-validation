@@ -1,0 +1,20 @@
+{
+  "subject": "p.G380R",
+  "predicate": "Positive_Correlation",
+  "object": "achondroplasia",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"p.G380R\" - \"Positive_Correlation\" - \"achondroplasia\"].\nSnippet to verify from: \"An improved tetra-primer PCR approach for the detection of the FGFR3 G380R mutation responsible for achondroplasia.Achondroplasia is the most common form of dwarfism and has an incidence of approximately 1/7500. In more than 98% of cases, the disease is associated with a G to A or G to C substitution at nucleotide position 1138 (p.G380R) of the fibroblast growth factor receptor 3 (FGFR3) gene. We have developed a sensitive single tube tetra-primer PCR assay to detect both the c.1138G>A and c.1138G>C mutations and can successfully distinguish DNA samples that are homozygous and heterozygous for the c.1138G>A mutation. Titration studies showed that the assay could reliably detect one copy of the mutant allele in a mix of 100 wild-type alleles. The assay has been tested in 50 healthy controls, 3 known patients with achondroplasia, and 5 amniotic fluids suspected of having achondroplasia and for whom we had previously determined the genotypes for the c.1138G>A mutation by PCR-RFLP. We have observed complete concordance between methods. Our tetra-primer PCR assay is sensitive, low-cost, and easy to use method for FGFR3 p.G380R genotyping, which could be used even in \"low-tech\" laboratories.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "An improved tetra-primer PCR approach for the detection of the FGFR3 G380R mutation responsible for achondroplasia.Achondroplasia is the most common form of dwarfism and has an incidence of approximately 1/7500. In more than 98% of cases, the disease is associated with a G to A or G to C substitution at nucleotide position 1138 (p.G380R) of the fibroblast growth factor receptor 3 (FGFR3) gene. We have developed a sensitive single tube tetra-primer PCR assay to detect both the c.1138G>A and c.1138G>C mutations and can successfully distinguish DNA samples that are homozygous and heterozygous for the c.1138G>A mutation. Titration studies showed that the assay could reliably detect one copy of the mutant allele in a mix of 100 wild-type alleles. The assay has been tested in 50 healthy controls, 3 known patients with achondroplasia, and 5 amniotic fluids suspected of having achondroplasia and for whom we had previously determined the genotypes for the c.1138G>A mutation by PCR-RFLP. We have observed complete concordance between methods. Our tetra-primer PCR assay is sensitive, low-cost, and easy to use method for FGFR3 p.G380R genotyping, which could be used even in \"low-tech\" laboratories.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement [\"p.G380R\" - \"Positive_Correlation\" - \"achondroplasia\"] can be directly verified from the snippet, which explicitly states that the p.G380R mutation is associated with achondroplasia.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

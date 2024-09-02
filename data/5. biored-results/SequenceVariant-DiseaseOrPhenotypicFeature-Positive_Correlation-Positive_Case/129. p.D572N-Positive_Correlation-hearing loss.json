@@ -1,0 +1,20 @@
+{
+  "subject": "p.D572N",
+  "predicate": "Positive_Correlation",
+  "object": "hearing loss",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"p.D572N\" - \"Positive_Correlation\" - \"hearing loss\"].\nSnippet to verify from: \"A novel mutation at the DFNA36 hearing loss locus reveals a critical function and potential genotype-phenotype correlation for amino acid-572 of TMC1.We ascertained a North American Caucasian family (LMG248) segregating autosomal dominant, non-syndromic, post-lingual, progressive sensorineural hearing loss. The hearing loss begins in the second decade of life and initially affects high frequencies. It progresses to profound deafness at all frequencies by the fourth or fifth decade. The phenotype co-segregates with short-tandem repeat markers flanking the TMC1 gene at the DFNA36 locus on chromosome 9q31-q21. The affected individuals carry a novel missense substitution, p.D572H (c.G1714C), of the TMC1 gene. This mutation is at the same nucleotide and amino acid position as the only other reported DFNA36 mutation, p.D572N (c.G1714A). Our observations implicate a critical function for amino acid-572 for wild-type TMC1 function or the pathogenesis of DFNA36 hearing loss. The slower progression of hearing loss associated with p.D572H, in comparison with that caused by p.D572N, may reflect a correlation of DFNA36 phenotype with TMC1 genotype.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "A novel mutation at the DFNA36 hearing loss locus reveals a critical function and potential genotype-phenotype correlation for amino acid-572 of TMC1.We ascertained a North American Caucasian family (LMG248) segregating autosomal dominant, non-syndromic, post-lingual, progressive sensorineural hearing loss. The hearing loss begins in the second decade of life and initially affects high frequencies. It progresses to profound deafness at all frequencies by the fourth or fifth decade. The phenotype co-segregates with short-tandem repeat markers flanking the TMC1 gene at the DFNA36 locus on chromosome 9q31-q21. The affected individuals carry a novel missense substitution, p.D572H (c.G1714C), of the TMC1 gene. This mutation is at the same nucleotide and amino acid position as the only other reported DFNA36 mutation, p.D572N (c.G1714A). Our observations implicate a critical function for amino acid-572 for wild-type TMC1 function or the pathogenesis of DFNA36 hearing loss. The slower progression of hearing loss associated with p.D572H, in comparison with that caused by p.D572N, may reflect a correlation of DFNA36 phenotype with TMC1 genotype.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The RDF statement is [\"p.D572N\" - \"Positive_Correlation\" - \"hearing loss\"]. The snippet mentions that \"The slower progression of hearing loss associated with p.D572H, in comparison with that caused by p.D572N, may reflect a correlation of DFNA36 phenotype with TMC1 genotype.\" This implies a correlation between p.D572N and hearing loss, but it does not directly state that p.D572N is positively correlated with hearing loss. Therefore, the snippet provides some indication of the truthfulness of the RDF, but it does not contain direct proof.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

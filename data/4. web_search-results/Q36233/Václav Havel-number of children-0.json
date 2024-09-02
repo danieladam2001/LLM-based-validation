@@ -1,0 +1,38 @@
+{
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  },
+  "task": {
+    "subject": "Václav Havel",
+    "predicate": "number of children",
+    "object": "0"
+  },
+  "sources": [
+    {
+      "url": "https://www.prg.aero/en/pchs",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.vaclavhavel.cz/en/about-us/child-protection-policy",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.prg.aero/en/private-check-in-service",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.vaclavhavel.cz/en/vaclav-havel/early-years",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://prague.eu/en/produkt/prague-of-vaclav-havel/",
+      "rdf_proof": false
+    }
+  ]
+}

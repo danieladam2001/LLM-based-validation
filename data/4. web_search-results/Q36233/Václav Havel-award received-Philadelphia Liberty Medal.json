@@ -1,0 +1,42 @@
+{
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  },
+  "task": {
+    "subject": "Václav Havel",
+    "predicate": "award received",
+    "object": "Philadelphia Liberty Medal"
+  },
+  "sources": [
+    {
+      "url": "https://constitutioncenter.org/about/liberty-medal/recipients/vaclav-havel",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.deseret.com/1994/7/4/19118089/czech-leader-receives-the-1994-liberty-medal/",
+      "rdf_proof": true,
+      "paragraph": "Czech President Vaclav Havel received the 1994 Philadelphia Liberty Medal Monday with a call for a spiritual renewal to unite people who are linked globally but violently torn by cultural conflicts.",
+      "raw_LLM": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly states that \"Václav Havel received the 1994 Philadelphia Liberty Medal\", which directly matches the RDF statement [\"Václav Havel\" - \"award received\" - \"Philadelphia Liberty Medal\"]."
+    },
+    {
+      "url": "https://www.upi.com/Archives/1994/07/04/Czech-president-gets-Liberty-Medal/5523773294400/",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.czechcenter.org/blog/2022/10/4/vaclav-havel",
+      "rdf_proof": true,
+      "paragraph": "Among his many honors, Vaclav Havel was the inaugural recipient of Amnesty International’s Ambassador of Conscience Award for his work in promoting human rights, awarded the Philadelphia Liberty Medal recognizing leadership in the pursuit of freedom, awarded the International Gandhi Peace Prize by the government of India for his contribution towards social, economic and political transformation through non-violence and other Gandhian methods, and recipient of the U.S. Presidential Medal of Freedom for his outstanding contribution towards world peace.",
+      "raw_LLM": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly states that Václav Havel was \"awarded the Philadelphia Liberty Medal recognizing leadership in the pursuit of freedom\", which directly matches the RDF statement [\"Václav Havel\" - \"award received\" - \"Philadelphia Liberty Medal\"]."
+    },
+    {
+      "url": "https://constitutioncenter.org/about/liberty-medal/recipients",
+      "rdf_proof": false
+    }
+  ]
+}

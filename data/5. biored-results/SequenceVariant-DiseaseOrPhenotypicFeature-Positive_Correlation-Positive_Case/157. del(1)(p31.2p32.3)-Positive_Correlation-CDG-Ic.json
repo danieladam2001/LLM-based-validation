@@ -1,0 +1,20 @@
+{
+  "subject": "del(1)(p31.2p32.3)",
+  "predicate": "Positive_Correlation",
+  "object": "CDG-Ic",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"del(1)(p31.2p32.3)\" - \"Positive_Correlation\" - \"CDG-Ic\"].\nSnippet to verify from: \"Congenital disorder of glycosylation Ic due to a de novo deletion and an hALG-6 mutation.We describe a new cause of congenital disorder of glycosylation-Ic (CDG-Ic) in a young girl with a rather mild CDG phenotype. Her cells accumulated lipid-linked oligosaccharides lacking three glucose residues, and sequencing of the ALG6 gene showed what initially appeared to be a homozygous novel point mutation (338G>A). However, haplotype analysis showed that the patient does not carry any paternal DNA markers extending 33kb in the telomeric direction from the ALG6 region, and microsatellite analysis extended the abnormal region to at least 2.5Mb. We used high-resolution karyotyping to confirm a deletion (10-12Mb) [del(1)(p31.2p32.3)] and found no structural abnormalities in the father, suggesting a de novo event. Our findings extend the causes of CDG to larger DNA deletions and identify the first Japanese CDG-Ic mutation.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Congenital disorder of glycosylation Ic due to a de novo deletion and an hALG-6 mutation.We describe a new cause of congenital disorder of glycosylation-Ic (CDG-Ic) in a young girl with a rather mild CDG phenotype. Her cells accumulated lipid-linked oligosaccharides lacking three glucose residues, and sequencing of the ALG6 gene showed what initially appeared to be a homozygous novel point mutation (338G>A). However, haplotype analysis showed that the patient does not carry any paternal DNA markers extending 33kb in the telomeric direction from the ALG6 region, and microsatellite analysis extended the abnormal region to at least 2.5Mb. We used high-resolution karyotyping to confirm a deletion (10-12Mb) [del(1)(p31.2p32.3)] and found no structural abnormalities in the father, suggesting a de novo event. Our findings extend the causes of CDG to larger DNA deletions and identify the first Japanese CDG-Ic mutation.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly mentions \"a deletion (10-12Mb) [del(1)(p31.2p32.3)]\" and \"congenital disorder of glycosylation-Ic (CDG-Ic)\", which directly matches the RDF statement [\"del(1)(p31.2p32.3)\" - \"Positive_Correlation\" - \"CDG-Ic\"].",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

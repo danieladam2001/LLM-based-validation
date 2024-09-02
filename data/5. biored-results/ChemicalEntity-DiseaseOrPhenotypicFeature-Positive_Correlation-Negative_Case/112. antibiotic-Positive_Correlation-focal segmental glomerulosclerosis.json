@@ -1,0 +1,20 @@
+{
+  "subject": "antibiotic",
+  "predicate": "Positive_Correlation",
+  "object": "focal segmental glomerulosclerosis",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"antibiotic\" - \"Positive_Correlation\" - \"focal segmental glomerulosclerosis\"].\nSnippet to verify from: \"Recurrent acute interstitial nephritis induced by azithromycin.A 14-year-old girl is reported with recurrent, azithromycin-induced, acute interstitial nephritis. The second episode was more severe than the first; and although both were treated with intensive corticosteroid therapy, renal function remained impaired. Although most cases of antibiotic induced acute interstitial nephritis are benign and self-limited, some patients are at risk for permanent renal injury.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Recurrent acute interstitial nephritis induced by azithromycin.A 14-year-old girl is reported with recurrent, azithromycin-induced, acute interstitial nephritis. The second episode was more severe than the first; and although both were treated with intensive corticosteroid therapy, renal function remained impaired. Although most cases of antibiotic induced acute interstitial nephritis are benign and self-limited, some patients are at risk for permanent renal injury.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions \"antibiotic\" (azithromycin) and a kidney-related disease (acute interstitial nephritis), which is related to \"focal segmental glomerulosclerosis\" (both are kidney diseases). Although the snippet does not directly state a positive correlation between antibiotics and focal segmental glomerulosclerosis, it provides some indication of the potential harm of antibiotics to kidney health, which is in line with the RDF statement.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "subject": "DA",
+  "predicate": "Positive_Correlation",
+  "object": "neurotoxicity",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"DA\" - \"Positive_Correlation\" - \"neurotoxicity\"].\nSnippet to verify from: \"Dopamine is not essential for the development of methamphetamine-induced neurotoxicity.It is widely believed that dopamine (DA) mediates methamphetamine (METH)-induced toxicity to brain dopaminergic neurons, because drugs that interfere with DA neurotransmission decrease toxicity, whereas drugs that increase DA neurotransmission enhance toxicity. However, temperature effects of drugs that have been used to manipulate brain DA neurotransmission confound interpretation of the data. Here we show that the recently reported ability of L-dihydroxyphenylalanine to reverse the protective effect of alpha-methyl-para-tyrosine on METH-induced DA neurotoxicity is also confounded by drug effects on body temperature. Further, we show that mice genetically engineered to be deficient in brain DA develop METH neurotoxicity, as long as the thermic effects of METH are preserved. In addition, we demonstrate that mice genetically engineered to have unilateral brain DA deficits develop METH-induced dopaminergic deficits that are of comparable magnitude on both sides of the brain. Taken together, these findings demonstrate that DA is not essential for the development of METH-induced dopaminergic neurotoxicity and suggest that mechanisms independent of DA warrant more intense investigation.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Dopamine is not essential for the development of methamphetamine-induced neurotoxicity.It is widely believed that dopamine (DA) mediates methamphetamine (METH)-induced toxicity to brain dopaminergic neurons, because drugs that interfere with DA neurotransmission decrease toxicity, whereas drugs that increase DA neurotransmission enhance toxicity. However, temperature effects of drugs that have been used to manipulate brain DA neurotransmission confound interpretation of the data. Here we show that the recently reported ability of L-dihydroxyphenylalanine to reverse the protective effect of alpha-methyl-para-tyrosine on METH-induced DA neurotoxicity is also confounded by drug effects on body temperature. Further, we show that mice genetically engineered to be deficient in brain DA develop METH neurotoxicity, as long as the thermic effects of METH are preserved. In addition, we demonstrate that mice genetically engineered to have unilateral brain DA deficits develop METH-induced dopaminergic deficits that are of comparable magnitude on both sides of the brain. Taken together, these findings demonstrate that DA is not essential for the development of METH-induced dopaminergic neurotoxicity and suggest that mechanisms independent of DA warrant more intense investigation.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet does not directly state that there is a positive correlation between DA and neurotoxicity, but it does suggest that DA is not essential for the development of METH-induced neurotoxicity, which implies that there might be other factors at play. This indirect indication of a possible correlation between DA and neurotoxicity supports the RDF statement, but it does not provide direct proof.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

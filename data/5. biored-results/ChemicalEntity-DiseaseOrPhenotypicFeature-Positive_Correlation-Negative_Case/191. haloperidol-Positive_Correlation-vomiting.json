@@ -1,0 +1,20 @@
+{
+  "subject": "haloperidol",
+  "predicate": "Positive_Correlation",
+  "object": "vomiting",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"haloperidol\" - \"Positive_Correlation\" - \"vomiting\"].\nSnippet to verify from: \"In vivo characterization of a dual adenosine A2A/A1 receptor antagonist in animal models of Parkinson's disease.The in vivo characterization of a dual adenosine A(2A)/A(1) receptor antagonist in several animal models of Parkinson's disease is described. Discovery and scale-up syntheses of compound 1 are described in detail, highlighting optimization steps that increased the overall yield of 1 from 10.0% to 30.5%. Compound 1 is a potent A(2A)/A(1) receptor antagonist in vitro (A(2A) K(i) = 4.1 nM; A(1) K(i) = 17.0 nM) that has excellent activity, after oral administration, across a number of animal models of Parkinson's disease including mouse and rat models of haloperidol-induced catalepsy, mouse model of reserpine-induced akinesia, rat 6-hydroxydopamine (6-OHDA) lesion model of drug-induced rotation, and MPTP-treated non-human primate model.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "In vivo characterization of a dual adenosine A2A/A1 receptor antagonist in animal models of Parkinson's disease.The in vivo characterization of a dual adenosine A(2A)/A(1) receptor antagonist in several animal models of Parkinson's disease is described. Discovery and scale-up syntheses of compound 1 are described in detail, highlighting optimization steps that increased the overall yield of 1 from 10.0% to 30.5%. Compound 1 is a potent A(2A)/A(1) receptor antagonist in vitro (A(2A) K(i) = 4.1 nM; A(1) K(i) = 17.0 nM) that has excellent activity, after oral administration, across a number of animal models of Parkinson's disease including mouse and rat models of haloperidol-induced catalepsy, mouse model of reserpine-induced akinesia, rat 6-hydroxydopamine (6-OHDA) lesion model of drug-induced rotation, and MPTP-treated non-human primate model.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions \"haloperidol-induced catalepsy\" which implies that haloperidol is associated with some negative effect (catalepsy). Although it does not explicitly state that haloperidol is positively correlated with vomiting, it suggests that haloperidol has some adverse effects, which could be related to vomiting. Therefore, the snippet provides some indication of the truthfulness of the RDF, but it does not contain direct proof.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

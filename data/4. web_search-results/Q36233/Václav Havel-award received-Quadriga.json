@@ -1,0 +1,42 @@
+{
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  },
+  "task": {
+    "subject": "Václav Havel",
+    "predicate": "award received",
+    "object": "Quadriga"
+  },
+  "sources": [
+    {
+      "url": "https://english.radio.cz/havel-gets-quadriga-award-8411996",
+      "rdf_proof": true,
+      "paragraph": "The former Czech president Václav Havel on Saturday received Germany’s prestigious Quadriga award at a gala ceremony in Berlin held on the 19th anniversary of the reunification of Germany. The award was also bestowed on the former Soviet president Mikhail Gorbachev and European Commission President Jose Manuel Barroso, as well as musician Marius Mueller-Westernhagen and human rights activist Baerbel Bohley. The annual award is sponsored by Werkstatt Deutschland, a non-profit organization based in Berlin and consists of a small statue resembling the quadriga at the top of the Brandenburg Gate in Berlin and a cash prize of 25,000 Euros.",
+      "raw_LLM": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly states that \"Václav Havel\" received the \"Quadriga\" award, which directly matches the RDF statement [\"Václav Havel\" - \"award received\" - \"Quadriga\"]."
+    },
+    {
+      "url": "https://www.lidovky.cz/ceska-pozice/havel-welcomes-withdrawal-of-award-to-putin.A110717_073026_pozice_28018",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://english.radio.cz/germany-cancels-award-putin-after-protests-havel-others-8366433",
+      "rdf_proof": true,
+      "paragraph": "The organizers of the prestigious German Quadriga Prize cancelled on Saturday this year’s award ceremony following an outcry by a number of international figures including former Czech president Václav Havel who protested against Russia’s Prime Minister Vladmir Putin receiving the award. Mr Havel, who received the prize in 2009, had threatened to return his award if the Russian official is given the prize, the German news website Deutsche Welle reported on Saturday. Mr Havel has reportedly asked the Quadriga jury to reconsider their decision which had surprised and disappointed him. The Czech daily Lidové noviny reported on Saturday that another Czech recipient of the prize, the head of the humanitarian NGO People in Need Šimon Pánek, was considering the same move.",
+      "raw_LLM": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly states \"Mr Havel, who received the prize in 2009...\" which directly verifies the RDF statement [\"Václav Havel\" - \"award received\" - \"Quadriga\"]."
+    },
+    {
+      "url": "https://www.bbc.com/news/world-europe-14173814",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.gettyimages.com/editorial-images/entertainment/event/quadriga-award/91020054",
+      "rdf_proof": false
+    }
+  ]
+}

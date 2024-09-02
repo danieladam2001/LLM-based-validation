@@ -1,0 +1,20 @@
+{
+  "subject": "maternal diabetes",
+  "predicate": "Positive_Correlation",
+  "object": "CHOP",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"maternal diabetes\" - \"Positive_Correlation\" - \"CHOP\"].\nSnippet to verify from: \"Superoxide dismutase 1 overexpression in mice abolishes maternal diabetes-induced endoplasmic reticulum stress in diabetic embryopathy.OBJECTIVE: Both oxidative stress and endoplasmic reticulum stress (ER stress) are causal events in diabetic embryopathy. We tested whether oxidative stress causes ER stress. STUDY DESIGN: Wild-type (WT) and superoxide dismutase 1 (SOD1)-overexpressing day 8.75 embryos from nondiabetic WT control with SOD1 transgenic male and diabetic WT female with SOD1 transgenic male were analyzed for ER stress markers: C/EBP-homologous protein (CHOP), calnexin, eukaryotic initiation factor 2a (eIF2a), protein kinase ribonucleic acid (RNA)-like ER kinase (PERK), binding immunoglobulin protein, protein disulfide isomerase family A member 3, kinases inositol-requiring protein-1a (IRE1a), and the X-box binding protein (XBP1) messenger RNA (mRNA) splicing. RESULTS: Maternal diabetes significantly increased the levels of CHOP, calnexin, phosphorylated (p)-eIF2a, p-PERK, and p-IRE1a; triggered XBP1 mRNA splicing; and enhanced ER chaperone gene expression in WT embryos. SOD1 overexpression blocked these diabetes-induced ER stress markers. CONCLUSION: Mitigating oxidative stress via SOD1 overexpression blocks maternal diabetes-induced ER stress in vivo.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Superoxide dismutase 1 overexpression in mice abolishes maternal diabetes-induced endoplasmic reticulum stress in diabetic embryopathy.OBJECTIVE: Both oxidative stress and endoplasmic reticulum stress (ER stress) are causal events in diabetic embryopathy. We tested whether oxidative stress causes ER stress. STUDY DESIGN: Wild-type (WT) and superoxide dismutase 1 (SOD1)-overexpressing day 8.75 embryos from nondiabetic WT control with SOD1 transgenic male and diabetic WT female with SOD1 transgenic male were analyzed for ER stress markers: C/EBP-homologous protein (CHOP), calnexin, eukaryotic initiation factor 2a (eIF2a), protein kinase ribonucleic acid (RNA)-like ER kinase (PERK), binding immunoglobulin protein, protein disulfide isomerase family A member 3, kinases inositol-requiring protein-1a (IRE1a), and the X-box binding protein (XBP1) messenger RNA (mRNA) splicing. RESULTS: Maternal diabetes significantly increased the levels of CHOP, calnexin, phosphorylated (p)-eIF2a, p-PERK, and p-IRE1a; triggered XBP1 mRNA splicing; and enhanced ER chaperone gene expression in WT embryos. SOD1 overexpression blocked these diabetes-induced ER stress markers. CONCLUSION: Mitigating oxidative stress via SOD1 overexpression blocks maternal diabetes-induced ER stress in vivo.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement is [\"maternal diabetes\" - \"Positive_Correlation\" - \"CHOP\"], which means that maternal diabetes has a positive correlation with CHOP. The snippet directly states that \"Maternal diabetes significantly increased the levels of CHOP\" in the RESULTS section, which confirms the RDF statement.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

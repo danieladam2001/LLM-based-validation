@@ -1,0 +1,20 @@
+{
+  "subject": "PD",
+  "predicate": "Positive_Correlation",
+  "object": "insertion/deletion (long allele-L/short allele-S) of 43 bp",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"PD\" - \"Positive_Correlation\" - \"insertion/deletion (long allele-L/short allele-S) of 43 bp\"].\nSnippet to verify from: \"Serotonin transporter gene polymorphic element 5-HTTLPR increases the risk of sporadic Parkinson's disease in Italy.Parkinson's disease (PD) is a neurodegenerative disorder causing muscular rigidity, resting tremor and bradykinesia. We conducted an association study assessing how PD risk in Italy was influenced by the serotonin transporter gene (SLC6A4) polymorphic region 5-HTTLPR, consisting of an insertion/deletion (long allele-L/short allele-S) of 43 bp in the SLC6A4 promoter region. The SLC6A4 promoter single nucleotide polymorphism rs25531(A-->G) was evaluated too. We collected 837 independent subjects (393 PD, 444 controls). An association between the 5-HTTLPR polymorphism and risk of PD (S/S genotype OR [95% CI]: 1.7[1.2-2.5], p = 0.002) was found. The rs25531 and the haplotype 5-HTTLPR/rs25531 did not associate with risk of PD. Our data indicate that the 5-HTTLPR polymorphic element within the SLC6A4 promoter may govern the genetic risk of PD in Italians.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Serotonin transporter gene polymorphic element 5-HTTLPR increases the risk of sporadic Parkinson's disease in Italy.Parkinson's disease (PD) is a neurodegenerative disorder causing muscular rigidity, resting tremor and bradykinesia. We conducted an association study assessing how PD risk in Italy was influenced by the serotonin transporter gene (SLC6A4) polymorphic region 5-HTTLPR, consisting of an insertion/deletion (long allele-L/short allele-S) of 43 bp in the SLC6A4 promoter region. The SLC6A4 promoter single nucleotide polymorphism rs25531(A-->G) was evaluated too. We collected 837 independent subjects (393 PD, 444 controls). An association between the 5-HTTLPR polymorphism and risk of PD (S/S genotype OR [95% CI]: 1.7[1.2-2.5], p = 0.002) was found. The rs25531 and the haplotype 5-HTTLPR/rs25531 did not associate with risk of PD. Our data indicate that the 5-HTTLPR polymorphic element within the SLC6A4 promoter may govern the genetic risk of PD in Italians.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement is [\"PD\" - \"Positive_Correlation\" - \"insertion/deletion (long allele-L/short allele-S) of 43 bp\"], and the snippet explicitly states that \"an association between the 5-HTTLPR polymorphism and risk of PD\" was found, where 5-HTTLPR is an insertion/deletion (long allele-L/short allele-S) of 43 bp in the SLC6A4 promoter region. This directly verifies the RDF statement.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

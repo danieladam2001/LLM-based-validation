@@ -1,0 +1,20 @@
+{
+  "subject": "Asn45Ser",
+  "predicate": "Positive_Correlation",
+  "object": "BSS",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"Asn45Ser\" - \"Positive_Correlation\" - \"BSS\"].\nSnippet to verify from: \"Compound heterozygosity for a novel nine-nucleotide deletion and the Asn45Ser missense mutation in the glycoprotein IX gene in a patient with Bernard-Soulier syndrome.Bernard-Soulier syndrome (BSS) is a rare inherited bleeding disorder due to quantitative or qualitative abnormalities in the platelet glycoprotein (GP) Ib/IX/V complex, the major von Willebrand factor receptor. The complex comprises four subunits, each encoded by a separate gene. Several mutations have been described for each of the subunits, except for GPV, as a cause of BSS. We describe here the genetic basis of the disorder in a child with BSS. Flow-cytometric analysis of the patient's platelets showed a markedly reduced surface expression of all three glycoproteins of the GPIb/IX/V complex. DNA sequencing analysis showed the patient to be a compound heterozygote for two mutations in the GPIX gene, a novel nine-nucleotide deletion starting at position 1952 of the gene that changes asparagine 86 for alanine and eliminates amino acids 87, 88, and 89 (arginine, threonine, and proline) and a previously reported point mutation that changes the codon asparagine (AAC) for serine (AGC) at residue 45. Her mother was heterozygous for the Asn45Ser mutation, and her father, for the nine-nucleotide deletion. Our findings suggest that the additive effects of both mutations in the GPIX gene are responsible for the BSS phenotype of the patient.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Compound heterozygosity for a novel nine-nucleotide deletion and the Asn45Ser missense mutation in the glycoprotein IX gene in a patient with Bernard-Soulier syndrome.Bernard-Soulier syndrome (BSS) is a rare inherited bleeding disorder due to quantitative or qualitative abnormalities in the platelet glycoprotein (GP) Ib/IX/V complex, the major von Willebrand factor receptor. The complex comprises four subunits, each encoded by a separate gene. Several mutations have been described for each of the subunits, except for GPV, as a cause of BSS. We describe here the genetic basis of the disorder in a child with BSS. Flow-cytometric analysis of the patient's platelets showed a markedly reduced surface expression of all three glycoproteins of the GPIb/IX/V complex. DNA sequencing analysis showed the patient to be a compound heterozygote for two mutations in the GPIX gene, a novel nine-nucleotide deletion starting at position 1952 of the gene that changes asparagine 86 for alanine and eliminates amino acids 87, 88, and 89 (arginine, threonine, and proline) and a previously reported point mutation that changes the codon asparagine (AAC) for serine (AGC) at residue 45. Her mother was heterozygous for the Asn45Ser mutation, and her father, for the nine-nucleotide deletion. Our findings suggest that the additive effects of both mutations in the GPIX gene are responsible for the BSS phenotype of the patient.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement [\"Asn45Ser\" - \"Positive_Correlation\" - \"BSS\"] can be directly verified from the snippet, which explicitly states that the Asn45Ser mutation is associated with Bernard-Soulier syndrome (BSS).",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

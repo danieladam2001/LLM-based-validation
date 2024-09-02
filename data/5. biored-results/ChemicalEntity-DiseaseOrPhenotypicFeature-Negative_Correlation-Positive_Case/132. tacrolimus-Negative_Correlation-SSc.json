@@ -1,0 +1,20 @@
+{
+  "subject": "tacrolimus",
+  "predicate": "Negative_Correlation",
+  "object": "SSc",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"tacrolimus\" - \"Negative_Correlation\" - \"SSc\"].\nSnippet to verify from: \"Late-onset scleroderma renal crisis induced by tacrolimus and prednisolone: a case report.Scleroderma renal crisis (SRC) is a rare complication of systemic sclerosis (SSc) but can be severe enough to require temporary or permanent renal replacement therapy. Moderate to high dose corticosteroid use is recognized as a major risk factor for SRC. Furthermore, there have been reports of thrombotic microangiopathy precipitated by cyclosporine in patients with SSc. In this article, we report a patient with SRC induced by tacrolimus and corticosteroids. The aim of this work is to call attention to the risk of tacrolimus use in patients with SSc.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Late-onset scleroderma renal crisis induced by tacrolimus and prednisolone: a case report.Scleroderma renal crisis (SRC) is a rare complication of systemic sclerosis (SSc) but can be severe enough to require temporary or permanent renal replacement therapy. Moderate to high dose corticosteroid use is recognized as a major risk factor for SRC. Furthermore, there have been reports of thrombotic microangiopathy precipitated by cyclosporine in patients with SSc. In this article, we report a patient with SRC induced by tacrolimus and corticosteroids. The aim of this work is to call attention to the risk of tacrolimus use in patients with SSc.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions that tacrolimus can induce scleroderma renal crisis (SRC) in patients with systemic sclerosis (SSc), which suggests a negative correlation between tacrolimus and SSc. However, it does not directly state that there is a negative correlation between the two. Therefore, the RDF statement can be inferred from the snippet, but it requires some interpretation and is not directly verified.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

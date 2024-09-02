@@ -1,0 +1,20 @@
+{
+  "subject": "Mesna",
+  "predicate": "Negative_Correlation",
+  "object": "[(3)H]norepinephrine",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"Mesna\" - \"Negative_Correlation\" - \"[(3)H]norepinephrine\"].\nSnippet to verify from: \"The cytogenetic action of ifosfamide, mesna, and their combination on peripheral rabbit lymphocytes: an in vivo/in vitro cytogenetic study.Ifosfamide (IFO) is an alkylating nitrogen mustard, administrated as an antineoplasmic agent. It is characterized by its intense urotoxic action, leading to hemorrhagic cystitis. This side effect of IFO raises the requirement for the co-administration with sodium 2-sulfanylethanesulfonate (Mesna) aiming to avoid or minimize this effect. IFO and Mesna were administrated separately on rabbit's lymphocytes in vivo, which were later developed in vitro. Cytogenetic markers for sister chromatid exchanges (SCEs), proliferation rate index (PRI) and Mitotic Index were recorded. Mesna's action, in conjunction with IFO reduces the frequency of SCEs, in comparison with the SCEs recordings obtained when IFO is administered alone. In addition to this, when high concentrations of Mesna were administered alone significant reductions of the PRI were noted, than with IFO acting at the same concentration on the lymphocytes. Mesna significantly reduces IFO's genotoxicity, while when administered in high concentrations it acts in an inhibitory fashion on the cytostatic action of the drug.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "The cytogenetic action of ifosfamide, mesna, and their combination on peripheral rabbit lymphocytes: an in vivo/in vitro cytogenetic study.Ifosfamide (IFO) is an alkylating nitrogen mustard, administrated as an antineoplasmic agent. It is characterized by its intense urotoxic action, leading to hemorrhagic cystitis. This side effect of IFO raises the requirement for the co-administration with sodium 2-sulfanylethanesulfonate (Mesna) aiming to avoid or minimize this effect. IFO and Mesna were administrated separately on rabbit's lymphocytes in vivo, which were later developed in vitro. Cytogenetic markers for sister chromatid exchanges (SCEs), proliferation rate index (PRI) and Mitotic Index were recorded. Mesna's action, in conjunction with IFO reduces the frequency of SCEs, in comparison with the SCEs recordings obtained when IFO is administered alone. In addition to this, when high concentrations of Mesna were administered alone significant reductions of the PRI were noted, than with IFO acting at the same concentration on the lymphocytes. Mesna significantly reduces IFO's genotoxicity, while when administered in high concentrations it acts in an inhibitory fashion on the cytostatic action of the drug.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The RDF statement is [\"Mesna\" - \"Negative_Correlation\" - \"[(3)H]norepinephrine\"]. The snippet does not directly mention [(3)H]norepinephrine, but it does mention the negative correlation between Mesna and the genotoxicity of ifosfamide, which can be inferred as a negative correlation. Therefore, the snippet provides some indications of the truthfulness of the RDF, but it does not contain direct proof.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

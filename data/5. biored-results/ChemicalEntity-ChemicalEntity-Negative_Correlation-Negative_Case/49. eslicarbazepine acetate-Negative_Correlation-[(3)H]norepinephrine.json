@@ -1,0 +1,20 @@
+{
+  "subject": "eslicarbazepine acetate",
+  "predicate": "Negative_Correlation",
+  "object": "[(3)H]norepinephrine",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"eslicarbazepine acetate\" - \"Negative_Correlation\" - \"[(3)H]norepinephrine\"].\nSnippet to verify from: \"Anticonvulsant effect of eslicarbazepine acetate (BIA 2-093) on seizures induced by microperfusion of picrotoxin in the hippocampus of freely moving rats.Eslicarbazepine acetate (BIA 2-093, S-(-)-10-acetoxy-10,11-dihydro-5H-dibenzo/b,f/azepine-5-carboxamide) is a novel antiepileptic drug, now in Phase III clinical trials, designed with the aim of improving efficacy and safety in comparison with the structurally related drugs carbamazepine (CBZ) and oxcarbazepine (OXC). We have studied the effects of oral treatment with eslicarbazepine acetate on a whole-animal model in which partial seizures can be elicited repeatedly on different days without changes in threshold or seizure patterns. In the animals treated with threshold doses of picrotoxin, the average number of seizures was 2.3+/-1.2, and average seizure duration was 39.5+/-8.4s. Pre-treatment with a dose of 30 mg/kg 2h before picrotoxin microperfusion prevented seizures in the 75% of the rats. Lower doses (3 and 10mg/kg) did not suppress seizures, however, after administration of 10mg/kg, significant reductions in seizures duration (24.3+/-6.8s) and seizure number (1.6+/-0.34) were found. No adverse effects of eslicarbazepine acetate were observed in the behavioral/EEG patterns studied, including sleep/wakefulness cycle, at the doses studied.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Anticonvulsant effect of eslicarbazepine acetate (BIA 2-093) on seizures induced by microperfusion of picrotoxin in the hippocampus of freely moving rats.Eslicarbazepine acetate (BIA 2-093, S-(-)-10-acetoxy-10,11-dihydro-5H-dibenzo/b,f/azepine-5-carboxamide) is a novel antiepileptic drug, now in Phase III clinical trials, designed with the aim of improving efficacy and safety in comparison with the structurally related drugs carbamazepine (CBZ) and oxcarbazepine (OXC). We have studied the effects of oral treatment with eslicarbazepine acetate on a whole-animal model in which partial seizures can be elicited repeatedly on different days without changes in threshold or seizure patterns. In the animals treated with threshold doses of picrotoxin, the average number of seizures was 2.3+/-1.2, and average seizure duration was 39.5+/-8.4s. Pre-treatment with a dose of 30 mg/kg 2h before picrotoxin microperfusion prevented seizures in the 75% of the rats. Lower doses (3 and 10mg/kg) did not suppress seizures, however, after administration of 10mg/kg, significant reductions in seizures duration (24.3+/-6.8s) and seizure number (1.6+/-0.34) were found. No adverse effects of eslicarbazepine acetate were observed in the behavioral/EEG patterns studied, including sleep/wakefulness cycle, at the doses studied.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is c) The RDF statement definitely cannot be inferred from the snippet.The RDF statement mentions \"Negative_Correlation\" between \"eslicarbazepine acetate\" and \"[(3)H]norepinephrine\", but the snippet does not mention \"[(3)H]norepinephrine\" at all. Therefore, it is not possible to infer the RDF statement from the given snippet.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

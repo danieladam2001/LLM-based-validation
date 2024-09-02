@@ -1,0 +1,20 @@
+{
+  "subject": "TIPE2",
+  "predicate": "Positive_Correlation",
+  "object": "caspase-9",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"TIPE2\" - \"Positive_Correlation\" - \"caspase-9\"].\nSnippet to verify from: \"TIPE2 Inhibits Lung Cancer Growth Attributing to Promotion of Apoptosis by Regulating Some Apoptotic Molecules Expression.Recent studies found that TIPE2 was involved in cancer development. However, little is known about TIPE2 in lung cancer. Our study aims to clarify the role of TIPE2 in lung carcinogenesis. We examined the expression of TIPE2 in lung squamous cancer (LSC), small cell lung cancer and lung adenocarcinoma (AdC) tissues and found that TIPE2 expression was lost in small cell lung cancer, compared with adjacent non-tumor tissues. Overexpression of TIPE2 significantly inhibited the growth of lung cancer cell H446 in vitro and even suppressed tumor formation in vivo. Flow cytometry analysis found TIPE2 overexpression promoted apoptosis of H446. In TIPE2 over-expression cells, caspase-3, caspase-9, and Bax were significantly up-regulated while Bcl-2 was down-regulated. Moreover, coincident results were shown by immunohistochemistry in tumors from nude mice. TIPE2 inhibited the phosphorylation of Akt, while promoting the phosphorylation of P38, but had no effect on IkBa and ERK pathway. Taken together, TIPE2 promoted lung cancer cell apoptosis through affecting apoptosis-related molecules caspase-3, caspase-9, Bcl-2 and Bax, possibly via regulating P38 and Akt pathways, indicating that TIPE2 might be a novel marker for lung cancer diagnosis and therapy.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "TIPE2 Inhibits Lung Cancer Growth Attributing to Promotion of Apoptosis by Regulating Some Apoptotic Molecules Expression.Recent studies found that TIPE2 was involved in cancer development. However, little is known about TIPE2 in lung cancer. Our study aims to clarify the role of TIPE2 in lung carcinogenesis. We examined the expression of TIPE2 in lung squamous cancer (LSC), small cell lung cancer and lung adenocarcinoma (AdC) tissues and found that TIPE2 expression was lost in small cell lung cancer, compared with adjacent non-tumor tissues. Overexpression of TIPE2 significantly inhibited the growth of lung cancer cell H446 in vitro and even suppressed tumor formation in vivo. Flow cytometry analysis found TIPE2 overexpression promoted apoptosis of H446. In TIPE2 over-expression cells, caspase-3, caspase-9, and Bax were significantly up-regulated while Bcl-2 was down-regulated. Moreover, coincident results were shown by immunohistochemistry in tumors from nude mice. TIPE2 inhibited the phosphorylation of Akt, while promoting the phosphorylation of P38, but had no effect on IkBa and ERK pathway. Taken together, TIPE2 promoted lung cancer cell apoptosis through affecting apoptosis-related molecules caspase-3, caspase-9, Bcl-2 and Bax, possibly via regulating P38 and Akt pathways, indicating that TIPE2 might be a novel marker for lung cancer diagnosis and therapy.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement [\"TIPE2\" - \"Positive_Correlation\" - \"caspase-9\"] can be directly verified from the snippet, which states: \"In TIPE2 over-expression cells, caspase-3, caspase-9, and Bax were significantly up-regulated...\" This sentence directly proves the positive correlation between TIPE2 and caspase-9.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

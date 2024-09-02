@@ -1,0 +1,20 @@
+{
+  "subject": "c.592C-->T",
+  "predicate": "Positive_Correlation",
+  "object": "microcornea",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"c.592C-->T\" - \"Positive_Correlation\" - \"microcornea\"].\nSnippet to verify from: \"A novel mutation in GJA8 causing congenital cataract-microcornea syndrome in a Chinese pedigree.PURPOSE: To identify the underlying genetic defect in a four-generation family of Chinese origin with autosomal dominant congenital cataract-microcornea syndrome (CCMC). METHODS: All individuals in the study underwent a full clinical examination and the details of history were collected . Genomic DNA extracted from peripheral blood was amplified by polymerase chain reaction (PCR) method and the exons of all candidate genes were sequenced. RESULTS: Direct sequencing of the encoding regions of the candidate genes revealed a heterozygous mutation c.592C-->T in exon 2 of the gap junction protein, alpha 8 (GJA8) gene. This mutation was responsible for the familial disorder through the substitution of a highly conserved arginine to tryptophan at codon 198 (p.R198W). This change co-segregated with all affected members of the family, but was not detected either in the non-carrier relatives or in the 100 normal controls. CONCLUSIONS: This report is the first to relate p.R198W mutation in GJA8 with CCMC. The result expands the mutation spectrum of GJA8 in associated with congenital cataract and microcornea, and implies that this gene has direct involvement with the development of the lens as well as the other anterior segment of the eye.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "A novel mutation in GJA8 causing congenital cataract-microcornea syndrome in a Chinese pedigree.PURPOSE: To identify the underlying genetic defect in a four-generation family of Chinese origin with autosomal dominant congenital cataract-microcornea syndrome (CCMC). METHODS: All individuals in the study underwent a full clinical examination and the details of history were collected . Genomic DNA extracted from peripheral blood was amplified by polymerase chain reaction (PCR) method and the exons of all candidate genes were sequenced. RESULTS: Direct sequencing of the encoding regions of the candidate genes revealed a heterozygous mutation c.592C-->T in exon 2 of the gap junction protein, alpha 8 (GJA8) gene. This mutation was responsible for the familial disorder through the substitution of a highly conserved arginine to tryptophan at codon 198 (p.R198W). This change co-segregated with all affected members of the family, but was not detected either in the non-carrier relatives or in the 100 normal controls. CONCLUSIONS: This report is the first to relate p.R198W mutation in GJA8 with CCMC. The result expands the mutation spectrum of GJA8 in associated with congenital cataract and microcornea, and implies that this gene has direct involvement with the development of the lens as well as the other anterior segment of the eye.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement is [\"c.592C-->T\" - \"Positive_Correlation\" - \"microcornea\"], and the snippet explicitly mentions the mutation \"c.592C-->T\" in the GJA8 gene, which is associated with microcornea. This is a direct proof of the RDF statement.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

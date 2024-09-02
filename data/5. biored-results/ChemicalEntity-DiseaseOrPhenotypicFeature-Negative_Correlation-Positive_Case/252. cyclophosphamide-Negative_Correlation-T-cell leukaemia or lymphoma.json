@@ -1,0 +1,20 @@
+{
+  "subject": "cyclophosphamide",
+  "predicate": "Negative_Correlation",
+  "object": "T-cell leukaemia or lymphoma",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"cyclophosphamide\" - \"Negative_Correlation\" - \"T-cell leukaemia or lymphoma\"].\nSnippet to verify from: \"Salvage therapy with nelarabine, etoposide, and cyclophosphamide in relapsed/refractory paediatric T-cell lymphoblastic leukaemia and lymphoma.A combination of 5 d of nelarabine (AraG) with 5 d of etoposide (VP) and cyclophosphamide (CPM) and prophylactic intrathecal chemotherapy was used as salvage therapy in seven children with refractory or relapsed T-cell leukaemia or lymphoma. The most common side effects attributable to the AraG included Grade 2 and 3 sensory and motor neuropathy and musculoskeletal pain. Haematological toxicity was greater for the combination than AraG alone, although median time to neutrophil and platelet recovery was consistent with other salvage therapies. All patients had some response to the combined therapy and five of the seven went into complete remission after one or two courses of AraG/VP/CPM. Our experience supports the safety of giving AraG as salvage therapy in synchrony with etoposide and cyclophosphamide, although neurological toxicity must be closely monitored.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Salvage therapy with nelarabine, etoposide, and cyclophosphamide in relapsed/refractory paediatric T-cell lymphoblastic leukaemia and lymphoma.A combination of 5 d of nelarabine (AraG) with 5 d of etoposide (VP) and cyclophosphamide (CPM) and prophylactic intrathecal chemotherapy was used as salvage therapy in seven children with refractory or relapsed T-cell leukaemia or lymphoma. The most common side effects attributable to the AraG included Grade 2 and 3 sensory and motor neuropathy and musculoskeletal pain. Haematological toxicity was greater for the combination than AraG alone, although median time to neutrophil and platelet recovery was consistent with other salvage therapies. All patients had some response to the combined therapy and five of the seven went into complete remission after one or two courses of AraG/VP/CPM. Our experience supports the safety of giving AraG as salvage therapy in synchrony with etoposide and cyclophosphamide, although neurological toxicity must be closely monitored.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions \"cyclophosphamide\" and \"T-cell leukaemia or lymphoma\" together, which suggests a connection between the two. However, it does not explicitly state a \"Negative_Correlation\" between them. Therefore, the RDF statement cannot be directly verified from the snippet, but the snippet does provide some indication of a relationship between the two entities.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

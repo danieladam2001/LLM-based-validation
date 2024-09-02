@@ -1,0 +1,40 @@
+{
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  },
+  "task": {
+    "subject": "Donald Trump",
+    "predicate": "residence",
+    "object": "Manhattan"
+  },
+  "sources": [
+    {
+      "url": "https://www.maisonvalentina.net/en/news-events/architecture/donald-trumps-manhattan-luxury-apartment-mansion",
+      "rdf_proof": true,
+      "paragraph": "Take a look inside newsly elected President of the USA, Donald Trump’s opulent Manhattan Penthouse. Located at the Trump Tower in Manhattan, New York, Donald and Melania Trump live on the top three floors of this grand penthouse with breathtaking views of Central Park and Manhattan.",
+      "raw_LLM": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly states that Donald Trump lives in Manhattan, which matches the RDF statement [\"Donald Trump\" - \"residence\" - \"Manhattan\"]."
+    },
+    {
+      "url": "https://www.cityrealty.com/nyc/midtown-east/trump-tower-721-fifth-avenue/3531",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.trump.com/residential-real-estate-portfolio/trump-park-avenue-new-york",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.trumptowerny.com/residential",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.gettyimages.com/photos/donald-trump-apartment",
+      "rdf_proof": false
+    }
+  ]
+}

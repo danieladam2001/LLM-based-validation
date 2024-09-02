@@ -1,0 +1,20 @@
+{
+  "subject": "mTOR",
+  "predicate": "Positive_Correlation",
+  "object": "scopolamine",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"mTOR\" - \"Positive_Correlation\" - \"scopolamine\"].\nSnippet to verify from: \"Metabolic Symbiosis Enables Adaptive Resistance to Anti-angiogenic Therapy that Is Dependent on mTOR Signaling.Therapeutic targeting of tumor angiogenesis with VEGF inhibitors results in demonstrable, but transitory efficacy in certain human tumors and mouse models of cancer, limited by unconventional forms of adaptive/evasive resistance. In one such mouse model, potent angiogenesis inhibitors elicit compartmental reorganization of cancer cells around remaining blood vessels. The glucose and lactate transporters GLUT1 and MCT4 are induced in distal hypoxic cells in a HIF1a-dependent fashion, indicative of glycolysis. Tumor cells proximal to blood vessels instead express the lactate transporter MCT1, and p-S6, the latter reflecting mTOR signaling. Normoxic cancer cells import and metabolize lactate, resulting in upregulation of mTOR signaling via glutamine metabolism enhanced by lactate catabolism. Thus, metabolic symbiosis is established in the face of angiogenesis inhibition, whereby hypoxic cancer cells import glucose and export lactate, while normoxic cells import and catabolize lactate. mTOR signaling inhibition disrupts this metabolic symbiosis, associated with upregulation of the glucose transporter GLUT2.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Metabolic Symbiosis Enables Adaptive Resistance to Anti-angiogenic Therapy that Is Dependent on mTOR Signaling.Therapeutic targeting of tumor angiogenesis with VEGF inhibitors results in demonstrable, but transitory efficacy in certain human tumors and mouse models of cancer, limited by unconventional forms of adaptive/evasive resistance. In one such mouse model, potent angiogenesis inhibitors elicit compartmental reorganization of cancer cells around remaining blood vessels. The glucose and lactate transporters GLUT1 and MCT4 are induced in distal hypoxic cells in a HIF1a-dependent fashion, indicative of glycolysis. Tumor cells proximal to blood vessels instead express the lactate transporter MCT1, and p-S6, the latter reflecting mTOR signaling. Normoxic cancer cells import and metabolize lactate, resulting in upregulation of mTOR signaling via glutamine metabolism enhanced by lactate catabolism. Thus, metabolic symbiosis is established in the face of angiogenesis inhibition, whereby hypoxic cancer cells import glucose and export lactate, while normoxic cells import and catabolize lactate. mTOR signaling inhibition disrupts this metabolic symbiosis, associated with upregulation of the glucose transporter GLUT2.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions \"mTOR signaling\" and its relation to lactate metabolism, but it does not explicitly state a positive correlation between mTOR and scopolamine. Scopolamine is not mentioned at all in the snippet. Therefore, the RDF statement cannot be directly verified from the snippet, but the snippet does provide some context about mTOR signaling that could be related to the RDF statement.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

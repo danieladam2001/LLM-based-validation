@@ -1,0 +1,42 @@
+{
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  },
+  "task": {
+    "subject": "Václav Havel",
+    "predicate": "award received",
+    "object": "Geuzenpenning"
+  },
+  "sources": [
+    {
+      "url": "https://archive.vaclavhavel-library.org/Archive/Event?sort=3eventType=Z%C3%A1kony%20vr%C3%A1cen%C3%A9&page=1605&lang=en",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.moas.eu/moas-to-receive-geuzen-medal-2016/",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://archive.vaclavhavel-library.org/Archive/Event?sort=2eventType=Internal%20personalities&lang=en&page=1604",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.muzeuminternetu.cz/offwebs/czech/218.htm",
+      "rdf_proof": true,
+      "paragraph": "© Vaclav Havel English Translations © Paul Wilson and others New Year's Address to the NationPrague, January 1, 1990The Polish Sejm and SenateWarsaw, January 25, 1990 On the occasion of Vaclav Havel's first official visit to Poland. A Joint Session of the U.S. Congress Washington, D.C., February 21, 1990 On the occasion of Vaclav Havel's first official visit to the Unites States. The Visit of German President Richard von Weizsacker Prague, March 15, 1990 President Richard von Weizsacker's visit marked by fifty-first anniversary of the Nazi occupation of Czechoslovakia. A meeting of Leaders of Three Neighboring Countries Bratislava Castle, April 21, 1990 A meeting of Hungarian, Polish and Czechoslovak presidents in Bratislava, Czechoslovakia. A Welcoming Address to the Pope Prague Castle, April 21, 1990 On the occasion of John Paul II's first official visit to Czechoslovakia. The Hebrew University Jerusalem, April 26, 1990 Vaclav Havel delivered this speech on being awarded an honorary doctorate by the university during a state visit to Israel. The Council of Europe Strasbourg, May 10, 1990 Vaclav Havel's address to the oldest European Intergovernmental organization of democratic states, Strasbourg, France. The Salzburg Festival Salzburg, July 26, 1990 With this address, Vaclav Havel, opened the 70th annual Salzburg music festival in Austria. The Oslo Conference on \"The Anatomy of Hate\" Oslo, August 28, 1990 Sponsored by the Elie Wiesel Foundation for Humanity, and the Norwegian Nobel Committee, the theme of this conference was \"The Anatomy of Hate: Resolving Conflict Though Dialogue and Democracy.\" The United Nations World Summit for Children New York, September 30, 1990 This was the first world summit conference devoted to children, with leaders from seventy one countries taking part. 1991-1994 under construction\"Czechs and Germans on the Way To a Good Neighbourship\" Charles University, Prague 17 February 1995 Address on the occasion of the presentation of the 1995 Geuzenpenning Grote Kerk, Vlaardingen, The Netherlands 13 March 1995 National Press Club Canberra, Australia 29 March 1995 Victoria University of Wellington New Zealand 31 March 1995 SHAPEX Conference Mons, Belgium 27 April 1995 Address at the World War II Veterans' and Resistance Fighters' Assembly to Mark the 50th Anniversary of V-E Day Third Courtyard, Prague Castle 8 May 1995 Address on the occasion of the conferment of the Catalonia International Prize Barcelona, Spain 11 May 1995 Address to Welcome His Holiness Pope John Paul II Prague-Ruzyne Airport 20 May 1995 Harvard University Cambridge, Massachusetts, USA June 8, 1995, 9.30 p.m. Address on the occasion of the inauguration of the Human Rights Building Strasbourg, France 29 June 1995 Address on the occasion of the conferment of the Nuremberg International Human Rights Award upon Sergei Kovalev * Commendation of the Laureate * Nuremberg, Federal Republic of Germany 17 September 1995",
+      "raw_LLM": "The correct answer is a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement is [\"Václav Havel\" - \"award received\" - \"Geuzenpenning\"], and the snippet explicitly mentions \"Address on the occasion of the presentation of the 1995 Geuzenpenning\" in the section for 1995, which directly verifies the RDF statement."
+    },
+    {
+      "url": "https://www.voatibetan.com/a/a-28-2005-03-12-voa5-90266702/1268977.html",
+      "rdf_proof": true,
+      "paragraph": "Hollywood actor Richard Gere, who has been ICT's chairman since 1997, accepted the award on its behalf.A special envoy of Tibet's exiled spiritual leader, the Dalai Lama, also attended the award ceremony.The Geuzen Medal is awarded annually in recognition of individuals or organizations for their contributions to democracy or efforts to end discrimination, racism or dictatorial rule.Previous winners include Amnesty International Netherlands, former German President Richard von Weizsaecker and former Czech president, Vaclav Havel.",
+      "raw_LLM": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly mentions \"former Czech president, Vaclav Havel\" as a previous winner of the Geuzen Medal, which directly verifies the RDF statement [\"Václav Havel\" - \"award received\" - \"Geuzenpenning\"]."
+    }
+  ]
+}

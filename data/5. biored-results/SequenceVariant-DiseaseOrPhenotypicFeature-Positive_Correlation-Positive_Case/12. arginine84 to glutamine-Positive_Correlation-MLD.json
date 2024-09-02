@@ -1,0 +1,20 @@
+{
+  "subject": "arginine84 to glutamine",
+  "predicate": "Positive_Correlation",
+  "object": "MLD",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"arginine84 to glutamine\" - \"Positive_Correlation\" - \"MLD\"].\nSnippet to verify from: \"Late-onset metachromatic leukodystrophy: molecular pathology in two siblings.We report on a new allele at the arylsulfatase A (ARSA) locus causing late-onset metachromatic leukodystrophy (MLD). In that allele arginine84, a residue that is highly conserved in the arylsulfatase gene family, is replaced by glutamine. In contrast to alleles that cause early-onset MLD, the arginine84 to glutamine substitution is associated with some residual ARSA activity. A comparison of genotypes, ARSA activities, and clinical data on 4 individuals carrying the allele of 81 patients with MLD examined, further validates the concept that different degrees of residual ARSA activity are the basis of phenotypical variation in MLD.. \n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Late-onset metachromatic leukodystrophy: molecular pathology in two siblings.We report on a new allele at the arylsulfatase A (ARSA) locus causing late-onset metachromatic leukodystrophy (MLD). In that allele arginine84, a residue that is highly conserved in the arylsulfatase gene family, is replaced by glutamine. In contrast to alleles that cause early-onset MLD, the arginine84 to glutamine substitution is associated with some residual ARSA activity. A comparison of genotypes, ARSA activities, and clinical data on 4 individuals carrying the allele of 81 patients with MLD examined, further validates the concept that different degrees of residual ARSA activity are the basis of phenotypical variation in MLD.. ",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement is [\"arginine84 to glutamine\" - \"Positive_Correlation\" - \"MLD\"], and the snippet explicitly states \"arginine84, a residue that is highly conserved in the arylsulfatase gene family, is replaced by glutamine\" and \"metachromatic leukodystrophy (MLD)\". This directly verifies the RDF statement.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

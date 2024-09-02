@@ -1,0 +1,20 @@
+{
+  "subject": "L-NAME",
+  "predicate": "Negative_Correlation",
+  "object": "myocardial infarction",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"L-NAME\" - \"Negative_Correlation\" - \"myocardial infarction\"].\nSnippet to verify from: \"The role of nitric oxide in convulsions induced by lindane in rats.Lindane is an organochloride pesticide and scabicide. It evokes convulsions mainly trough the blockage of GABA(A) receptors. Nitric oxide (NO), gaseous neurotransmitter, has contradictor role in epileptogenesis due to opposite effects of L-arginine, precursor of NO syntheses (NOS), and L-NAME (NOS inhibitor) observed in different epilepsy models. The aim of the current study was to determine the effects of NO on the behavioral and EEG characteristics of lindane-induced epilepsy in male Wistar albino rats. The administration of L-arginine (600, 800 and 1000 mg/kg, i.p.) in dose-dependent manner significantly increased convulsion incidence and severity and shortened latency time to first convulsion elicited by lower lindane dose (4 mg/kg, i.p.). On the contrary, pretreatment with L-NAME (500, 700 and 900 mg/kg, i.p.) decreased convulsion incidence and severity and prolonged latency time to convulsion following injection with a convulsive dose of lindane (8 mg/kg, i.p.). EEG analyses showed increase of number and duration of ictal periods in EEG of rats receiving l-arginine prior to lindane and decrease of this number in rats pretreated with L-NAME. These results support the conclusion that NO plays a role of endogenous convulsant in rat model of lindane seizures.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "The role of nitric oxide in convulsions induced by lindane in rats.Lindane is an organochloride pesticide and scabicide. It evokes convulsions mainly trough the blockage of GABA(A) receptors. Nitric oxide (NO), gaseous neurotransmitter, has contradictor role in epileptogenesis due to opposite effects of L-arginine, precursor of NO syntheses (NOS), and L-NAME (NOS inhibitor) observed in different epilepsy models. The aim of the current study was to determine the effects of NO on the behavioral and EEG characteristics of lindane-induced epilepsy in male Wistar albino rats. The administration of L-arginine (600, 800 and 1000 mg/kg, i.p.) in dose-dependent manner significantly increased convulsion incidence and severity and shortened latency time to first convulsion elicited by lower lindane dose (4 mg/kg, i.p.). On the contrary, pretreatment with L-NAME (500, 700 and 900 mg/kg, i.p.) decreased convulsion incidence and severity and prolonged latency time to convulsion following injection with a convulsive dose of lindane (8 mg/kg, i.p.). EEG analyses showed increase of number and duration of ictal periods in EEG of rats receiving l-arginine prior to lindane and decrease of this number in rats pretreated with L-NAME. These results support the conclusion that NO plays a role of endogenous convulsant in rat model of lindane seizures.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is c) The RDF statement definitely cannot be inferred from the snippet.The RDF statement claims a negative correlation between L-NAME and myocardial infarction, but the snippet does not mention myocardial infarction at all. It discusses the role of L-NAME in epilepsy models and its effects on convulsions, but it does not provide any information about its correlation with myocardial infarction.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

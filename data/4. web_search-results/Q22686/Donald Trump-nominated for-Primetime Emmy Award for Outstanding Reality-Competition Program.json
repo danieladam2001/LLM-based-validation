@@ -1,0 +1,38 @@
+{
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  },
+  "task": {
+    "subject": "Donald Trump",
+    "predicate": "nominated for",
+    "object": "Primetime Emmy Award for Outstanding Reality-Competition Program"
+  },
+  "sources": [
+    {
+      "url": "https://www.emmys.com/bios/donald-trump",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.imdb.com/name/nm0874339/awards/",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://m.imdb.com/news/ni62210260/",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.nytimes.com/2016/10/21/us/politics/trump-apprentice-emmy.html",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.teenvogue.com/story/emmy-nominations-2024-see-all-nominees-here",
+      "rdf_proof": false
+    }
+  ]
+}

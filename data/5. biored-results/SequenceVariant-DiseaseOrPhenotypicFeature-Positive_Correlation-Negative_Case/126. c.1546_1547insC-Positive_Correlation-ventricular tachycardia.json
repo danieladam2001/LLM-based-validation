@@ -1,0 +1,20 @@
+{
+  "subject": "c.1546_1547insC",
+  "predicate": "Positive_Correlation",
+  "object": "ventricular tachycardia",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"c.1546_1547insC\" - \"Positive_Correlation\" - \"ventricular tachycardia\"].\nSnippet to verify from: \"Mutation analysis in a Chinese family with multiple endocrine neoplasia type 1.BACKGROUND: Multiple endocrine neoplasia type 1 (MEN1) is an autosomal dominant cancer syndrome which is caused by germline mutations of the tumor suppressor gene MEN1. This study aimed to identify mutations in a Chinese pedigree with MEN1. METHODS: A large Chinese family with MEN1 was collected. All of the coded regions and their adjacent sequences of the MEN1 gene were amplified and sequenced. RESULTS: In this family, a heterozygous cytosine insertion in exon 10 (c.1546_1547insC) inducing a frame shift mutation of MEN1 was found in the proband and the other two suffering members of his family. This mutation was linked to a novel single nucleotide polymorphism (SNP) in intron 3 (IVS3 + 18C > T). CONCLUSIONS: The mutation in exon 10 of MEN1 gene might induce development of parathyroid hyperplasia and pituitary adenoma and cosegregate with MEN1 syndrome. The significance of the new found IVS3 + 18C > T of MEN1 needs a further investigation.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Mutation analysis in a Chinese family with multiple endocrine neoplasia type 1.BACKGROUND: Multiple endocrine neoplasia type 1 (MEN1) is an autosomal dominant cancer syndrome which is caused by germline mutations of the tumor suppressor gene MEN1. This study aimed to identify mutations in a Chinese pedigree with MEN1. METHODS: A large Chinese family with MEN1 was collected. All of the coded regions and their adjacent sequences of the MEN1 gene were amplified and sequenced. RESULTS: In this family, a heterozygous cytosine insertion in exon 10 (c.1546_1547insC) inducing a frame shift mutation of MEN1 was found in the proband and the other two suffering members of his family. This mutation was linked to a novel single nucleotide polymorphism (SNP) in intron 3 (IVS3 + 18C > T). CONCLUSIONS: The mutation in exon 10 of MEN1 gene might induce development of parathyroid hyperplasia and pituitary adenoma and cosegregate with MEN1 syndrome. The significance of the new found IVS3 + 18C > T of MEN1 needs a further investigation.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The RDF statement is [\"c.1546_1547insC\" - \"Positive_Correlation\" - \"ventricular tachycardia\"], but the snippet does not mention \"ventricular tachycardia\" at all. However, it does mention the mutation \"c.1546_1547insC\" and its association with a disease (MEN1 syndrome), which is an indication of the truthfulness of the RDF, but not a direct proof.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

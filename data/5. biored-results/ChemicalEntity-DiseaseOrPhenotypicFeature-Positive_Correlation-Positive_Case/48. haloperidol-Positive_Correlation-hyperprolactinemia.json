@@ -1,0 +1,20 @@
+{
+  "subject": "haloperidol",
+  "predicate": "Positive_Correlation",
+  "object": "hyperprolactinemia",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"haloperidol\" - \"Positive_Correlation\" - \"hyperprolactinemia\"].\nSnippet to verify from: \"Pituitary response to luteinizing hormone-releasing hormone during haloperidol-induced hyperprolactinemia.The effects of a 6-hour infusion with haloperidol on serum prolactin and luteinizing hormone (LH) levels was studied in a group of male subjects. Five hours after starting the infusions, a study of the pituitary responses to LH-releasing hormone (LH-RH) was carried out. Control patients received infusions of 0.9% NaCl solution. During the course of haloperidol infusions, significant hyperprolactinemia was found, together with an abolished pituitary response to LH-RH, as compared with responses of control subjects.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Pituitary response to luteinizing hormone-releasing hormone during haloperidol-induced hyperprolactinemia.The effects of a 6-hour infusion with haloperidol on serum prolactin and luteinizing hormone (LH) levels was studied in a group of male subjects. Five hours after starting the infusions, a study of the pituitary responses to LH-releasing hormone (LH-RH) was carried out. Control patients received infusions of 0.9% NaCl solution. During the course of haloperidol infusions, significant hyperprolactinemia was found, together with an abolished pituitary response to LH-RH, as compared with responses of control subjects.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions \"haloperidol-induced hyperprolactinemia\", which implies a positive correlation between haloperidol and hyperprolactinemia. However, it does not directly state that haloperidol has a positive correlation with hyperprolactinemia. Therefore, the RDF statement can be inferred from the snippet, but it requires some interpretation and is not a direct proof.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

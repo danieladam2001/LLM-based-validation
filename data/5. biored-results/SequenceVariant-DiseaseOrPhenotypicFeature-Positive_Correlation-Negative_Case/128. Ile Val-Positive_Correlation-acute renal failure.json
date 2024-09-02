@@ -1,0 +1,20 @@
+{
+  "subject": "Ile/Val",
+  "predicate": "Positive_Correlation",
+  "object": "acute renal failure",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"Ile/Val\" - \"Positive_Correlation\" - \"acute renal failure\"].\nSnippet to verify from: \"Genetic polymorphism of the glutathione-S-transferase P1 gene (GSTP1) and susceptibility to prostate cancer in the Kashmiri population.Glutathione-S-transferase P1 (GSTP1) is a critical enzyme of the phase II detoxification pathway. One of the common functional polymorphisms of GSTP1 is A > G at nucleotide 313, which results in an amino acid substitution (Ile105Val) at the substrate binding site of GSTP1 and reduces catalytic activity of GSTP1. To investigate the GSTP1 Ile105Val genotype frequency in prostate cancer cases in the Kashmiri population, we designed a case-control study, in which 50 prostate cancer cases and 45 benign prostate hyperplasia cases were studied for GSTP1 Ile105Val polymorphism, compared to 80 controls taken from the general population, employing the PCR-RFLP technique. We found the frequency of the three different genotypes of GSTP1 Ile105Val in our ethnic Kashmir population, i.e., Ile/Ile, Ile/Val and Val/Val, to be 52.4, 33.3 and 14.3% among prostate cancer cases, 48.5, 37.5 and 14% among benign prostate hyperplasia cases and 73.8, 21.3 and 5% in the control population, respectively. There was a significant association between the GSTP1 Ile/Val genotype and the advanced age group among the cases. We conclude that GSTP1 Ile/Val polymorphism is involved in the risk of prostate cancer development in our population.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Genetic polymorphism of the glutathione-S-transferase P1 gene (GSTP1) and susceptibility to prostate cancer in the Kashmiri population.Glutathione-S-transferase P1 (GSTP1) is a critical enzyme of the phase II detoxification pathway. One of the common functional polymorphisms of GSTP1 is A > G at nucleotide 313, which results in an amino acid substitution (Ile105Val) at the substrate binding site of GSTP1 and reduces catalytic activity of GSTP1. To investigate the GSTP1 Ile105Val genotype frequency in prostate cancer cases in the Kashmiri population, we designed a case-control study, in which 50 prostate cancer cases and 45 benign prostate hyperplasia cases were studied for GSTP1 Ile105Val polymorphism, compared to 80 controls taken from the general population, employing the PCR-RFLP technique. We found the frequency of the three different genotypes of GSTP1 Ile105Val in our ethnic Kashmir population, i.e., Ile/Ile, Ile/Val and Val/Val, to be 52.4, 33.3 and 14.3% among prostate cancer cases, 48.5, 37.5 and 14% among benign prostate hyperplasia cases and 73.8, 21.3 and 5% in the control population, respectively. There was a significant association between the GSTP1 Ile/Val genotype and the advanced age group among the cases. We conclude that GSTP1 Ile/Val polymorphism is involved in the risk of prostate cancer development in our population.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is c) The RDF statement definitely cannot be inferred from the snippet.The RDF statement mentions \"acute renal failure\", but the snippet does not mention \"acute renal failure\" at all. It talks about prostate cancer, GSTP1 gene, and polymorphism, but there is no connection to acute renal failure. Therefore, the RDF statement cannot be inferred from the snippet.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

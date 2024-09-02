@@ -1,0 +1,42 @@
+{
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  },
+  "task": {
+    "subject": "Václav Havel",
+    "predicate": "award received",
+    "object": "Gottlieb Duttweiler Prize"
+  },
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/pulse/gottlieb-duttweiler-prize-2019-goes-watson-matthias-hartmann",
+      "rdf_proof": true,
+      "paragraph": "IBM believes the promise of technology is to empower people to do good. We are honored for this belief to have been reinforced last night, when we received such a renowned award. An award which has also been given to the likes of Václav Havel, Czech politician, writer and human rights activist and Tim Berners-Lee, the inventor of the World Wide Web, for their outstanding contributions to the well-being of the wider community and to cultural, social or economic environments. Now, for the first time in history, the Gottlieb Duttweiler Institute has made the decision to honor a technology.",
+      "raw_LLM": "The correct answer is a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly mentions that the award has been given to Václav Havel, and the award is from the Gottlieb Duttweiler Institute, which matches the RDF statement [\"Václav Havel\" - \"award received\" - \"Gottlieb Duttweiler Prize\"]."
+    },
+    {
+      "url": "https://webfoundation.org/2015/04/sir-tim-berners-lee-receives-gottlieb-duttweiler-award-2015/",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.swissinfo.ch/eng/swiss-politics/joschka-fischer-wins-gottlieb-duttweiler-prize/3887864",
+      "rdf_proof": true,
+      "paragraph": "The SFr100,000 ($78,000) prize also recognises Fischer’s ability to take difficult but important decisions.Despite strong opposition from within his own party, Fischer has supported German military involvement in the Balkans and Afghanistan.The Gottlieb Duttweiler Institute is one of Switzerland’s oldest think tanks, and is named after its founder, who also created the Migros retail giant.Previous winners of the award, which is handed out on an irregular basis, include former Czech president, Václav Havel.“This award honours personalities… who have distinguished themselves through courage, perseverance, commitment, and successfully introducing and implementing lasting changes,” the institute said in a statement.swissinfo, Jacob Greber in Zurich",
+      "raw_LLM": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly mentions \"Previous winners of the award... include former Czech president, Václav Havel\", which directly verifies the RDF statement [\"Václav Havel\" - \"award received\" - \"Gottlieb Duttweiler Prize\"]."
+    },
+    {
+      "url": "https://www.vaclavhavel.cz/docs/vyrocni-zprava-2016-en.pdf",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.vaclavhavel.cz/docs/vyrocni-zprava-2017-en.pdf",
+      "rdf_proof": false
+    }
+  ]
+}

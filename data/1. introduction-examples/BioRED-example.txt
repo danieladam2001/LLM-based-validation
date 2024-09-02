@@ -1,0 +1,34 @@
+### DEMONSTRATION OF THE LLM NOT KNOWING THE RDF TRUTHFULNESS:
+https://replicate.com/p/gh24j4gys5rj00chmhmamymy54
+
+[INPUT]
+Is the given RDF true? The RDF: ["aspartate" - "Negative_Correlation" - "pilocarpine"]
+
+[OUTPUT]
+A question about RDF (Resource Description Framework) triples!
+
+To determine if the given RDF triple is true, I'd need more context and information about the specific domain and knowledge graph being referred to.
+
+However, I can provide some general insights:
+
+* "Aspartate" is an amino acid, a building block of proteins.
+* "Pilocarpine" is a medication used to treat dry mouth and glaucoma.
+* "Negative_Correlation" suggests that there might be an inverse relationship between aspartate and pilocarpine.
+
+Without further information, it's difficult to say whether this RDF triple is true or not. Here are a few possibilities:
+
+1. **Pharmacological context**: In the context of pharmacology, it's possible that aspartate and pilocarpine have a negative correlation in terms of their effects on a specific biological process or pathway. For example, maybe aspartate inhibits a certain enzyme, while pilocarpine activates it.
+2. **Biochemical context**: In a biochemical context, aspartate is involved in various metabolic pathways, including the synthesis of other amino acids. Pilocarpine, being a medication, might not have a direct correlation with aspartate in this context.
+3. **Unknown or domain-specific context**: Without more information, it's possible that this RDF triple is part of a specific knowledge graph or domain model that I'm not familiar with.
+
+To determine the truth value of this RDF triple, I would need more context or information about the specific domain, knowledge graph, or research study that this triple is related to.
+
+
+### IN SECTION 4.1. WE WERE ABLE TO FIND A PRIMARY SOURCE FOR THIS RDF:
+
+[INPUT]
+Can the given RDF be inferred from the given snippet? RDF for verification: ["aspartate" - " Negative_Correlation" - " pilocarpine"]. Snippet to verify from: " Behavioral and neurochemical studies in mice pretreated with garcinielliptone FC in pilocarpine-induced seizures.Garcinielliptone FC (GFC) isolated from hexanic fraction seed extract…." Please, choose the correct option based on your answer!
+a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof. b) The snippet contains some indications of the truthfulness of the RDF.
+c) The RDF statement definitely cannot be inferred from the snippet.
+
+[OUTPUT] The correct answer is a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement is [\"aspartate\" - \"Negative_Correlation\" - \"pilocarpine\"], and the snippet explicitly states: \"In aspartate, glutamine and glutamate levels detected a decrease of 5.21%, 13.55% and 21.80%, respectively in mice hippocampus treated with GFC75 plus P400 when compared with seized mice.\" This sentence directly proves the negative correlation between aspartate and pilocarpine.      

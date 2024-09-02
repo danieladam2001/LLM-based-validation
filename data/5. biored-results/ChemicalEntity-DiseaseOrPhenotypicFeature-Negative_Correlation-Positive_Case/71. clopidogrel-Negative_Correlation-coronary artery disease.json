@@ -1,0 +1,20 @@
+{
+  "subject": "clopidogrel",
+  "predicate": "Negative_Correlation",
+  "object": "coronary artery disease",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"clopidogrel\" - \"Negative_Correlation\" - \"coronary artery disease\"].\nSnippet to verify from: \"Clopidogrel pharmacogenomics and risk of inadequate platelet inhibition: US FDA recommendations.Antiplatelet therapy with clopidogrel is the current standard of care for coronary artery disease patients undergoing a percutaneous coronary intervention. However, approximately 25% of patients experience a subtherapeutic antiplatelet response. Clopidogrel is a prodrug that undergoes hepatic biotransformation by CYP2C19 into its active metabolite. Several studies have reported that, compared with wild-type individuals, CYP2C19 variant allele carriers exhibit a significantly lower capacity to metabolize clopidogrel into its active metabolite and inhibit platelet activation, and are therefore at significantly higher risk of adverse cardiovascular events. Consequently, the US FDA has recently changed clopidogrel's prescribing information to highlight the impact of CYP2C19 genotype on clopidogrel pharmacokinetics, pharmacodynamics and clinical response. Future studies remain necessary to develop effective personalized therapeutic strategies for CYP2C19 variant allele carriers and other individuals at risk for clopidogrel nonresponsiveness.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Clopidogrel pharmacogenomics and risk of inadequate platelet inhibition: US FDA recommendations.Antiplatelet therapy with clopidogrel is the current standard of care for coronary artery disease patients undergoing a percutaneous coronary intervention. However, approximately 25% of patients experience a subtherapeutic antiplatelet response. Clopidogrel is a prodrug that undergoes hepatic biotransformation by CYP2C19 into its active metabolite. Several studies have reported that, compared with wild-type individuals, CYP2C19 variant allele carriers exhibit a significantly lower capacity to metabolize clopidogrel into its active metabolite and inhibit platelet activation, and are therefore at significantly higher risk of adverse cardiovascular events. Consequently, the US FDA has recently changed clopidogrel's prescribing information to highlight the impact of CYP2C19 genotype on clopidogrel pharmacokinetics, pharmacodynamics and clinical response. Future studies remain necessary to develop effective personalized therapeutic strategies for CYP2C19 variant allele carriers and other individuals at risk for clopidogrel nonresponsiveness.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions that clopidogrel is used to treat coronary artery disease, and that some patients may experience adverse cardiovascular events due to genetic variations affecting clopidogrel's metabolism. This suggests a negative correlation between clopidogrel and coronary artery disease, but it does not directly state it. Therefore, the RDF statement can be inferred from the snippet, but it requires some interpretation and connection of the dots.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

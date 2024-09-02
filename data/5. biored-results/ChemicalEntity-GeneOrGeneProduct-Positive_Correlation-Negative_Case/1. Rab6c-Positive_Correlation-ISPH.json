@@ -1,0 +1,20 @@
+{
+  "subject": "Rab6c",
+  "predicate": "Positive_Correlation",
+  "object": "ISPH",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"Rab6c\" - \"Positive_Correlation\" - \"ISPH\"].\nSnippet to verify from: \"Rab6c, a new member of the rab gene family, is involved in drug resistance in MCF7/AdrR cells.A new Rab6 homolog cDNA, Rab6c, was discovered by a hypermethylated DNA fragment probe that was isolated from a human multidrug resistant (MDR) breast cancer cell line, MCF7/AdrR, by the methylation sensitive-representational difference analysis (MS-RDA) technique. Rab6c was found to be under-expressed in MCF7/AdrR and MES-SA/Dx5 (a human MDR uterine sarcoma cell line) compared with their non-MDR parental cell lines. MCF7/AdrR cells expressing the exogenous Rab6c exhibited less resistance to several anti-cancer drugs, such as doxorubicin (DOX), taxol, vinblastine, and vincristine, than the control cells containing the empty vector. Flow cytometry experiments confirmed that the transfectants' diminished resistance to DOX was caused by increased drug accumulation induced by the exogenous Rab6c. These results indicate that Rab6c is involved in drug resistance in MCF7/AdrR cells.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Rab6c, a new member of the rab gene family, is involved in drug resistance in MCF7/AdrR cells.A new Rab6 homolog cDNA, Rab6c, was discovered by a hypermethylated DNA fragment probe that was isolated from a human multidrug resistant (MDR) breast cancer cell line, MCF7/AdrR, by the methylation sensitive-representational difference analysis (MS-RDA) technique. Rab6c was found to be under-expressed in MCF7/AdrR and MES-SA/Dx5 (a human MDR uterine sarcoma cell line) compared with their non-MDR parental cell lines. MCF7/AdrR cells expressing the exogenous Rab6c exhibited less resistance to several anti-cancer drugs, such as doxorubicin (DOX), taxol, vinblastine, and vincristine, than the control cells containing the empty vector. Flow cytometry experiments confirmed that the transfectants' diminished resistance to DOX was caused by increased drug accumulation induced by the exogenous Rab6c. These results indicate that Rab6c is involved in drug resistance in MCF7/AdrR cells.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The RDF statement is [\"Rab6c\" - \"Positive_Correlation\" - \"ISPH\"], which suggests a positive correlation between Rab6c and ISPH (increased sensitivity to pharmaceuticals). The snippet does not directly state this correlation, but it does provide evidence that Rab6c is involved in drug resistance and that its expression leads to increased drug accumulation, which is an indication of increased sensitivity to pharmaceuticals. Therefore, the snippet provides some indications of the truthfulness of the RDF, but it does not directly prove it.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

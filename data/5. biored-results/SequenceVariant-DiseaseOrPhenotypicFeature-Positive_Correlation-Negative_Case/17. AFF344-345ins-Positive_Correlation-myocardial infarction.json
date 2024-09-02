@@ -1,0 +1,20 @@
+{
+  "subject": "AFF344-345ins",
+  "predicate": "Positive_Correlation",
+  "object": "myocardial infarction",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"AFF344-345ins\" - \"Positive_Correlation\" - \"myocardial infarction\"].\nSnippet to verify from: \"Identification of a novel WFS1 mutation (AFF344-345ins) in Japanese patients with Wolfram syndrome.Wolfram syndrome (WFS) is an autosomal recessive disorder characterized by early onset diabetes mellitus, progressive optic atrophy, sensorineural deafness and diabetes insipidus. Affected individuals may also have renal tract abnormalities as well as neurogical and psychiatric syndromes. WFS1 encoding a transmembrane protein was identified as the gene responsible for WFS. We report herein a Japanese family, of which two members had this syndrome. In the WFS1 gene of these patients, we identified a novel mutation, a nine nucleotide insertion (AFF344-345ins). In addition, one of these patients had preclinical hypopituitarism, which is an unusual feature of WFS. As only the two family members homozygous for the mutation showed WFS, these data support the notion that this mutation is the cause of WFS.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Identification of a novel WFS1 mutation (AFF344-345ins) in Japanese patients with Wolfram syndrome.Wolfram syndrome (WFS) is an autosomal recessive disorder characterized by early onset diabetes mellitus, progressive optic atrophy, sensorineural deafness and diabetes insipidus. Affected individuals may also have renal tract abnormalities as well as neurogical and psychiatric syndromes. WFS1 encoding a transmembrane protein was identified as the gene responsible for WFS. We report herein a Japanese family, of which two members had this syndrome. In the WFS1 gene of these patients, we identified a novel mutation, a nine nucleotide insertion (AFF344-345ins). In addition, one of these patients had preclinical hypopituitarism, which is an unusual feature of WFS. As only the two family members homozygous for the mutation showed WFS, these data support the notion that this mutation is the cause of WFS.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions the mutation \"AFF344-345ins\" in the context of Wolfram syndrome, but it does not explicitly mention \"Positive_Correlation\" or \"myocardial infarction\". While the snippet provides some information about the mutation, it does not provide direct proof of the RDF statement. However, it does contain some indications that the mutation is associated with a disease (Wolfram syndrome), which could be related to the concept of \"Positive_Correlation\" and \"myocardial infarction\", but this connection is not explicitly made in the snippet.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

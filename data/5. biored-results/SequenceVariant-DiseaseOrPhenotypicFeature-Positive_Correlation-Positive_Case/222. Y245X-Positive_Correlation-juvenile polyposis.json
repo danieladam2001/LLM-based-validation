@@ -1,0 +1,20 @@
+{
+  "subject": "Y245X",
+  "predicate": "Positive_Correlation",
+  "object": "juvenile polyposis",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"Y245X\" - \"Positive_Correlation\" - \"juvenile polyposis\"].\nSnippet to verify from: \"A family with two consecutive nonsense mutations in BMPR1A causing juvenile polyposis.We describe a novel germline mutation of BMPR1A in a family with juvenile polyposis and colon cancer. This mutation consists of two consecutive substitutions (735-6 TG>AT) that cause two nonsense mutations (Y245X, G246X), inherited in an autosomal dominant fashion, on one parental chromosome. This mutation caused protein truncation, and represents a novel case of consecutive nonsense mutations in human disease.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "A family with two consecutive nonsense mutations in BMPR1A causing juvenile polyposis.We describe a novel germline mutation of BMPR1A in a family with juvenile polyposis and colon cancer. This mutation consists of two consecutive substitutions (735-6 TG>AT) that cause two nonsense mutations (Y245X, G246X), inherited in an autosomal dominant fashion, on one parental chromosome. This mutation caused protein truncation, and represents a novel case of consecutive nonsense mutations in human disease.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly mentions \"Y245X\" and \"juvenile polyposis\", which are the exact entities and relationship described in the RDF for verification.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

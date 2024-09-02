@@ -1,0 +1,38 @@
+{
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  },
+  "task": {
+    "subject": "Donald Trump",
+    "predicate": "award received",
+    "object": "King Abdulaziz Medal"
+  },
+  "sources": [
+    {
+      "url": "https://www.reuters.com/article/world/saudi-king-presents-trump-with-top-civilian-honor-idUSKCN18G0FK/",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/donald-trump-latest-saudi-arabia-highest-civilian-honour-king-abdulaziz-al-saud-collar-gold-medallion-king-salman-barack-obama-a7746566.html",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8oTEV-U-ays",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://thehill.com/homenews/administration/334366-trump-receives-saudi-arabias-highest-civilian-honor/",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.defensenews.com/global/mideast-africa/2017/05/21/saudis-welcome-trump-with-gold-medal-receive-arms-package/",
+      "rdf_proof": false
+    }
+  ]
+}

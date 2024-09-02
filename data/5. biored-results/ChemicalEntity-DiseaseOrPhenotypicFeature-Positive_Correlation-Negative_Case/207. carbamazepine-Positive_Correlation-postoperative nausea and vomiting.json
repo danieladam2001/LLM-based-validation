@@ -1,0 +1,20 @@
+{
+  "subject": "carbamazepine",
+  "predicate": "Positive_Correlation",
+  "object": "postoperative nausea and vomiting",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"carbamazepine\" - \"Positive_Correlation\" - \"postoperative nausea and vomiting\"].\nSnippet to verify from: \"Fatal carbamazepine induced fulminant eosinophilic (hypersensitivity) myocarditis: emphasis on anatomical and histological characteristics, mechanisms and genetics of drug hypersensitivity and differential diagnosis.The most severe adverse reactions to carbamazepine have been observed in the haemopoietic system, the liver and the cardiovascular system. A frequently fatal, although exceptionally rare side effect of carbamazepine is necrotizing eosinophilic (hypersensitivity) myocarditis. We report a case of hypersensitivity myocarditis secondary to administration of carbamazepine. Acute hypersensitivity myocarditis was not suspected clinically, and the diagnosis was made post-mortem. Histology revealed diffuse infiltration of the myocardium by eosinophils and lymphocytes with myocyte damage. Clinically, death was due to cardiogenic shock. To best of our knowledge this is the second case of fatal carbamazepine induced myocarditis reported in English literature.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Fatal carbamazepine induced fulminant eosinophilic (hypersensitivity) myocarditis: emphasis on anatomical and histological characteristics, mechanisms and genetics of drug hypersensitivity and differential diagnosis.The most severe adverse reactions to carbamazepine have been observed in the haemopoietic system, the liver and the cardiovascular system. A frequently fatal, although exceptionally rare side effect of carbamazepine is necrotizing eosinophilic (hypersensitivity) myocarditis. We report a case of hypersensitivity myocarditis secondary to administration of carbamazepine. Acute hypersensitivity myocarditis was not suspected clinically, and the diagnosis was made post-mortem. Histology revealed diffuse infiltration of the myocardium by eosinophils and lymphocytes with myocyte damage. Clinically, death was due to cardiogenic shock. To best of our knowledge this is the second case of fatal carbamazepine induced myocarditis reported in English literature.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet does not directly mention \"postoperative nausea and vomiting\" which is part of the RDF, but it does mention adverse reactions to carbamazepine, including cardiovascular system effects, which could be related to nausea and vomiting. Therefore, the snippet provides some indirect indications that support the RDF, but it does not provide direct proof.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

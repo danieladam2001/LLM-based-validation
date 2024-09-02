@@ -1,0 +1,38 @@
+{
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  },
+  "task": {
+    "subject": "Václav Havel",
+    "predicate": "award received",
+    "object": "Freedom Award"
+  },
+  "sources": [
+    {
+      "url": "https://english.radio.cz/havel-receive-us-presidential-medal-freedom-8076320",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://pace.coe.int/pages/havelprize",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.vaclavhavel.cz/en/vaclav-havel/awards/state",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://hrf.org/havel-prize/",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.fourfreedoms.nl/en/laureaten/vaclav-havel-jacques-delors",
+      "rdf_proof": false
+    }
+  ]
+}

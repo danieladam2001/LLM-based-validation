@@ -1,0 +1,20 @@
+{
+  "subject": "doxycycline",
+  "predicate": "Negative_Correlation",
+  "object": "obese",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"doxycycline\" - \"Negative_Correlation\" - \"obese\"].\nSnippet to verify from: \"Star-PAP, a poly(A) polymerase, functions as a tumor suppressor in an orthotopic human breast cancer model.Star-PAP is a noncanonical poly(A) polymerase and required for the expression of a select set of mRNAs. However, the pathological role of Star-PAP in cancer largely remains unknown. In this study, we observed decreased expression of Star-PAP in breast cancer cell lines and tissues. Ectopic Star-PAP expression inhibited proliferation as well as colony-forming ability of breast cancer cells. In breast cancer patients, high levels of Star-PAP correlated with an improved prognosis. Moreover, by regulating the expression of BIK (BCL2-interacting killer), Star-PAP induced apoptosis of breast cancer cells through the mitochondrial pathway. The growth of breast cancer xenografts in NOD/SCID mice was also inhibited by the doxycycline-induced Star-PAP overexpression. Furthermore, Star-PAP sensitized breast cancer cells to chemotherapy drugs both in vitro and in vivo. In mammary epithelial cells, Star-PAP knockdown partially transformed these cells and induced them to undergo epithelial-mesenchymal transition (EMT). These findings suggested that Star-PAP possesses tumor-suppressing activity and can be a valuable target for developing new cancer therapeutic strategies.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Star-PAP, a poly(A) polymerase, functions as a tumor suppressor in an orthotopic human breast cancer model.Star-PAP is a noncanonical poly(A) polymerase and required for the expression of a select set of mRNAs. However, the pathological role of Star-PAP in cancer largely remains unknown. In this study, we observed decreased expression of Star-PAP in breast cancer cell lines and tissues. Ectopic Star-PAP expression inhibited proliferation as well as colony-forming ability of breast cancer cells. In breast cancer patients, high levels of Star-PAP correlated with an improved prognosis. Moreover, by regulating the expression of BIK (BCL2-interacting killer), Star-PAP induced apoptosis of breast cancer cells through the mitochondrial pathway. The growth of breast cancer xenografts in NOD/SCID mice was also inhibited by the doxycycline-induced Star-PAP overexpression. Furthermore, Star-PAP sensitized breast cancer cells to chemotherapy drugs both in vitro and in vivo. In mammary epithelial cells, Star-PAP knockdown partially transformed these cells and induced them to undergo epithelial-mesenchymal transition (EMT). These findings suggested that Star-PAP possesses tumor-suppressing activity and can be a valuable target for developing new cancer therapeutic strategies.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is c) The RDF statement definitely cannot be inferred from the snippet.The RDF statement mentions \"doxycycline\", \"Negative_Correlation\", and \"obese\", but the snippet does not mention \"obese\" or \"Negative_Correlation\" at all. The snippet only mentions \"doxycycline\" in the context of inducing Star-PAP overexpression, which has a positive effect on breast cancer treatment. There is no correlation or mention of obesity in the snippet.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

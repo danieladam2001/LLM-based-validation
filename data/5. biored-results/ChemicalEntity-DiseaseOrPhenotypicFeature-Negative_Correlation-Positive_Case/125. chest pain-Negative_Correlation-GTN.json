@@ -1,0 +1,20 @@
+{
+  "subject": "chest pain",
+  "predicate": "Negative_Correlation",
+  "object": "GTN",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"chest pain\" - \"Negative_Correlation\" - \"GTN\"].\nSnippet to verify from: \"A dramatic drop in blood pressure following prehospital GTN administration.A male in his sixties with no history of cardiac chest pain awoke with chest pain following an afternoon sleep. The patient did not self medicate. The patient's observations were within normal limits, he was administered oxygen via a face mask and glyceryl trinitrate (GTN). Several minutes after the GTN the patient experienced a sudden drop in blood pressure and heart rate, this was rectified by atropine sulphate and a fluid challenge. There was no further deterioration in the patient's condition during transport to hospital. There are very few documented case like this in the prehospital scientific literature. The cause appears to be the Bezold-Jarish reflex, stimulation of the ventricular walls which in turn decreases sympathetic outflow from the vasomotor centre. Prehospital care providers who are managing any patient with a syncopal episode that fails to recover within a reasonable time frame should consider the Bezold-Jarisch reflex as the cause and manage the patient accordingly.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "A dramatic drop in blood pressure following prehospital GTN administration.A male in his sixties with no history of cardiac chest pain awoke with chest pain following an afternoon sleep. The patient did not self medicate. The patient's observations were within normal limits, he was administered oxygen via a face mask and glyceryl trinitrate (GTN). Several minutes after the GTN the patient experienced a sudden drop in blood pressure and heart rate, this was rectified by atropine sulphate and a fluid challenge. There was no further deterioration in the patient's condition during transport to hospital. There are very few documented case like this in the prehospital scientific literature. The cause appears to be the Bezold-Jarish reflex, stimulation of the ventricular walls which in turn decreases sympathetic outflow from the vasomotor centre. Prehospital care providers who are managing any patient with a syncopal episode that fails to recover within a reasonable time frame should consider the Bezold-Jarisch reflex as the cause and manage the patient accordingly.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The RDF statement is [\"chest pain\" - \"Negative_Correlation\" - \"GTN\"], which suggests that there is a negative correlation between chest pain and GTN. The snippet does not directly prove this correlation, but it does provide some indications that support this idea. The patient in the snippet experienced chest pain, but after being administered GTN, their condition worsened (a sudden drop in blood pressure and heart rate). This suggests that GTN may not be effective in alleviating chest pain, or may even have a negative effect, which is in line with the RDF statement. However, the snippet does not provide direct proof of a negative correlation, hence option b) is the most appropriate answer.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

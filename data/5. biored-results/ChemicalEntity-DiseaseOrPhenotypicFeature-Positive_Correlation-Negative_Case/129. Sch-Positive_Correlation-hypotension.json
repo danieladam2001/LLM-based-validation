@@ -1,0 +1,20 @@
+{
+  "subject": "Sch",
+  "predicate": "Positive_Correlation",
+  "object": "hypotension",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"Sch\" - \"Positive_Correlation\" - \"hypotension\"].\nSnippet to verify from: \"Succinylcholine-induced masseter muscle rigidity during bronchoscopic removal of a tracheal foreign body.Masseter muscle rigidity during general anesthesia is considered an early warning sign of a possible episode of malignant hyperthermia. The decision whether to continue or discontinue the procedure depends on the urgency of the surgery and severity of masseter muscle rigidity. Here, we describe a case of severe masseter muscle rigidity (jaw of steel) after succinylcholine (Sch) administration during general anesthetic management for rigid bronchoscopic removal of a tracheal foreign body. Anesthesia was continued uneventfully with propofol infusion while all facilities were available to detect and treat malignant hyperthermia.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Succinylcholine-induced masseter muscle rigidity during bronchoscopic removal of a tracheal foreign body.Masseter muscle rigidity during general anesthesia is considered an early warning sign of a possible episode of malignant hyperthermia. The decision whether to continue or discontinue the procedure depends on the urgency of the surgery and severity of masseter muscle rigidity. Here, we describe a case of severe masseter muscle rigidity (jaw of steel) after succinylcholine (Sch) administration during general anesthetic management for rigid bronchoscopic removal of a tracheal foreign body. Anesthesia was continued uneventfully with propofol infusion while all facilities were available to detect and treat malignant hyperthermia.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions \"Succinylcholine (Sch)\" and \"hypotension\" is not mentioned at all. However, it does mention \"malignant hyperthermia\" which is a condition that is opposite to \"hypotension\". So, there is some indirect indication that Sch might be related to a condition that is not hypotension, but it's not a direct proof of a positive correlation between Sch and hypotension.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

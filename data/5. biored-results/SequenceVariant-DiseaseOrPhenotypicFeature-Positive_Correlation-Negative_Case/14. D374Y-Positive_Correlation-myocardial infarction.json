@@ -1,0 +1,20 @@
+{
+  "subject": "D374Y",
+  "predicate": "Positive_Correlation",
+  "object": "myocardial infarction",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"D374Y\" - \"Positive_Correlation\" - \"myocardial infarction\"].\nSnippet to verify from: \"Mutations in the PCSK9 gene in Norwegian subjects with autosomal dominant hypercholesterolemia.Proprotein convertase subtilisin/kexin type 9 (PCSK9) is at a locus for autosomal dominant hypercholesterolemia, and recent data indicate that the PCSK9 gene is involved in cholesterol biosynthesis. Mutations within this gene have previously been found to segregate with hypercholesterolemia. In this study, DNA sequencing of the 12 exons of the PCSK9 gene has been performed in 51 Norwegian subjects with a clinical diagnosis of familial hypercholesterolemia where mutations in the low-density lipoprotein receptor gene and mutation R3500Q in the apolipoprotein B-100 gene had been excluded. Two novel missense mutations were detected in the catalytic subdomain of the PCSK9 gene. Two patients were heterozygotes for D374Y, and one patient was a double heterozygote for D374Y and N157K. D374Y segregated with hypercholesterolemia in the two former families where family members were available for study. Our findings support the notion that mutations in the PCSK9 gene cause autosomal dominant hypercholesterolemia.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Mutations in the PCSK9 gene in Norwegian subjects with autosomal dominant hypercholesterolemia.Proprotein convertase subtilisin/kexin type 9 (PCSK9) is at a locus for autosomal dominant hypercholesterolemia, and recent data indicate that the PCSK9 gene is involved in cholesterol biosynthesis. Mutations within this gene have previously been found to segregate with hypercholesterolemia. In this study, DNA sequencing of the 12 exons of the PCSK9 gene has been performed in 51 Norwegian subjects with a clinical diagnosis of familial hypercholesterolemia where mutations in the low-density lipoprotein receptor gene and mutation R3500Q in the apolipoprotein B-100 gene had been excluded. Two novel missense mutations were detected in the catalytic subdomain of the PCSK9 gene. Two patients were heterozygotes for D374Y, and one patient was a double heterozygote for D374Y and N157K. D374Y segregated with hypercholesterolemia in the two former families where family members were available for study. Our findings support the notion that mutations in the PCSK9 gene cause autosomal dominant hypercholesterolemia.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The RDF statement is [\"D374Y\" - \"Positive_Correlation\" - \"myocardial infarction\"], but the snippet does not directly mention \"myocardial infarction\". However, it does mention that the mutation D374Y segregates with hypercholesterolemia, which is a risk factor for myocardial infarction. Therefore, the snippet provides some indication of the truthfulness of the RDF, but it does not directly prove it.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

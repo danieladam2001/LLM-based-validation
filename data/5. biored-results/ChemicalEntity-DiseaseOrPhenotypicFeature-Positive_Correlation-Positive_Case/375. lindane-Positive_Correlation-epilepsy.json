@@ -1,0 +1,20 @@
+{
+  "subject": "lindane",
+  "predicate": "Positive_Correlation",
+  "object": "epilepsy",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"lindane\" - \"Positive_Correlation\" - \"epilepsy\"].\nSnippet to verify from: \"The role of nitric oxide in convulsions induced by lindane in rats.Lindane is an organochloride pesticide and scabicide. It evokes convulsions mainly trough the blockage of GABA(A) receptors. Nitric oxide (NO), gaseous neurotransmitter, has contradictor role in epileptogenesis due to opposite effects of L-arginine, precursor of NO syntheses (NOS), and L-NAME (NOS inhibitor) observed in different epilepsy models. The aim of the current study was to determine the effects of NO on the behavioral and EEG characteristics of lindane-induced epilepsy in male Wistar albino rats. The administration of L-arginine (600, 800 and 1000 mg/kg, i.p.) in dose-dependent manner significantly increased convulsion incidence and severity and shortened latency time to first convulsion elicited by lower lindane dose (4 mg/kg, i.p.). On the contrary, pretreatment with L-NAME (500, 700 and 900 mg/kg, i.p.) decreased convulsion incidence and severity and prolonged latency time to convulsion following injection with a convulsive dose of lindane (8 mg/kg, i.p.). EEG analyses showed increase of number and duration of ictal periods in EEG of rats receiving l-arginine prior to lindane and decrease of this number in rats pretreated with L-NAME. These results support the conclusion that NO plays a role of endogenous convulsant in rat model of lindane seizures.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "The role of nitric oxide in convulsions induced by lindane in rats.Lindane is an organochloride pesticide and scabicide. It evokes convulsions mainly trough the blockage of GABA(A) receptors. Nitric oxide (NO), gaseous neurotransmitter, has contradictor role in epileptogenesis due to opposite effects of L-arginine, precursor of NO syntheses (NOS), and L-NAME (NOS inhibitor) observed in different epilepsy models. The aim of the current study was to determine the effects of NO on the behavioral and EEG characteristics of lindane-induced epilepsy in male Wistar albino rats. The administration of L-arginine (600, 800 and 1000 mg/kg, i.p.) in dose-dependent manner significantly increased convulsion incidence and severity and shortened latency time to first convulsion elicited by lower lindane dose (4 mg/kg, i.p.). On the contrary, pretreatment with L-NAME (500, 700 and 900 mg/kg, i.p.) decreased convulsion incidence and severity and prolonged latency time to convulsion following injection with a convulsive dose of lindane (8 mg/kg, i.p.). EEG analyses showed increase of number and duration of ictal periods in EEG of rats receiving l-arginine prior to lindane and decrease of this number in rats pretreated with L-NAME. These results support the conclusion that NO plays a role of endogenous convulsant in rat model of lindane seizures.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet does not directly state that there is a positive correlation between lindane and epilepsy, but it does provide evidence that lindane induces convulsions and epilepsy-like behavior in rats, and that nitric oxide plays a role in exacerbating these effects. This suggests a possible link between lindane and epilepsy, but it does not provide direct proof of a positive correlation.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

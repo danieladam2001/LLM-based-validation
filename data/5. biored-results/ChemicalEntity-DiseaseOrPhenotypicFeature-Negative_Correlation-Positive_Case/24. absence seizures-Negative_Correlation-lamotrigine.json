@@ -1,0 +1,20 @@
+{
+  "subject": "absence seizures",
+  "predicate": "Negative_Correlation",
+  "object": "lamotrigine",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"absence seizures\" - \"Negative_Correlation\" - \"lamotrigine\"].\nSnippet to verify from: \"Inappropriate use of carbamazepine and vigabatrin in typical absence seizures.Carbamazepine and vigabatrin are contraindicated in typical absence seizures. Of 18 consecutive referrals of children with resistant typical absences only, eight were erroneously treated with carbamazepine either as monotherapy or as an add-on. Vigabatrin was also used in the treatment of two children. Frequency of absences increased in four children treated with carbamazepine and two of these developed myoclonic jerks, which resolved on withdrawal of carbamazepine. Absences were aggravated in both cases where vigabatrin was added on to concurrent treatment. Optimal control of the absences was achieved with sodium valproate, lamotrigine, or ethosuximide alone or in combination.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Inappropriate use of carbamazepine and vigabatrin in typical absence seizures.Carbamazepine and vigabatrin are contraindicated in typical absence seizures. Of 18 consecutive referrals of children with resistant typical absences only, eight were erroneously treated with carbamazepine either as monotherapy or as an add-on. Vigabatrin was also used in the treatment of two children. Frequency of absences increased in four children treated with carbamazepine and two of these developed myoclonic jerks, which resolved on withdrawal of carbamazepine. Absences were aggravated in both cases where vigabatrin was added on to concurrent treatment. Optimal control of the absences was achieved with sodium valproate, lamotrigine, or ethosuximide alone or in combination.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions that optimal control of absences was achieved with lamotrigine, which implies that lamotrigine is effective in treating absence seizures. This is the opposite of a negative correlation, which would suggest that lamotrigine is not effective or even worsens absence seizures. While the snippet does not directly state that there is a negative correlation between absence seizures and lamotrigine, it does provide some indication that lamotrigine is actually helpful in treating absence seizures, which contradicts the RDF statement.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

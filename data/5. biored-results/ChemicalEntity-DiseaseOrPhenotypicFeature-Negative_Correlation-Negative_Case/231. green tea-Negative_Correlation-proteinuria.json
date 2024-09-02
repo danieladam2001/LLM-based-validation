@@ -1,0 +1,20 @@
+{
+  "subject": "green tea",
+  "predicate": "Negative_Correlation",
+  "object": "proteinuria",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"green tea\" - \"Negative_Correlation\" - \"proteinuria\"].\nSnippet to verify from: \"Effect of green tea and vitamin E combination in isoproterenol induced myocardial infarction in rats.The present study was aimed to investigate the combined effects of green tea and vitamin E on heart weight, body weight, serum marker enzymes, lipid peroxidation, endogenous antioxidants and membrane bound ATPases in isoproterenol (ISO)-induced myocardial infarction in rats. Adult male albino rats, treated with ISO (200 mg/kg, s.c.) for 2 days at an interval of 24 h caused a significant (P<0.05) elevation of heart weight, serum marker enzymes, lipid peroxidation and Ca+2 ATPase level whereas there was a significant (P<0.05) decrease in body weight, endogenous antioxidants, Na+/ K+ ATPase and Mg+2 ATPase levels. Administration of green tea (100 mg/kg/day, p.o.) and vitamin E (100 mg/kg/day, p.o.) together for 30 consecutive days and challenged with ISO on the day 29th and 30th, showed a significant (P<0.05) decrease in heart weight, serum marker enzymes, lipid peroxidation, Ca+2 ATPase and a significant increase in the body weight, endogenous antioxidants, Na+/K+ ATPase and Mg+2 ATPase when compared with ISO treated group and green tea or vitamin E alone treated groups. These findings indicate the synergistic protective effect of green tea and vitamin E during ISO induced myocardial infarction in rats.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Effect of green tea and vitamin E combination in isoproterenol induced myocardial infarction in rats.The present study was aimed to investigate the combined effects of green tea and vitamin E on heart weight, body weight, serum marker enzymes, lipid peroxidation, endogenous antioxidants and membrane bound ATPases in isoproterenol (ISO)-induced myocardial infarction in rats. Adult male albino rats, treated with ISO (200 mg/kg, s.c.) for 2 days at an interval of 24 h caused a significant (P<0.05) elevation of heart weight, serum marker enzymes, lipid peroxidation and Ca+2 ATPase level whereas there was a significant (P<0.05) decrease in body weight, endogenous antioxidants, Na+/ K+ ATPase and Mg+2 ATPase levels. Administration of green tea (100 mg/kg/day, p.o.) and vitamin E (100 mg/kg/day, p.o.) together for 30 consecutive days and challenged with ISO on the day 29th and 30th, showed a significant (P<0.05) decrease in heart weight, serum marker enzymes, lipid peroxidation, Ca+2 ATPase and a significant increase in the body weight, endogenous antioxidants, Na+/K+ ATPase and Mg+2 ATPase when compared with ISO treated group and green tea or vitamin E alone treated groups. These findings indicate the synergistic protective effect of green tea and vitamin E during ISO induced myocardial infarction in rats.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is c) The RDF statement definitely cannot be inferred from the snippet.The RDF statement claims a negative correlation between \"green tea\" and \"proteinuria\", but the snippet does not mention \"proteinuria\" at all. It discusses the effects of green tea on myocardial infarction in rats, but does not provide any information about proteinuria. Therefore, it is not possible to infer the RDF statement from the snippet.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

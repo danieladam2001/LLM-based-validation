@@ -1,0 +1,20 @@
+{
+  "subject": "proteinuria",
+  "predicate": "Positive_Correlation",
+  "object": "sirolimus",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"proteinuria\" - \"Positive_Correlation\" - \"sirolimus\"].\nSnippet to verify from: \"mToR inhibitors-induced proteinuria: mechanisms, significance, and management.Massive urinary protein excretion has been observed after conversion from calcineurin inhibitors to mammalian target of rapamycin (mToR) inhibitors, especially sirolimus, in renal transplant recipients with chronic allograft nephropathy. Because proteinuria is a major predictive factor of poor transplantation outcome, many studies focused on this adverse event during the past years. Whether proteinuria was due to sirolimus or only a consequence of calcineurin inhibitors withdrawal remained unsolved until high range proteinuria has been observed during sirolimus therapy in islet transplantation and in patients who received sirolimus de novo. Podocyte injury and focal segmental glomerulosclerosis have been related to mToR inhibition in some patients, but the pathways underlying these lesions remain hypothetic. We discuss herein the possible mechanisms and the significance of mToR blockade-induced proteinuria.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "mToR inhibitors-induced proteinuria: mechanisms, significance, and management.Massive urinary protein excretion has been observed after conversion from calcineurin inhibitors to mammalian target of rapamycin (mToR) inhibitors, especially sirolimus, in renal transplant recipients with chronic allograft nephropathy. Because proteinuria is a major predictive factor of poor transplantation outcome, many studies focused on this adverse event during the past years. Whether proteinuria was due to sirolimus or only a consequence of calcineurin inhibitors withdrawal remained unsolved until high range proteinuria has been observed during sirolimus therapy in islet transplantation and in patients who received sirolimus de novo. Podocyte injury and focal segmental glomerulosclerosis have been related to mToR inhibition in some patients, but the pathways underlying these lesions remain hypothetic. We discuss herein the possible mechanisms and the significance of mToR blockade-induced proteinuria.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions that \"Massive urinary protein excretion has been observed after conversion from calcineurin inhibitors to mammalian target of rapamycin (mToR) inhibitors, especially sirolimus\", which suggests a correlation between sirolimus and proteinuria. However, it does not directly state that sirolimus causes proteinuria, but rather that it is associated with it. Therefore, the RDF statement [\"proteinuria\" - \"Positive_Correlation\" - \"sirolimus\"] can be inferred from the snippet, but it requires some interpretation and is not directly verified.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

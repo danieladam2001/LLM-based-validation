@@ -1,0 +1,44 @@
+{
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  },
+  "task": {
+    "subject": "Donald Trump",
+    "predicate": "residence",
+    "object": "Mar-a-Lago"
+  },
+  "sources": [
+    {
+      "url": "https://www.homesandgardens.com/news/Donald-trump-florida-home-mar-a-lago",
+      "rdf_proof": true,
+      "paragraph": "Trump's Mar-a-Lago estate is believed to be his primary residence, however, it's not the only home on his property portfolio. From 1983 until 2019, his main home was the three-level penthouse on the top floor of Trump Tower in Manhattan. However, in 2019, he named the Palm Beach estate his primary residence.",
+      "raw_LLM": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly states \"in 2019, he named the Palm Beach estate his primary residence\", which matches the RDF statement [\"Donald Trump\" - \"residence\" - \"Mar-a-Lago\"] since Mar-a-Lago is located in Palm Beach."
+    },
+    {
+      "url": "https://www.novinky.cz/clanek/volby-usa-ve-stinu-mar-a-lago-trumpova-rezidence-v-palm-beach-ma-s-mestem-komplikovane-vztahy-40474630",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.ajc.com/news/local/photos-donald-trump-palm-beach-home-mar-lago/oeF6jUOXzRLwaRKwhEE1XM/",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://apnews.com/article/trump-maralago-lawsuit-palm-beach-51fea4e520b1901c1c045590b2a7bdc0",
+      "rdf_proof": true,
+      "paragraph": "FILE - President Donald Trump speaks to members of the media following a Christmas Eve video teleconference with members of the military at his Mar-a-Lago estate in Palm Beach, Fla., Tuesday, Dec. 24, 2019. (AP Photo/Andrew Harnik, File)",
+      "raw_LLM": "The correct answer is a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly mentions \"his Mar-a-Lago estate\", which directly implies that Mar-a-Lago is a residence of Donald Trump."
+    },
+    {
+      "url": "https://www.britannica.com/topic/Mar-a-Lago",
+      "rdf_proof": true,
+      "paragraph": "In 2019 Trump declared Mar-a-Lago his primary residence, and in January 2021 he returned there to live full-time after his presidency. His permanent residence was contested by some of his Palm Beach neighbours on the basis of a 1993 zoning agreement stating that guests of the club cannot stay longer than three weeks in one year. However, later in 2021 a court granted Trump permission to live there because club employees were allowed to live on the premises and Trump was considered to be a “bona fide employee.”",
+      "raw_LLM": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly states that \"In 2019 Trump declared Mar-a-Lago his primary residence\", which directly verifies the RDF statement [\"Donald Trump\" - \"residence\" - \"Mar-a-Lago\"]."
+    }
+  ]
+}

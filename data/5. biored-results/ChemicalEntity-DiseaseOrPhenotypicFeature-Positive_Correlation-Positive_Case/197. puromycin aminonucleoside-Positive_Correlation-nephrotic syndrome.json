@@ -1,0 +1,20 @@
+{
+  "subject": "puromycin aminonucleoside",
+  "predicate": "Positive_Correlation",
+  "object": "nephrotic syndrome",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"puromycin aminonucleoside\" - \"Positive_Correlation\" - \"nephrotic syndrome\"].\nSnippet to verify from: \"Protective effects of antithrombin on puromycin aminonucleoside nephrosis in rats.We investigated the effects of antithrombin, a plasma inhibitor of coagulation factors, in rats with puromycin aminonucleoside-induced nephrosis, which is an experimental model of human nephrotic syndrome. Antithrombin (50 or 500 IU/kg/i.v.) was administered to rats once a day for 10 days immediately after the injection of puromycin aminonucleoside (50 mg/kg/i.v.). Treatment with antithrombin attenuated the puromycin aminonucleoside-induced hematological abnormalities. Puromycin aminonucleoside-induced renal dysfunction and hyperlipidemia were also suppressed. Histopathological examination revealed severe renal damage such as proteinaceous casts in tubuli and tubular expansion in the kidney of control rats, while an improvement of the damage was seen in antithrombin-treated rats. In addition, antithrombin treatment markedly suppressed puromycin aminonucleoside-induced apoptosis of renal tubular epithelial cells. Furthermore, puromycin aminonucleoside-induced increases in renal cytokine content were also decreased. These findings suggest that thrombin plays an important role in the pathogenesis of puromycin aminonucleoside-induced nephrotic syndrome. Treatment with antithrombin may be clinically effective in patients with nephrotic syndrome.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Protective effects of antithrombin on puromycin aminonucleoside nephrosis in rats.We investigated the effects of antithrombin, a plasma inhibitor of coagulation factors, in rats with puromycin aminonucleoside-induced nephrosis, which is an experimental model of human nephrotic syndrome. Antithrombin (50 or 500 IU/kg/i.v.) was administered to rats once a day for 10 days immediately after the injection of puromycin aminonucleoside (50 mg/kg/i.v.). Treatment with antithrombin attenuated the puromycin aminonucleoside-induced hematological abnormalities. Puromycin aminonucleoside-induced renal dysfunction and hyperlipidemia were also suppressed. Histopathological examination revealed severe renal damage such as proteinaceous casts in tubuli and tubular expansion in the kidney of control rats, while an improvement of the damage was seen in antithrombin-treated rats. In addition, antithrombin treatment markedly suppressed puromycin aminonucleoside-induced apoptosis of renal tubular epithelial cells. Furthermore, puromycin aminonucleoside-induced increases in renal cytokine content were also decreased. These findings suggest that thrombin plays an important role in the pathogenesis of puromycin aminonucleoside-induced nephrotic syndrome. Treatment with antithrombin may be clinically effective in patients with nephrotic syndrome.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement is [\"puromycin aminonucleoside\" - \"Positive_Correlation\" - \"nephrotic syndrome\"], and the snippet explicitly states that puromycin aminonucleoside induces nephrotic syndrome, which implies a positive correlation between the two.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

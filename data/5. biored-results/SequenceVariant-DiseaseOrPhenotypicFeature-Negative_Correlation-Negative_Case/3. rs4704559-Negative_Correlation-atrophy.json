@@ -1,0 +1,20 @@
+{
+  "subject": "rs4704559",
+  "predicate": "Negative_Correlation",
+  "object": "atrophy",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"rs4704559\" - \"Negative_Correlation\" - \"atrophy\"].\nSnippet to verify from: \"Association of common genetic variants of HOMER1 gene with levodopa adverse effects in Parkinson's disease patients.Levodopa is the most effective symptomatic therapy for Parkinson's disease, but its chronic use could lead to chronic adverse outcomes, such as motor fluctuations, dyskinesia and visual hallucinations. HOMER1 is a protein with pivotal function in glutamate transmission, which has been related to the pathogenesis of these complications. This study investigates whether polymorphisms in the HOMER1 gene promoter region are associated with the occurrence of the chronic complications of levodopa therapy. A total of 205 patients with idiopathic Parkinson's disease were investigated. Patients were genotyped for rs4704559, rs10942891 and rs4704560 by allelic discrimination with Taqman assays. The rs4704559 G allele was associated with a lower prevalence of dyskinesia (prevalence ratio (PR)=0.615, 95% confidence interval (CI) 0.426-0.887, P=0.009) and visual hallucinations (PR=0.515, 95% CI 0.295-0.899, P=0.020). Our data suggest that HOMER1 rs4704559 G allele has a protective role for the development of levodopa adverse effects.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Association of common genetic variants of HOMER1 gene with levodopa adverse effects in Parkinson's disease patients.Levodopa is the most effective symptomatic therapy for Parkinson's disease, but its chronic use could lead to chronic adverse outcomes, such as motor fluctuations, dyskinesia and visual hallucinations. HOMER1 is a protein with pivotal function in glutamate transmission, which has been related to the pathogenesis of these complications. This study investigates whether polymorphisms in the HOMER1 gene promoter region are associated with the occurrence of the chronic complications of levodopa therapy. A total of 205 patients with idiopathic Parkinson's disease were investigated. Patients were genotyped for rs4704559, rs10942891 and rs4704560 by allelic discrimination with Taqman assays. The rs4704559 G allele was associated with a lower prevalence of dyskinesia (prevalence ratio (PR)=0.615, 95% confidence interval (CI) 0.426-0.887, P=0.009) and visual hallucinations (PR=0.515, 95% CI 0.295-0.899, P=0.020). Our data suggest that HOMER1 rs4704559 G allele has a protective role for the development of levodopa adverse effects.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The RDF statement is [\"rs4704559\" - \"Negative_Correlation\" - \"atrophy\"], but the snippet does not mention \"atrophy\" at all. However, it does mention that the rs4704559 G allele is associated with a lower prevalence of dyskinesia and visual hallucinations, which could be interpreted as a negative correlation with adverse effects. Therefore, the snippet provides some indications of the truthfulness of the RDF, but it does not directly verify it.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

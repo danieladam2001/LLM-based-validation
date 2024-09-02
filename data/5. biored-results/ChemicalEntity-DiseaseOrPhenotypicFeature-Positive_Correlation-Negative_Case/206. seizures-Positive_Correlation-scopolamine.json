@@ -1,0 +1,20 @@
+{
+  "subject": "seizures",
+  "predicate": "Positive_Correlation",
+  "object": "scopolamine",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"seizures\" - \"Positive_Correlation\" - \"scopolamine\"].\nSnippet to verify from: \"Seizures associated with levofloxacin: case presentation and literature review.PURPOSE: We present a case of a patient who developed seizures shortly after initiating treatment with levofloxacin and to discuss the potential drug-drug interactions related to the inhibition of cytochrome P450 (CYP) 1A2 in this case, as well as in other cases, of levofloxacin-induced seizures. METHODS: Several biomedical databases were searched including MEDLINE, Cochrane and Ovid. The main search terms utilized were case report and levofloxacin. The search was limited to studies published in English. RESULTS: Six cases of levofloxacin-induced seizures have been reported in the literature. Drug-drug interactions related to the inhibition of CYP1A2 by levofloxacin are likely involved in the clinical outcome of these cases. CONCLUSIONS: Clinicians are exhorted to pay close attention when initiating levofloxacin therapy in patients taking medications with epileptogenic properties that are CYP1A2 substrates.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Seizures associated with levofloxacin: case presentation and literature review.PURPOSE: We present a case of a patient who developed seizures shortly after initiating treatment with levofloxacin and to discuss the potential drug-drug interactions related to the inhibition of cytochrome P450 (CYP) 1A2 in this case, as well as in other cases, of levofloxacin-induced seizures. METHODS: Several biomedical databases were searched including MEDLINE, Cochrane and Ovid. The main search terms utilized were case report and levofloxacin. The search was limited to studies published in English. RESULTS: Six cases of levofloxacin-induced seizures have been reported in the literature. Drug-drug interactions related to the inhibition of CYP1A2 by levofloxacin are likely involved in the clinical outcome of these cases. CONCLUSIONS: Clinicians are exhorted to pay close attention when initiating levofloxacin therapy in patients taking medications with epileptogenic properties that are CYP1A2 substrates.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is c) The RDF statement definitely cannot be inferred from the snippet.The RDF statement mentions \"scopolamine\", which is not mentioned at all in the given snippet. The snippet only talks about levofloxacin and its interactions with other medications, but does not mention scopolamine or its relationship with seizures. Therefore, it is not possible to infer the RDF statement from the given snippet.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

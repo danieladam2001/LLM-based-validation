@@ -1,0 +1,20 @@
+{
+  "subject": "Ile/Val",
+  "predicate": "Negative_Correlation",
+  "object": "prostate cancer",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"Ile/Val\" - \"Negative_Correlation\" - \"prostate cancer\"].\nSnippet to verify from: \"Cytochrome p4501A1 gene variants as susceptibility marker for prostate cancer.CYP1A1 activates environmental procarcinogens and catalyzes oxidative metabolism of estrogens and is likely to play an important role in the etiology of prostate cancer. To evaluate this phenomenon, the association between two single nucleotide polymorphisms (A to G transition in exon7 leading to amino acid substitution Ile462Val and T3801C at 3'UTR) of CYP1A1 gene in prostate cancer were analyzed in a case-control study of 100 individuals in South Indian population. The estimated relative risk was significantly high for individuals with w1/m1 genotype at 3'UTR of CYP1A1 gene (OR-4.64; 95%CI = 1.51-14.86; P < 0.01) whereas the CYP1A1 Ile/Val genotype (w2/m2) on exon 7 was found to be associated with a decreased risk for prostate cancer (OR-0.17; 95%CI = 0.02-0.89; P=0.03). A Stratified analysis of the genotypes with age of onset and tumor grade showed the w1/m1 genotype to be significantly associated with an early age of onset; however the tumor grades did not have significant association with the variant genotypes. Thus the present study indicates that individuals with the variant w1/m1 genotype exhibit an increased risk while those with w2/m2 genotype exhibit a decreased risk for prostate cancer.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Cytochrome p4501A1 gene variants as susceptibility marker for prostate cancer.CYP1A1 activates environmental procarcinogens and catalyzes oxidative metabolism of estrogens and is likely to play an important role in the etiology of prostate cancer. To evaluate this phenomenon, the association between two single nucleotide polymorphisms (A to G transition in exon7 leading to amino acid substitution Ile462Val and T3801C at 3'UTR) of CYP1A1 gene in prostate cancer were analyzed in a case-control study of 100 individuals in South Indian population. The estimated relative risk was significantly high for individuals with w1/m1 genotype at 3'UTR of CYP1A1 gene (OR-4.64; 95%CI = 1.51-14.86; P < 0.01) whereas the CYP1A1 Ile/Val genotype (w2/m2) on exon 7 was found to be associated with a decreased risk for prostate cancer (OR-0.17; 95%CI = 0.02-0.89; P=0.03). A Stratified analysis of the genotypes with age of onset and tumor grade showed the w1/m1 genotype to be significantly associated with an early age of onset; however the tumor grades did not have significant association with the variant genotypes. Thus the present study indicates that individuals with the variant w1/m1 genotype exhibit an increased risk while those with w2/m2 genotype exhibit a decreased risk for prostate cancer.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement is [\"Ile/Val\" - \"Negative_Correlation\" - \"prostate cancer\"], and the snippet explicitly states that \"the CYP1A1 Ile/Val genotype (w2/m2) on exon 7 was found to be associated with a decreased risk for prostate cancer\", which directly supports the RDF statement.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "subject": "amiodarone",
+  "predicate": "Negative_Correlation",
+  "object": "atrial fibrillation",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"amiodarone\" - \"Negative_Correlation\" - \"atrial fibrillation\"].\nSnippet to verify from: \"Acute low back pain during intravenous administration of amiodarone: a report of two cases.Amiodarone represents an effective antiarrhythmic drug for cardioversion of recent-onset atrial fibrillation (AF) and maintenance of sinus rhythm. We briefly describe two patients suffering from recent-onset atrial fibrillation, who experienced an acute devastating low back pain a few minutes after initiation of intravenous amiodarone loading. Notably, this side effect has not been ever reported in the medical literature. Clinicians should be aware of this reaction since prompt termination of parenteral administration leads to complete resolution.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Acute low back pain during intravenous administration of amiodarone: a report of two cases.Amiodarone represents an effective antiarrhythmic drug for cardioversion of recent-onset atrial fibrillation (AF) and maintenance of sinus rhythm. We briefly describe two patients suffering from recent-onset atrial fibrillation, who experienced an acute devastating low back pain a few minutes after initiation of intravenous amiodarone loading. Notably, this side effect has not been ever reported in the medical literature. Clinicians should be aware of this reaction since prompt termination of parenteral administration leads to complete resolution.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is c) The RDF statement definitely cannot be inferred from the snippet.The RDF statement claims a \"Negative_Correlation\" between \"amiodarone\" and \"atrial fibrillation\", but the snippet actually describes amiodarone as an effective treatment for atrial fibrillation, which suggests a positive correlation. Therefore, the RDF statement cannot be inferred from the snippet.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "subject": "irinotecan",
+  "predicate": "Negative_Correlation",
+  "object": "fulminant hepatic failure",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"irinotecan\" - \"Negative_Correlation\" - \"fulminant hepatic failure\"].\nSnippet to verify from: \"Single nucleotide polymorphism in ABCG2 is associated with irinotecan-induced severe myelosuppression.Irinotecan is an anti-neoplastic agent that is widely used for treating colorectal and lung cancers, but often causes toxicities such as severe myelosuppression and diarrhea. In this study, we performed a two-stage case-control association study for irinotecan-induced severe myelosuppression (grades 3 and 4). In the first stage, 23 patients who developed severe myelosuppression and 58 patients who did not develop any toxicity were examined for 170 single nucleotide polymorphisms (SNPs) in 14 genes involved in the metabolism and transport of irinotecan. A total of five SNPs were identified to show the possible association with severe myelosuppression (P(Fisher)<0.01) and were further examined in 7 cases and 20 controls in the second stage of the study. An intronic SNP, rs2622604, in ABCG2 showed P(Fisher)=0.0419 in the second stage and indicated a significant association with severe myelosuppression in the combined study (P(Fisher)=0.000237; P(Corrected)=0.036). Although only limited subjects were investigated, our results suggested that a genetic polymorphism in ABCG2 might alter the transport activity for the drug and elevate the systemic circulation level of irinotecan, leading to severe myelosuppression.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Single nucleotide polymorphism in ABCG2 is associated with irinotecan-induced severe myelosuppression.Irinotecan is an anti-neoplastic agent that is widely used for treating colorectal and lung cancers, but often causes toxicities such as severe myelosuppression and diarrhea. In this study, we performed a two-stage case-control association study for irinotecan-induced severe myelosuppression (grades 3 and 4). In the first stage, 23 patients who developed severe myelosuppression and 58 patients who did not develop any toxicity were examined for 170 single nucleotide polymorphisms (SNPs) in 14 genes involved in the metabolism and transport of irinotecan. A total of five SNPs were identified to show the possible association with severe myelosuppression (P(Fisher)<0.01) and were further examined in 7 cases and 20 controls in the second stage of the study. An intronic SNP, rs2622604, in ABCG2 showed P(Fisher)=0.0419 in the second stage and indicated a significant association with severe myelosuppression in the combined study (P(Fisher)=0.000237; P(Corrected)=0.036). Although only limited subjects were investigated, our results suggested that a genetic polymorphism in ABCG2 might alter the transport activity for the drug and elevate the systemic circulation level of irinotecan, leading to severe myelosuppression.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is c) The RDF statement definitely cannot be inferred from the snippet.The RDF statement mentions \"fulminant hepatic failure\", but the snippet does not mention this term at all. The snippet talks about irinotecan-induced severe myelosuppression, diarrhea, and genetic polymorphism in ABCG2, but it does not provide any information about fulminant hepatic failure. Therefore, the RDF statement cannot be inferred from the snippet.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

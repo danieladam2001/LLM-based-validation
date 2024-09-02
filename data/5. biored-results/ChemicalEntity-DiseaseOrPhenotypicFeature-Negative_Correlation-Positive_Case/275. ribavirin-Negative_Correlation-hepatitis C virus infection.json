@@ -1,0 +1,20 @@
+{
+  "subject": "ribavirin",
+  "predicate": "Negative_Correlation",
+  "object": "hepatitis C virus infection",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"ribavirin\" - \"Negative_Correlation\" - \"hepatitis C virus infection\"].\nSnippet to verify from: \"Rhabdomyolysis in a hepatitis C virus infected patient treated with telaprevir and simvastatin.A 46-year old man with a chronic hepatitis C virus infection received triple therapy with ribavirin, pegylated interferon and telaprevir. The patient also received simvastatin. One month after starting the antiviral therapy, the patient was admitted to the hospital because he developed rhabdomyolysis. At admission simvastatin and all antiviral drugs were discontinued because toxicity due to a drug-drug interaction was suspected. The creatine kinase peaked at 62,246 IU/L and the patient was treated with intravenous normal saline. The patient's renal function remained unaffected. Fourteen days after hospitalization, creatine kinase level had returned to 230 IU/L and the patient was discharged. Telaprevir was considered the probable causative agent of an interaction with simvastatin according to the Drug Interaction Probability Scale. The interaction is due to inhibition of CYP3A4-mediated simvastatin clearance. Simvastatin plasma concentration increased 30 times in this patient and statin induced muscle toxicity is related to the concentration of the statin in blood. In conclusion, with this case we illustrate that telaprevir as well as statins are susceptible to clinical relevant drug-drug interactions.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Rhabdomyolysis in a hepatitis C virus infected patient treated with telaprevir and simvastatin.A 46-year old man with a chronic hepatitis C virus infection received triple therapy with ribavirin, pegylated interferon and telaprevir. The patient also received simvastatin. One month after starting the antiviral therapy, the patient was admitted to the hospital because he developed rhabdomyolysis. At admission simvastatin and all antiviral drugs were discontinued because toxicity due to a drug-drug interaction was suspected. The creatine kinase peaked at 62,246 IU/L and the patient was treated with intravenous normal saline. The patient's renal function remained unaffected. Fourteen days after hospitalization, creatine kinase level had returned to 230 IU/L and the patient was discharged. Telaprevir was considered the probable causative agent of an interaction with simvastatin according to the Drug Interaction Probability Scale. The interaction is due to inhibition of CYP3A4-mediated simvastatin clearance. Simvastatin plasma concentration increased 30 times in this patient and statin induced muscle toxicity is related to the concentration of the statin in blood. In conclusion, with this case we illustrate that telaprevir as well as statins are susceptible to clinical relevant drug-drug interactions.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is c) The RDF statement definitely cannot be inferred from the snippet.The RDF statement claims a negative correlation between \"ribavirin\" and \"hepatitis C virus infection\", but the snippet does not provide any information about the relationship between ribavirin and hepatitis C virus infection. The snippet only mentions that the patient received ribavirin as part of the antiviral therapy, but it does not provide any information about the effect of ribavirin on the infection.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

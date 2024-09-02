@@ -1,0 +1,20 @@
+{
+  "subject": "adrenocorticotrophic hormone",
+  "predicate": "Positive_Correlation",
+  "object": "HT",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"adrenocorticotrophic hormone\" - \"Positive_Correlation\" - \"HT\"].\nSnippet to verify from: \"Role of xanthine oxidase in dexamethasone-induced hypertension in rats.1. Glucocorticoid-induced hypertension (GC-HT) in the rat is associated with nitric oxide-redox imbalance. 2. We studied the role of xanthine oxidase (XO), which is implicated in the production of reactive oxygen species, in dexamethasone-induced hypertension (dex-HT). 3. Thirty male Sprague-Dawley rats were divided randomly into four treatment groups: saline, dexamethasone (dex), allopurinol plus saline, and allopurinol plus dex. 4. Systolic blood pressures (SBP) and bodyweights were recorded each alternate day. Thymus weight was used as a marker of glucocorticoid activity, and serum urate to assess XO inhibition. 5. Dex increased SBP (110 +/- 2-126 +/- 3 mmHg; P < 0.001) and decreased thymus (P < 0.001) and bodyweights (P\" < 0.01). Allopurinol decreased serum urate from 76 +/- 5 to 30 +/- 3 micromol/L (P < 0.001) in saline and from 84 +/- 13 to 28 +/- 2 micromol/L in dex-treated (P < 0.01) groups. 6. Allopurinol did not prevent dex-HT. This, together with our previous findings that allopurinol failed to prevent adrenocorticotrophic hormone induced hypertension, suggests that XO activity is not a major determinant of GC-HT in the rat.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Role of xanthine oxidase in dexamethasone-induced hypertension in rats.1. Glucocorticoid-induced hypertension (GC-HT) in the rat is associated with nitric oxide-redox imbalance. 2. We studied the role of xanthine oxidase (XO), which is implicated in the production of reactive oxygen species, in dexamethasone-induced hypertension (dex-HT). 3. Thirty male Sprague-Dawley rats were divided randomly into four treatment groups: saline, dexamethasone (dex), allopurinol plus saline, and allopurinol plus dex. 4. Systolic blood pressures (SBP) and bodyweights were recorded each alternate day. Thymus weight was used as a marker of glucocorticoid activity, and serum urate to assess XO inhibition. 5. Dex increased SBP (110 +/- 2-126 +/- 3 mmHg; P < 0.001) and decreased thymus (P < 0.001) and bodyweights (P\" < 0.01). Allopurinol decreased serum urate from 76 +/- 5 to 30 +/- 3 micromol/L (P < 0.001) in saline and from 84 +/- 13 to 28 +/- 2 micromol/L in dex-treated (P < 0.01) groups. 6. Allopurinol did not prevent dex-HT. This, together with our previous findings that allopurinol failed to prevent adrenocorticotrophic hormone induced hypertension, suggests that XO activity is not a major determinant of GC-HT in the rat.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The RDF statement is [\"adrenocorticotrophic hormone\" - \"Positive_Correlation\" - \"HT\"]. The snippet mentions that \"allopurinol failed to prevent adrenocorticotrophic hormone induced hypertension\", which suggests a positive correlation between adrenocorticotrophic hormone and hypertension (HT). However, it does not directly state that there is a positive correlation between the two, hence option b) is the correct answer.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

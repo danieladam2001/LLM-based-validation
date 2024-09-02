@@ -1,0 +1,20 @@
+{
+  "subject": "Brat",
+  "predicate": "Negative_Correlation",
+  "object": "AMPK",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"Brat\" - \"Negative_Correlation\" - \"AMPK\"].\nSnippet to verify from: \"Brat promotes stem cell differentiation via control of a bistable switch that restricts BMP signaling.Drosophila ovarian germline stem cells (GSCs) are maintained by Dpp signaling and the Pumilio (Pum) and Nanos (Nos) translational repressors. Upon division, Dpp signaling is extinguished, and Nos is downregulated in one daughter cell, causing it to switch to a differentiating cystoblast (CB). However, downstream effectors of Pum-Nos remain unknown, and how CBs lose their responsiveness to Dpp is unclear. Here, we identify Brain Tumor (Brat) as a potent differentiation factor and target of Pum-Nos regulation. Brat is excluded from GSCs by Pum-Nos but functions with Pum in CBs to translationally repress distinct targets, including the Mad and dMyc mRNAs. Regulation of both targets simultaneously lowers cellular responsiveness to Dpp signaling, forcing the cell to become refractory to the self-renewal signal. Mathematical modeling elucidates bistability of cell fate in the Brat-mediated system, revealing how autoregulation of GSC number can arise from Brat coupling extracellular Dpp regulation to intracellular interpretation.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Brat promotes stem cell differentiation via control of a bistable switch that restricts BMP signaling.Drosophila ovarian germline stem cells (GSCs) are maintained by Dpp signaling and the Pumilio (Pum) and Nanos (Nos) translational repressors. Upon division, Dpp signaling is extinguished, and Nos is downregulated in one daughter cell, causing it to switch to a differentiating cystoblast (CB). However, downstream effectors of Pum-Nos remain unknown, and how CBs lose their responsiveness to Dpp is unclear. Here, we identify Brain Tumor (Brat) as a potent differentiation factor and target of Pum-Nos regulation. Brat is excluded from GSCs by Pum-Nos but functions with Pum in CBs to translationally repress distinct targets, including the Mad and dMyc mRNAs. Regulation of both targets simultaneously lowers cellular responsiveness to Dpp signaling, forcing the cell to become refractory to the self-renewal signal. Mathematical modeling elucidates bistability of cell fate in the Brat-mediated system, revealing how autoregulation of GSC number can arise from Brat coupling extracellular Dpp regulation to intracellular interpretation.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "After analyzing the given RDF and snippet, I conclude that:b) The snippet contains some indications of the truthfulness of the RDF.The RDF states that \"Brat\" has a \"Negative_Correlation\" with \"AMPK\". Although the snippet doesn't explicitly mention \"AMPK\", it does discuss the role of \"Brat\" in regulating cell differentiation and responsiveness to Dpp signaling. This could be interpreted as a negative correlation, but it's not a direct proof. The snippet provides some indications of the truthfulness of the RDF, but it's not a definitive verification.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

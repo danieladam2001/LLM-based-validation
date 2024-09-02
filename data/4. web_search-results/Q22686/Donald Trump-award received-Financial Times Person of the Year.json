@@ -1,0 +1,38 @@
+{
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  },
+  "task": {
+    "subject": "Donald Trump",
+    "predicate": "award received",
+    "object": "Financial Times Person of the Year"
+  },
+  "sources": [
+    {
+      "url": "https://www.ft.com/content/b7bb61ec-c054-11e6-81c2-f57d90f6741a",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://ig.ft.com/sites/person-of-the-year/",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.ft.com/content/2dc1048c-de8b-11e7-a8a4-0a1e63a52f9c",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.cnn.com/2018/12/11/politics/time-magazine-person-of-the-year-trump-khashoggi/index.html",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.nbcnews.com/politics/white-house/trump-vs-time-magazine-disputes-president-s-person-year-claims-n823861",
+      "rdf_proof": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "subject": "hyperkinetic",
+  "predicate": "Positive_Correlation",
+  "object": "I280S",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"hyperkinetic\" - \"Positive_Correlation\" - \"I280S\"].\nSnippet to verify from: \"Severe form of thyroid hormone resistance in a patient with homozygous/hemizygous mutation of T3 receptor gene.Resistance to thyroid hormone syndrome (RTH) is a rare disorder, usually inherited as an autosomal dominant trait. Patients with RTH are usually euthyroid but can occasionally present with signs and symptoms of thyrotoxicosis or rarely with hypothyroidism. Affected individuals are usually heterozygous for mutations in the thyroid hormone receptor beta gene (TR-beta). We present a patient with RTH found to be homo-/hemizygous for a mutation in the TR-beta gene. The single nucleotide substitution I280S (1123T-->G) was present either on both alleles or in a hemizygous form with complete deletion of the second allele. The I280S mutation was recently reported in a heterozygous patient. The severe phenotype with seriously impaired intellectual development, hyperkinetic behaviour, tachycardia, hearing and visual impairment is probably due to the dominant negative effect of the I280S mutant protein and the absence of any functional TR-beta.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Severe form of thyroid hormone resistance in a patient with homozygous/hemizygous mutation of T3 receptor gene.Resistance to thyroid hormone syndrome (RTH) is a rare disorder, usually inherited as an autosomal dominant trait. Patients with RTH are usually euthyroid but can occasionally present with signs and symptoms of thyrotoxicosis or rarely with hypothyroidism. Affected individuals are usually heterozygous for mutations in the thyroid hormone receptor beta gene (TR-beta). We present a patient with RTH found to be homo-/hemizygous for a mutation in the TR-beta gene. The single nucleotide substitution I280S (1123T-->G) was present either on both alleles or in a hemizygous form with complete deletion of the second allele. The I280S mutation was recently reported in a heterozygous patient. The severe phenotype with seriously impaired intellectual development, hyperkinetic behaviour, tachycardia, hearing and visual impairment is probably due to the dominant negative effect of the I280S mutant protein and the absence of any functional TR-beta.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement [\"hyperkinetic\" - \"Positive_Correlation\" - \"I280S\"] can be directly verified from the snippet, which mentions \"hyperkinetic behaviour\" as one of the symptoms of the patient with the I280S mutation.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "subject": "cytosine insertion",
+  "predicate": "Positive_Correlation",
+  "object": "pituitary adenoma",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"cytosine insertion\" - \"Positive_Correlation\" - \"pituitary adenoma\"].\nSnippet to verify from: \"Mutation analysis in a Chinese family with multiple endocrine neoplasia type 1.BACKGROUND: Multiple endocrine neoplasia type 1 (MEN1) is an autosomal dominant cancer syndrome which is caused by germline mutations of the tumor suppressor gene MEN1. This study aimed to identify mutations in a Chinese pedigree with MEN1. METHODS: A large Chinese family with MEN1 was collected. All of the coded regions and their adjacent sequences of the MEN1 gene were amplified and sequenced. RESULTS: In this family, a heterozygous cytosine insertion in exon 10 (c.1546_1547insC) inducing a frame shift mutation of MEN1 was found in the proband and the other two suffering members of his family. This mutation was linked to a novel single nucleotide polymorphism (SNP) in intron 3 (IVS3 + 18C > T). CONCLUSIONS: The mutation in exon 10 of MEN1 gene might induce development of parathyroid hyperplasia and pituitary adenoma and cosegregate with MEN1 syndrome. The significance of the new found IVS3 + 18C > T of MEN1 needs a further investigation.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Mutation analysis in a Chinese family with multiple endocrine neoplasia type 1.BACKGROUND: Multiple endocrine neoplasia type 1 (MEN1) is an autosomal dominant cancer syndrome which is caused by germline mutations of the tumor suppressor gene MEN1. This study aimed to identify mutations in a Chinese pedigree with MEN1. METHODS: A large Chinese family with MEN1 was collected. All of the coded regions and their adjacent sequences of the MEN1 gene were amplified and sequenced. RESULTS: In this family, a heterozygous cytosine insertion in exon 10 (c.1546_1547insC) inducing a frame shift mutation of MEN1 was found in the proband and the other two suffering members of his family. This mutation was linked to a novel single nucleotide polymorphism (SNP) in intron 3 (IVS3 + 18C > T). CONCLUSIONS: The mutation in exon 10 of MEN1 gene might induce development of parathyroid hyperplasia and pituitary adenoma and cosegregate with MEN1 syndrome. The significance of the new found IVS3 + 18C > T of MEN1 needs a further investigation.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement is [\"cytosine insertion\" - \"Positive_Correlation\" - \"pituitary adenoma\"], and the snippet explicitly states that a \"heterozygous cytosine insertion\" in the MEN1 gene \"might induce development of... pituitary adenoma\". This is a direct correlation between the cytosine insertion and pituitary adenoma, which matches the RDF statement.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "subject": "memory deficits",
+  "predicate": "Positive_Correlation",
+  "object": "scopolamine",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"memory deficits\" - \"Positive_Correlation\" - \"scopolamine\"].\nSnippet to verify from: \"MDMA polydrug users show process-specific central executive impairments coupled with impaired social and emotional judgement processes.In recent years working memory deficits have been reported in users of MDMA (3,4-methylenedioxymethamphetamine, ecstasy). The current study aimed to assess the impact of MDMA use on three separate central executive processes (set shifting, inhibition and memory updating) and also on \"prefrontal\" mediated social and emotional judgement processes. Fifteen polydrug ecstasy users and 15 polydrug non-ecstasy user controls completed a general drug use questionnaire, the Brixton Spatial Anticipation task (set shifting), Backward Digit Span procedure (memory updating), Inhibition of Return (inhibition), an emotional intelligence scale, the Tromso Social Intelligence Scale and the Dysexecutive Questionnaire (DEX). Compared with MDMA-free polydrug controls, MDMA polydrug users showed impairments in set shifting and memory updating, and also in social and emotional judgement processes. The latter two deficits remained significant after controlling for other drug use. These data lend further support to the proposal that cognitive processes mediated by the prefrontal cortex may be impaired by recreational ecstasy use.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "MDMA polydrug users show process-specific central executive impairments coupled with impaired social and emotional judgement processes.In recent years working memory deficits have been reported in users of MDMA (3,4-methylenedioxymethamphetamine, ecstasy). The current study aimed to assess the impact of MDMA use on three separate central executive processes (set shifting, inhibition and memory updating) and also on \"prefrontal\" mediated social and emotional judgement processes. Fifteen polydrug ecstasy users and 15 polydrug non-ecstasy user controls completed a general drug use questionnaire, the Brixton Spatial Anticipation task (set shifting), Backward Digit Span procedure (memory updating), Inhibition of Return (inhibition), an emotional intelligence scale, the Tromso Social Intelligence Scale and the Dysexecutive Questionnaire (DEX). Compared with MDMA-free polydrug controls, MDMA polydrug users showed impairments in set shifting and memory updating, and also in social and emotional judgement processes. The latter two deficits remained significant after controlling for other drug use. These data lend further support to the proposal that cognitive processes mediated by the prefrontal cortex may be impaired by recreational ecstasy use.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions \"working memory deficits\" in users of MDMA, which is related to the RDF statement [\"memory deficits\" - \"Positive_Correlation\" - \"scopolamine\"]. However, the snippet does not directly mention scopolamine, and the correlation is not explicitly stated. Therefore, the RDF statement cannot be directly verified from the snippet, but the snippet provides some indication of the truthfulness of the RDF.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

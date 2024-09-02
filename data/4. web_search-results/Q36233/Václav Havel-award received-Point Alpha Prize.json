@@ -1,0 +1,46 @@
+{
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  },
+  "task": {
+    "subject": "Václav Havel",
+    "predicate": "award received",
+    "object": "Point Alpha Prize"
+  },
+  "sources": [
+    {
+      "url": "https://english.radio.cz/former-president-havel-receives-point-alpha-award-8591590",
+      "rdf_proof": true,
+      "paragraph": "The former Czech president Václav Havel has just been awarded the German Point Alpha Prize for his contribution to German, and European, unification. Tuesday’s ceremony did not take place at the usual venue – the former border between East and West Germany – but at the German Embassy in Prague. The embassy itself has also been marking an important chapter in its own history.",
+      "raw_LLM": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly states that Václav Havel was awarded the Point Alpha Prize, which matches the RDF statement [\"Václav Havel\" - \"award received\" - \"Point Alpha Prize\"]."
+    },
+    {
+      "url": "https://www.expatica.com/de/general/vaclav-havel-awarded-germanys-point-alpha-prize-95068/",
+      "rdf_proof": true,
+      "paragraph": "Prague — Czech author and former president Vaclav Havel was on Tuesday awarded Germany’s Point Alpha Prize for the Unity of Germany and Europe in Peace and Freedom.",
+      "raw_LLM": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly states that Václav Havel was awarded the Point Alpha Prize, which matches the RDF statement."
+    },
+    {
+      "url": "https://english.radio.cz/havel-honoured-role-unification-germany-and-europe-8437157",
+      "rdf_proof": true,
+      "paragraph": "Former Czech president Václav Havel has received a German award for his part in the unification of Germany and Europe. Mr Havel was presented with the Point-Alpha Prize at the German Embassy in Prague on Tuesday. It is named after a Cold War era US military observation post on the border between East and West Germany. Mr Havel led the Velvet Revolution in Czechoslovakia and became president of the country in 1990.",
+      "raw_LLM": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly states that Václav Havel received the Point-Alpha Prize, which matches the RDF statement [\"Václav Havel\" - \"award received\" - \"Point Alpha Prize\"]."
+    },
+    {
+      "url": "https://www.express.co.uk/news/world/63912/Czech-Havel-wins-German-award",
+      "rdf_proof": true,
+      "paragraph": "Havel received the Point Alpha award together with a cash prize of £17,000 in a ceremony at the German Embassy in Prague.",
+      "raw_LLM": "The correct answer is a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly states that \"Havel received the Point Alpha award\", which directly matches the RDF statement [\"Václav Havel\" - \"award received\" - \"Point Alpha Prize\"]."
+    },
+    {
+      "url": "https://www.pointalpha.com/en/the-point-alpha-award/",
+      "rdf_proof": false
+    }
+  ]
+}

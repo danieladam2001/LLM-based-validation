@@ -1,0 +1,20 @@
+{
+  "subject": "antibiotic",
+  "predicate": "Positive_Correlation",
+  "object": "interstitial nephritis",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"antibiotic\" - \"Positive_Correlation\" - \"interstitial nephritis\"].\nSnippet to verify from: \"Recurrent acute interstitial nephritis induced by azithromycin.A 14-year-old girl is reported with recurrent, azithromycin-induced, acute interstitial nephritis. The second episode was more severe than the first; and although both were treated with intensive corticosteroid therapy, renal function remained impaired. Although most cases of antibiotic induced acute interstitial nephritis are benign and self-limited, some patients are at risk for permanent renal injury.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Recurrent acute interstitial nephritis induced by azithromycin.A 14-year-old girl is reported with recurrent, azithromycin-induced, acute interstitial nephritis. The second episode was more severe than the first; and although both were treated with intensive corticosteroid therapy, renal function remained impaired. Although most cases of antibiotic induced acute interstitial nephritis are benign and self-limited, some patients are at risk for permanent renal injury.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The snippet mentions \"antibiotic induced acute interstitial nephritis\", which suggests a positive correlation between antibiotics and interstitial nephritis. However, it does not directly state that \"antibiotic\" has a \"Positive_Correlation\" with \"interstitial nephritis\". The snippet provides some evidence, but it requires some inference to arrive at the RDF statement.",
+  "answered_correctly": false,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

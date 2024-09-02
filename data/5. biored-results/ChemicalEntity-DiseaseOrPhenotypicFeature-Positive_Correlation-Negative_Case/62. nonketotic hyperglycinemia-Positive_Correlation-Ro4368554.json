@@ -1,0 +1,20 @@
+{
+  "subject": "nonketotic hyperglycinemia",
+  "predicate": "Positive_Correlation",
+  "object": "Ro4368554",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"nonketotic hyperglycinemia\" - \"Positive_Correlation\" - \"Ro4368554\"].\nSnippet to verify from: \"Valproate-induced chorea and encephalopathy in atypical nonketotic hyperglycinemia.Nonketotic hyperglycinemia is a disorder of amino acid metabolism in which a defect in the glycine cleavage system leads to an accumulation of glycine in the brain and other body compartments. In the classical form it presents as neonatal apnea, intractable seizures, and hypotonia, followed by significant psychomotor retardation. An important subset of children with nonketotic hyperglycinemia are atypical variants who present in a heterogeneous manner. This report describes a patient with mild language delay and mental retardation, who was found to have nonketotic hyperglycinemia following her presentation with acute encephalopathy and chorea shortly after initiation of valproate therapy.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Valproate-induced chorea and encephalopathy in atypical nonketotic hyperglycinemia.Nonketotic hyperglycinemia is a disorder of amino acid metabolism in which a defect in the glycine cleavage system leads to an accumulation of glycine in the brain and other body compartments. In the classical form it presents as neonatal apnea, intractable seizures, and hypotonia, followed by significant psychomotor retardation. An important subset of children with nonketotic hyperglycinemia are atypical variants who present in a heterogeneous manner. This report describes a patient with mild language delay and mental retardation, who was found to have nonketotic hyperglycinemia following her presentation with acute encephalopathy and chorea shortly after initiation of valproate therapy.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is:c) The RDF statement definitely cannot be inferred from the snippet.The snippet provides information about nonketotic hyperglycinemia, but it does not mention \"Positive_Correlation\" or \"Ro4368554\", which are essential components of the RDF statement. Therefore, it is not possible to infer the RDF statement from the given snippet.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

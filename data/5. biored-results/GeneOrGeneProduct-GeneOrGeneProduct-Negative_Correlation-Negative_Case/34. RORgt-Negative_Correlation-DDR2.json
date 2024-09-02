@@ -1,0 +1,20 @@
+{
+  "subject": "RORgt",
+  "predicate": "Negative_Correlation",
+  "object": "DDR2",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"RORgt\" - \"Negative_Correlation\" - \"DDR2\"].\nSnippet to verify from: \"HEB is required for the specification of fetal IL-17-producing gd T cells.IL-17-producing gd T (gdT17) cells are critical components of the innate immune system. However, the gene networks that control their development are unclear. Here we show that HEB (HeLa E-box binding protein, encoded by Tcf12) is required for the generation of a newly defined subset of fetal-derived CD73- gdT17 cells. HEB is required in immature CD24+CD73- gd T cells for the expression of Sox4, Sox13, and Rorc, and these genes are repressed by acute expression of the HEB antagonist Id3. HEB-deficiency also affects mature CD73+ gd T cells, which are defective in RORgt expression and IL-17 production. Additionally, the fetal TCRg chain repertoire is altered, and peripheral Vg4 gd T cells are mostly restricted to the IFNg-producing phenotype in HEB-deficient mice. Therefore, our work identifies HEB-dependent pathways for the development of CD73+ and CD73- gdT17 cells, and provides mechanistic evidence for control of the gdT17 gene network by HEB.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "HEB is required for the specification of fetal IL-17-producing gd T cells.IL-17-producing gd T (gdT17) cells are critical components of the innate immune system. However, the gene networks that control their development are unclear. Here we show that HEB (HeLa E-box binding protein, encoded by Tcf12) is required for the generation of a newly defined subset of fetal-derived CD73- gdT17 cells. HEB is required in immature CD24+CD73- gd T cells for the expression of Sox4, Sox13, and Rorc, and these genes are repressed by acute expression of the HEB antagonist Id3. HEB-deficiency also affects mature CD73+ gd T cells, which are defective in RORgt expression and IL-17 production. Additionally, the fetal TCRg chain repertoire is altered, and peripheral Vg4 gd T cells are mostly restricted to the IFNg-producing phenotype in HEB-deficient mice. Therefore, our work identifies HEB-dependent pathways for the development of CD73+ and CD73- gdT17 cells, and provides mechanistic evidence for control of the gdT17 gene network by HEB.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The RDF statement is [\"RORgt\" - \"Negative_Correlation\" - \"DDR2\"], but the snippet does not mention \"DDR2\" at all. However, it does mention \"RORgt\" and its relation to HEB, stating that HEB-deficient mice have defective RORgt expression. This suggests a negative correlation between HEB and RORgt, but it does not provide direct proof of the RDF statement.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

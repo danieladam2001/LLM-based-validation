@@ -1,0 +1,20 @@
+{
+  "subject": "cyclooxygenase inhibitors",
+  "predicate": "Positive_Correlation",
+  "object": "heart failure",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"cyclooxygenase inhibitors\" - \"Positive_Correlation\" - \"heart failure\"].\nSnippet to verify from: \"Cardiovascular risk with cyclooxygenase inhibitors: general problem with substance specific differences?Randomised clinical trials and observational studies have shown an increased risk of myocardial infarction, stroke, hypertension and heart failure during treatment with cyclooxygenase inhibitors. Adverse cardiovascular effects occurred mainly, but not exclusively, in patients with concomitant risk factors. Cyclooxygenase inhibitors cause complex changes in renal, vascular and cardiac prostanoid profiles thereby increasing vascular resistance and fluid retention. The incidence of cardiovascular adverse events tends to increase with the daily dose and total exposure time. A comparison of individual selective and unselective cyclooxygenase inhibitors suggests substance-specific differences, which may depend on differences in pharmacokinetic parameters or inhibitory potency and may be contributed by prostaglandin-independent effects. Diagnostic markers such as N-terminal pro brain natriuretic peptide (NT-proBNP) or high-sensitive C-reactive protein might help in the early identification of patients at risk, thus avoiding the occurrence of serious cardiovascular toxicity.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Cardiovascular risk with cyclooxygenase inhibitors: general problem with substance specific differences?Randomised clinical trials and observational studies have shown an increased risk of myocardial infarction, stroke, hypertension and heart failure during treatment with cyclooxygenase inhibitors. Adverse cardiovascular effects occurred mainly, but not exclusively, in patients with concomitant risk factors. Cyclooxygenase inhibitors cause complex changes in renal, vascular and cardiac prostanoid profiles thereby increasing vascular resistance and fluid retention. The incidence of cardiovascular adverse events tends to increase with the daily dose and total exposure time. A comparison of individual selective and unselective cyclooxygenase inhibitors suggests substance-specific differences, which may depend on differences in pharmacokinetic parameters or inhibitory potency and may be contributed by prostaglandin-independent effects. Diagnostic markers such as N-terminal pro brain natriuretic peptide (NT-proBNP) or high-sensitive C-reactive protein might help in the early identification of patients at risk, thus avoiding the occurrence of serious cardiovascular toxicity.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly states that \"Randomised clinical trials and observational studies have shown an increased risk of... heart failure during treatment with cyclooxygenase inhibitors\", which directly supports the RDF statement [\"cyclooxygenase inhibitors\" - \"Positive_Correlation\" - \"heart failure\"].",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

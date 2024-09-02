@@ -1,0 +1,20 @@
+{
+  "subject": "vancomycin",
+  "predicate": "Positive_Correlation",
+  "object": "obese",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"vancomycin\" - \"Positive_Correlation\" - \"obese\"].\nSnippet to verify from: \"Acute renal failure in patients with AIDS on tenofovir while receiving prolonged vancomycin course for osteomyelitis.Renal failure developed after a prolonged course of vancomycin therapy in 2 patients who were receiving tenofovir disoproxil fumarate as part of an antiretroviral regimen. Tenofovir has been implicated in the development of Fanconi syndrome and renal insufficiency because of its effects on the proximal renal tubule. Vancomycin nephrotoxicity is infrequent but may result from coadministration with a nephrotoxic agent. Clinicians should be aware that tenofovir may raise the risk of renal failure during prolonged administration of vancomycin.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Acute renal failure in patients with AIDS on tenofovir while receiving prolonged vancomycin course for osteomyelitis.Renal failure developed after a prolonged course of vancomycin therapy in 2 patients who were receiving tenofovir disoproxil fumarate as part of an antiretroviral regimen. Tenofovir has been implicated in the development of Fanconi syndrome and renal insufficiency because of its effects on the proximal renal tubule. Vancomycin nephrotoxicity is infrequent but may result from coadministration with a nephrotoxic agent. Clinicians should be aware that tenofovir may raise the risk of renal failure during prolonged administration of vancomycin.",
+  "expected_answer": false,
+  "LLM_anwser_parsed": false,
+  "LLM_answer_raw": "The correct answer is b) The snippet contains some indications of the truthfulness of the RDF.The RDF statement [\"vancomycin\" - \"Positive_Correlation\" - \"obese\"] cannot be directly verified from the snippet because there is no mention of \"obese\" in the snippet. However, the snippet does mention vancomycin and its potential to cause renal failure, which could be related to obesity, but it's not a direct proof. Therefore, the snippet contains some indications of the truthfulness of the RDF, but it's not a direct verification.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}

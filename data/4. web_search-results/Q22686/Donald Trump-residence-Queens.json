@@ -1,0 +1,40 @@
+{
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  },
+  "task": {
+    "subject": "Donald Trump",
+    "predicate": "residence",
+    "object": "Queens"
+  },
+  "sources": [
+    {
+      "url": "https://ny1.com/nyc/queens/news/2021/01/19/trump-queens-childhood-home-on-the-market-again",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://untappedcities.com/2020/02/17/president-donald-trumps-childhood-houses-in-queens/",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.curbed.com/2020/12/trump-house-queens-nyc-for-sale.html",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.dailymail.co.uk/news/article-13347693/queens-mansion-trump-record-tudor.html",
+      "rdf_proof": false
+    },
+    {
+      "url": "https://www.6sqft.com/jamaica-estates-home-where-donald-trump-grew-up-asks-1-65m/",
+      "rdf_proof": true,
+      "paragraph": "A common question about Donald Trump is “Where did he come from?” and this new listing for his childhood home in Queens may be one piece of the puzzle. Newsday reports that the Jamaica Estates home in which the presidential hopeful lived as a young boy has hit the market for $1.65 million. The six-bedroom tudor home at 85-15 Wareham Place is listed as his address on his 1946 birth certificate (he was born at nearby Jamaica Hospital) and is located in an affluent enclave where the average sales price is around $2 million according to DNAinfo.",
+      "raw_LLM": "The correct answer is a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The snippet explicitly mentions \"his childhood home in Queens\" which directly verifies the RDF statement [\"Donald Trump\" - \"residence\" - \"Queens\"]."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "subject": "OPMD",
+  "predicate": "Positive_Correlation",
+  "object": "insertion of (GCG)4GCA",
+  "prompt": "Can the given RDF be inferred from the given snippet?\n\nRDF for verification: [\"OPMD\" - \"Positive_Correlation\" - \"insertion of (GCG)4GCA\"].\nSnippet to verify from: \"Study of a Taiwanese family with oculopharyngeal muscular dystrophy.BACKGROUND: Oculopharyngeal muscular dystrophy (OPMD) is a late onset autosomal dominant muscle disorder. OPMD is caused by a short trinucleotide repeat expansion encoding an expanded polyalanine tract in the polyadenylate binding-protein nuclear 1 (PABPN1) gene. We identified and characterized a PABPN1 mutation in a Taiwanese family with OPMD. METHODS: The phenotypic and genotypic characteristics of all subjects were evaluated in a Taiwanese OPMD family. Genetic alterations in the PABPN1 gene were identified using PCR and DNA sequencing. RESULTS: Ten subjects with OPMD (6 symptomatic and 4 asymptomatic) within the Taiwanese family carried a novel mutation in the PABPN1 gene. The normal (GCG)6(GCA)3GCG sequence was replaced by (GCG)6(GCA)(GCG)4(GCA)3GCG due to an insertion of (GCG)4GCA into the normal allele in the Taiwanese OPMD subjects. CONCLUSIONS: In contrast to a single GCG expansion in most of OPMD patients in the literature, an insertion of (GCG)4GCA in the PABPN1 gene was found in the Taiwanese OPMD subjects. The identification of this mutation appears to support the molecular mechanism of unequal cross-over of two PABPN1 alleles.\n\n\nPlease, choose the correct option based on your answer!\na) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.\nb) The snippet contains some indications of the truthfulness of the RDF.c) The RDF statement definitely cannot be inferred from the snippet.\n",
+  "text": "Study of a Taiwanese family with oculopharyngeal muscular dystrophy.BACKGROUND: Oculopharyngeal muscular dystrophy (OPMD) is a late onset autosomal dominant muscle disorder. OPMD is caused by a short trinucleotide repeat expansion encoding an expanded polyalanine tract in the polyadenylate binding-protein nuclear 1 (PABPN1) gene. We identified and characterized a PABPN1 mutation in a Taiwanese family with OPMD. METHODS: The phenotypic and genotypic characteristics of all subjects were evaluated in a Taiwanese OPMD family. Genetic alterations in the PABPN1 gene were identified using PCR and DNA sequencing. RESULTS: Ten subjects with OPMD (6 symptomatic and 4 asymptomatic) within the Taiwanese family carried a novel mutation in the PABPN1 gene. The normal (GCG)6(GCA)3GCG sequence was replaced by (GCG)6(GCA)(GCG)4(GCA)3GCG due to an insertion of (GCG)4GCA into the normal allele in the Taiwanese OPMD subjects. CONCLUSIONS: In contrast to a single GCG expansion in most of OPMD patients in the literature, an insertion of (GCG)4GCA in the PABPN1 gene was found in the Taiwanese OPMD subjects. The identification of this mutation appears to support the molecular mechanism of unequal cross-over of two PABPN1 alleles.",
+  "expected_answer": true,
+  "LLM_anwser_parsed": true,
+  "LLM_answer_raw": "The correct answer is:a) The RDF statement can be directly verified from the snippet. The snippet contains direct proof.The RDF statement is [\"OPMD\" - \"Positive_Correlation\" - \"insertion of (GCG)4GCA\"], and the snippet explicitly states: \"an insertion of (GCG)4GCA in the PABPN1 gene was found in the Taiwanese OPMD subjects.\" This directly verifies the RDF statement.",
+  "answered_correctly": true,
+  "LLM": {
+    "model": "meta/meta-llama-3-70b-instruct",
+    "seed": 42,
+    "top_p": 0.9,
+    "temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Work only with the text given to you.",
+    "max_new_tokens": 500,
+    "min_new_tokens": -1
+  }
+}
