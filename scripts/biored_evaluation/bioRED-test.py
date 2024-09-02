@@ -1,4 +1,5 @@
 import codecs
+import pathlib
 import sys
 import json
 import re
@@ -201,6 +202,7 @@ if __name__ == '__main__':
         print("Replicate API token missing.")
         exit()
 
+    pathlib.Path("biored-tests").mkdir(parents=False, exist_ok=True)
     dataset = json.loads(open("biored-adjusted.json", "r").read())
 
     concepts = [
@@ -241,7 +243,9 @@ if __name__ == '__main__':
     ]
 
     for concept in concepts:
+        pathlib.Path("biored-tests/{}-{}-{}-{}".format(concept[0], concept[1], concept[2], concept[3])).mkdir(parents=False, exist_ok=True)
 
+    for concept in concepts:
         entity1, entity2, relation, case = concept[0], concept[1], concept[2], concept[3]
         data = sort_data(dataset, entity1, entity2, relation, case)
         test(data, case, entity1, entity2, relation)
