@@ -1,4 +1,4 @@
-By default, the HTML is generated for 36233/Vaclav-Havel-GPT4.txt
+By default, the HTML is generated for data/wikipedia-results/Bioluminescence-gpt4.txt
 To view the HTML pages, open the .html file in your browser
 
 To generate HTML for different subject
