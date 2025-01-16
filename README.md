@@ -6,6 +6,10 @@ The purpose of this project is to propose a method for validating RDF statements
 All data containing the results of the experiments (BioRED evaluation) or exemplary use-cases are located in data folder.
 ```md
 ├───data
+    ├───llm_snli-results
+    │   ├───meta_meta-llama-3-70b-instruct.zip
+    │   ├───meta_meta-llama-3-8b-instruct.zip
+    │   └───meta_meta-llama-3.1-405b-instruct.zip
     ├───introduction-examples
     ├───web_search-results
     │   ├───Q22686
