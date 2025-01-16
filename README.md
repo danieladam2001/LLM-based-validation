@@ -3,7 +3,7 @@ This repository contains scripts and supplementary materials (datasets and resul
 The purpose of this project is to propose a method for validating RDF statements using LLMs and to suggest two possible applications in knowledge graphs, in our case Wikidata.
 ## Experiments
 ### Results
-All data containing the results of the experiments (BioRED evaluation) or exemplary use-cases are located in data folder.
+All data containing the results of the experiments (BioRED evaluation, SNLI evaluation) or exemplary use-cases are located in data folder.
 ```md
 ├───data
     ├───llm_snli-results
@@ -18,7 +18,7 @@ All data containing the results of the experiments (BioRED evaluation) or exempl
     └───biored-results
 ```
 ### Scripts
-All data required for the replicability of the experiments (BioRED evaluation, Web search, Wikipedia search) are located in scripts folder.
+All data required for the replicability of the experiments (BioRED evaluation, Web search, Wikipedia search, SNLI evaluation) are located in scripts folder.
 ```md
 ├───scripts
     ├───llm_snli
