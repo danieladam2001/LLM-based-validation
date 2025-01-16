@@ -21,6 +21,12 @@ All data containing the results of the experiments (BioRED evaluation) or exempl
 All data required for the replicability of the experiments (BioRED evaluation, Web search, Wikipedia search) are located in scripts folder.
 ```md
 ├───scripts
+    ├───llm_snli
+    │   ├───snli-test.py
+    │   └───snli_1.0/snli_1.0/snli_1.0_test.jsonl
+    ├───nli_deberta_base
+    │   ├───bioRED-test.py
+    │   └───biored-adjusted.json
     ├───biored_evaluation
     │   ├───biored-adjusted.json
     │   ├───bioRED-test.py
